@@ -1,17 +1,33 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import './globals.css';
+import { BottomNav } from './components/BottomNav';
+import { SwipeGestures } from './components/SwipeGestures';
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
+  userScalable: true,
+  themeColor: '#7c3aed',
+};
 
 export const metadata: Metadata = {
   title: '10minCUET – CUET Prep in 10-Minute Sessions',
   description:
     'Master CUET with daily 10-minute sessions. Covers Languages, Domain Subjects, and General Test. Get into DU, JNU, BHU, and top Central Universities.',
   keywords: 'CUET, CUET preparation, DU, JNU, BHU, Central University, CUET mock test, General Test, Domain Subject',
+  manifest: '/manifest.json',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className="bg-white text-gray-900 antialiased">{children}</body>
+      <body className="bg-white text-gray-900 antialiased">
+        <SwipeGestures enableRefresh={true} enableNavigation={true}>
+          {children}
+          <BottomNav />
+        </SwipeGestures>
+      </body>
     </html>
   );
 }
