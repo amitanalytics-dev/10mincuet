@@ -177,8 +177,14 @@ export default function LandingPage() {
 
         <div className="flex flex-col sm:flex-row gap-3 justify-center">
           <Link
-            href="/register"
+            href="/diagnostic"
             className="w-full sm:w-auto bg-orange-500 text-white font-black text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 rounded-2xl hover:bg-orange-600 transition-all shadow-lg shadow-orange-200 active:scale-95"
+          >
+            Take the 2-minute diagnostic — no signup →
+          </Link>
+          <Link
+            href="/register"
+            className="w-full sm:w-auto border-2 border-orange-200 text-orange-600 font-bold text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 rounded-2xl hover:border-orange-300 transition-all"
           >
             {t.home_cta_start}
           </Link>

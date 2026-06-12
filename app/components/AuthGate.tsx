@@ -15,6 +15,8 @@ const PUBLIC_PATHS = [
   "/blog",
   // Free mock test (public, no signup needed)
   "/mock",
+  // Anonymous diagnostic funnel (public, no signup needed)
+  "/diagnostic",
   // Public leaderboard
   "/leaderboard",
   // Public teams + season standings
