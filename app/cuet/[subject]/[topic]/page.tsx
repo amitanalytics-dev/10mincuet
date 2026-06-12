@@ -148,6 +148,45 @@ export default async function TopicSEOPage({
         }}
       />
 
+      {/* FAQPage JSON-LD */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: [
+              {
+                "@type": "Question",
+                name: `How many questions come from ${topic.name} in CUET UG?`,
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: `On average, ${topic.avgQuestionsPerPaper} questions per CUET UG paper come from ${topic.name} — about ${topic.paperCoverage}% of the ${subj.name} paper, worth roughly ${topic.marksContribution} marks.`,
+                },
+              },
+              {
+                "@type": "Question",
+                name: `Is ${topic.name} hard in CUET UG?`,
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: `${topic.name} is rated ${topic.difficulty} for CUET UG. ${topic.quickWin}`,
+                },
+              },
+              {
+                "@type": "Question",
+                name: `Which NCERT chapter covers ${topic.name} for CUET?`,
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: ncert
+                    ? `${ncert.book}, Chapter ${ncert.chapter} (${ncert.chapterName}), pages ${ncert.pageStart}-${ncert.pageEnd}. CUET UG questions stay within the NCERT syllabus.`
+                    : `${topic.name} follows the NCERT Class 11-12 syllabus for ${subj.name}. CUET UG questions stay within NCERT scope.`,
+                },
+              },
+            ],
+          }),
+        }}
+      />
+
       <div className="max-w-4xl mx-auto px-4 py-10">
         {/* Breadcrumb */}
         <nav aria-label="Breadcrumb" className="text-sm text-gray-400 mb-6">
@@ -261,6 +300,44 @@ export default async function TopicSEOPage({
           </div>
         </div>
 
+        {/* FAQ */}
+        <div className="mb-10">
+          <h2 className="text-2xl font-black text-gray-900 mb-4">
+            {topic.name} in CUET UG — FAQs
+          </h2>
+          <div className="space-y-3">
+            <div className="border border-gray-100 rounded-xl p-4">
+              <h3 className="font-bold text-gray-900 mb-1 text-sm">
+                How many questions come from {topic.name} in CUET UG?
+              </h3>
+              <p className="text-sm text-gray-600">
+                On average, <strong>{topic.avgQuestionsPerPaper} questions per paper</strong> come
+                from {topic.name} — about {topic.paperCoverage}% of the {subj.name} paper, worth
+                roughly {topic.marksContribution} marks.
+              </p>
+            </div>
+            <div className="border border-gray-100 rounded-xl p-4">
+              <h3 className="font-bold text-gray-900 mb-1 text-sm">
+                Is {topic.name} hard in CUET UG?
+              </h3>
+              <p className="text-sm text-gray-600">
+                It is rated <strong>{topic.difficulty}</strong>. {topic.quickWin}
+              </p>
+            </div>
+            <div className="border border-gray-100 rounded-xl p-4">
+              <h3 className="font-bold text-gray-900 mb-1 text-sm">
+                Which NCERT chapter covers {topic.name}?
+              </h3>
+              <p className="text-sm text-gray-600">
+                {ncert
+                  ? `${ncert.book}, Chapter ${ncert.chapter} (${ncert.chapterName}), pages ${ncert.pageStart}–${ncert.pageEnd}.`
+                  : `${topic.name} follows the NCERT Class 11–12 syllabus for ${subj.name}.`}{" "}
+                CUET UG questions stay within NCERT scope.
+              </p>
+            </div>
+          </div>
+        </div>
+
         {/* CTA */}
         <div className="bg-gray-900 rounded-2xl p-8 text-center text-white">
           <h2 className="text-2xl font-black mb-3">
@@ -269,12 +346,20 @@ export default async function TopicSEOPage({
           <p className="text-gray-400 mb-6">
             10 minutes. Bloom-level questions. Know exactly where you stand.
           </p>
-          <Link
-            href="/register"
-            className="bg-orange-500 hover:bg-orange-600 text-white font-black py-4 px-8 rounded-xl transition-all inline-block"
-          >
-            Start free practice →
-          </Link>
+          <div className="flex flex-col sm:flex-row gap-3 justify-center">
+            <Link
+              href={`/quiz/${subject}/${topicSlug}`}
+              className="bg-orange-500 hover:bg-orange-600 text-white font-black py-4 px-8 rounded-xl transition-all inline-block"
+            >
+              Take today&apos;s {topic.name} quiz →
+            </Link>
+            <Link
+              href="/diagnostic"
+              className="border-2 border-gray-700 hover:border-gray-500 text-white font-bold py-4 px-8 rounded-xl transition-all inline-block"
+            >
+              Free 2-min diagnostic
+            </Link>
+          </div>
         </div>
       </div>
     </div>

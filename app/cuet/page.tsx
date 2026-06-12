@@ -38,6 +38,33 @@ function toTopicSlug(name: string) {
     .replace(/(^-|-$)/g, "");
 }
 
+const STREAM_GROUPS = [
+  {
+    label: "Compulsory for everyone",
+    emoji: "📌",
+    note: "Section IA (Language) and Section III (General Test) — taken by all streams",
+    subjects: ["English", "General Test"],
+  },
+  {
+    label: "Science stream",
+    emoji: "🔬",
+    note: "Domain subjects for B.Sc., B.Tech and allied courses",
+    subjects: ["Physics", "Chemistry", "Biology", "Mathematics"],
+  },
+  {
+    label: "Commerce stream",
+    emoji: "📊",
+    note: "Domain subjects for B.Com, BBA and Economics courses",
+    subjects: ["Accountancy", "Business Studies", "Economics"],
+  },
+  {
+    label: "Humanities stream",
+    emoji: "🏛️",
+    note: "Domain subjects for BA programmes across central universities",
+    subjects: ["History", "Geography", "Political Science"],
+  },
+];
+
 export default function CUETHubPage() {
   return (
     <div className="min-h-screen bg-white">
@@ -80,14 +107,25 @@ export default function CUETHubPage() {
           Bloom-level questions.
         </p>
 
-        {subjects.map((subj) => (
+        {STREAM_GROUPS.map((group) => (
+          <div key={group.label} className="mb-12">
+            <div className="flex items-center gap-3 mb-6">
+              <span className="text-2xl">{group.emoji}</span>
+              <div>
+                <h2 className="text-2xl font-black text-gray-900">{group.label}</h2>
+                <p className="text-xs text-gray-400">{group.note}</p>
+              </div>
+            </div>
+            {subjects
+              .filter((s) => group.subjects.includes(s.name))
+              .map((subj) => (
           <div key={subj.name} className="mb-10">
-            <h2
-              className="text-2xl font-black mb-4"
+            <h3
+              className="text-xl font-black mb-4"
               style={{ color: subj.accent }}
             >
               {subj.name}
-            </h2>
+            </h3>
             <div className="grid md:grid-cols-2 gap-3">
               {subj.topics.map((topic) => {
                 const topicSlug = toTopicSlug(topic.name);
@@ -123,6 +161,8 @@ export default function CUETHubPage() {
                 );
               })}
             </div>
+          </div>
+              ))}
           </div>
         ))}
 
