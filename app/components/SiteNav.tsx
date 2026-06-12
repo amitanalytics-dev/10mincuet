@@ -11,6 +11,7 @@ export function SiteNav() {
   const pathname = usePathname();
   const [loggedIn, setLoggedIn] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [moreOpen, setMoreOpen] = useState(false);
   const [streak, setStreak] = useState<{ streak: number; activeToday: boolean } | null>(null);
   const [access, setAccess] = useState<{ hasPremium: boolean; reason: string; daysLeft?: number } | null>(null);
   const { t } = useLanguage();
@@ -25,15 +26,18 @@ export function SiteNav() {
   ];
 
   const APP_LINKS = [
+    { href: "/sprint",      label: t.nav_sprint },
     { href: "/topics",      label: t.nav_topics },
     { href: "/mock",        label: t.nav_mock_short },
+    { href: "/leaderboard", label: t.nav_leaderboard },
+    { href: "/readiness",   label: t.nav_readiness },
+  ];
+
+  const MORE_LINKS = [
     { href: "/foundation",  label: "Foundation" },
-    { href: "/sprint",      label: t.nav_sprint },
     { href: "/challenge",   label: t.nav_challenge },
     { href: "/tournaments", label: t.nav_tournaments },
-    { href: "/leaderboard", label: t.nav_leaderboard },
     { href: "/teams",       label: t.nav_teams },
-    { href: "/readiness",   label: t.nav_readiness },
     { href: "/study-rooms", label: t.nav_study_rooms },
     { href: "/educators",   label: t.nav_educators },
     { href: "/blog",        label: t.nav_blog },
@@ -102,6 +106,38 @@ export function SiteNav() {
               {l.label}
             </Link>
           ))}
+          {loggedIn && (
+            <div className="relative">
+              <button
+                onClick={() => setMoreOpen((p) => !p)}
+                className={`text-sm font-semibold transition-colors whitespace-nowrap ${
+                  MORE_LINKS.some((l) => pathname === l.href || pathname.startsWith(l.href + "/"))
+                    ? "text-orange-500"
+                    : "text-gray-500 hover:text-gray-800"
+                }`}
+              >
+                More ▾
+              </button>
+              {moreOpen && (
+                <div className="absolute top-full left-0 mt-2 bg-white border border-gray-100 rounded-xl shadow-lg py-2 min-w-[180px] z-40">
+                  {MORE_LINKS.map((l) => (
+                    <Link
+                      key={l.href}
+                      href={l.href}
+                      onClick={() => setMoreOpen(false)}
+                      className={`block px-4 py-2 text-sm font-semibold transition-colors ${
+                        pathname === l.href || pathname.startsWith(l.href + "/")
+                          ? "text-orange-500 bg-orange-50"
+                          : "text-gray-600 hover:bg-gray-50"
+                      }`}
+                    >
+                      {l.label}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
+          )}
         </div>
 
         {/* Right side */}
@@ -171,7 +207,7 @@ export function SiteNav() {
       {/* Mobile drawer */}
       {mobileOpen && (
         <div className="lg:hidden border-t border-gray-100 bg-white px-4 py-3 flex flex-col gap-1">
-          {links.map((l) => (
+          {(loggedIn ? [...APP_LINKS, ...MORE_LINKS] : links).map((l) => (
             <Link
               key={l.href}
               href={l.href}

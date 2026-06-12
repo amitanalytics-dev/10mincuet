@@ -8,6 +8,7 @@ import { Analytics } from "@vercel/analytics/react";
 import { PosthogProvider } from "./components/PosthogProvider";
 import { GeolocationProvider } from "./components/GeolocationProvider";
 import { LayoutFooter } from "./components/LayoutFooter";
+import { BottomNav } from "./components/BottomNav";
 import { LanguageProvider } from "./context/LanguageContext";
 
 const geistSans = Geist({
@@ -100,6 +101,7 @@ export default function RootLayout({
           </LanguageProvider>
         </PosthogProvider>
         <LayoutFooter />
+        <BottomNav />
         <SpeedInsights />
         <Analytics />
       </body>
