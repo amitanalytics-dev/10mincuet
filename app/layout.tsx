@@ -1,17 +1,116 @@
-import type { Metadata } from 'next';
-import './globals.css';
+import type { Metadata } from "next";
+import { Geist, Geist_Mono } from "next/font/google";
+import "./globals.css";
+import AuthGate from "./components/AuthGate";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/react";
+import { PosthogProvider } from "./components/PosthogProvider";
+import { GeolocationProvider } from "./components/GeolocationProvider";
+import { LayoutFooter } from "./components/LayoutFooter";
+import { LanguageProvider } from "./context/LanguageContext";
+
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
+
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
-  title: '10minCUET – CUET Prep in 10-Minute Sessions',
+  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL ?? "https://10mincuet.com"),
+  title: {
+    default: "10minCUET — CUET Prep in 10 Minutes a Day",
+    template: "%s | 10minCUET",
+  },
   description:
-    'Master CUET with daily 10-minute sessions. Covers Languages, Domain Subjects, and General Test. Get into DU, JNU, BHU, and top Central Universities.',
-  keywords: 'CUET, CUET preparation, DU, JNU, BHU, Central University, CUET mock test, General Test, Domain Subject',
+    "Crack CUET UG in 10 minutes a day. Languages, Domain subjects, General Test. Pick your 5 subjects, track Bloom level per subconcept. One exam, 280+ central universities.",
+  keywords: [
+    "CUET UG preparation", "CUET 2025", "CUET 2026",
+    "CUET English", "CUET General Test", "CUET Mathematics",
+    "DU admission", "JNU admission", "BHU admission", "Jamia admission",
+    "central university entrance", "Bloom taxonomy CUET", "10 minute study",
+    "free CUET practice questions", "CUET mock test", "CUET previous year papers",
+    "CUET rank predictor", "central university college predictor",
+    "Class 12 arts CUET", "Class 12 commerce CUET", "Class 12 science CUET",
+  ],
+  openGraph: {
+    type: "website",
+    locale: "en_IN",
+    url: "https://10mincuet.com",
+    siteName: "10minCUET",
+    title: "10minCUET — CUET Prep in 10 Minutes a Day",
+    description:
+      "In India you get food, cabs, groceries in 10 minutes. Now CUET prep too. Pick your 5 subjects, Bloom-level tracking, central university predictor.",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "10minCUET — CUET Prep in 10 Minutes a Day",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "10minCUET — CUET Prep in 10 Minutes a Day",
+    description:
+      "Master CUET UG in 10 minutes a day. Pick your 5 of 27 domain subjects. Bloom-level tracking.",
+    images: ["/og-image.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
-    <html lang="en">
-      <body className="bg-white text-gray-900 antialiased">{children}</body>
+    <html
+      lang="en-IN"
+      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+    >
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              "@id": "https://10mincuet.com/#founder",
+              "name": "Amit Tyagi",
+              "jobTitle": "Founder",
+              "worksFor": {
+                "@type": "Organization",
+                "name": "EAZEALLIANCE SERVICES PRIVATE LIMITED",
+              },
+              "url": "https://10mincuet.com",
+              "alumniOf": {
+                "@type": "CollegeOrUniversity",
+                "name": "Indian School of Business",
+              },
+            }),
+          }}
+        />
+      </head>
+      <body className="min-h-full flex flex-col">
+        <PosthogProvider>
+          <LanguageProvider>
+            <GeolocationProvider>
+              <AuthGate>{children}</AuthGate>
+            </GeolocationProvider>
+          </LanguageProvider>
+        </PosthogProvider>
+        <LayoutFooter />
+        <SpeedInsights />
+        <Analytics />
+      </body>
     </html>
   );
 }

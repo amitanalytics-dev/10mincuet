@@ -1,202 +1,250 @@
-import Link from 'next/link';
+import type { Metadata } from "next";
+import Link from "next/link";
 
-const features = [
-  {
-    category: 'CUET Coverage',
-    embibeRating: 2,
-    minCUETRating: 5,
-    embibe: 'General prep platform; CUET is one of many exams covered.',
-    mincuet: 'Built exclusively for CUET. Every question, mock, and concept maps to NTA CUET syllabus.',
+export const metadata: Metadata = {
+  title: "10minCUET vs Allen Kota — CUET Prep Comparison 2025",
+  description:
+    "10minCUET vs Allen Kota for CUET UG 2025. Compare price (₹2,499/yr vs ₹80,000–1.2L/yr), format (10 min/day vs 8hr classroom), Bloom tracking, and parent visibility. Honest breakdown.",
+  alternates: { canonical: "https://10minjee.com/compare/10minjee-vs-allen" },
+  openGraph: {
+    type: "website",
+    url: "https://10minjee.com/compare/10minjee-vs-allen",
+    title: "10minCUET vs Allen Kota — CUET Prep Comparison 2025",
+    description:
+      "Price, format, Bloom tracking, and parent visibility compared. Honest breakdown for CUET UG 2025 students.",
   },
-  {
-    category: 'Languages Section',
-    embibeRating: 2,
-    minCUETRating: 5,
-    embibe: 'Limited language comprehension practice for CUET-specific format.',
-    mincuet: 'Full CUET Languages section practice — English & Hindi comprehension, grammar, vocabulary.',
-  },
-  {
-    category: 'Domain Subject',
-    embibeRating: 3,
-    minCUETRating: 5,
-    embibe: 'Domain content exists but not mapped to CUET marking pattern.',
-    mincuet: 'Domain Subject questions aligned to CUET NTA syllabus; covers all 27 domain subjects.',
-  },
-  {
-    category: 'General Test',
-    embibeRating: 3,
-    minCUETRating: 5,
-    embibe: 'QA and Reasoning practice available but not CUET-specific.',
-    mincuet: '50 dedicated General Test questions per mock: QA, Logical Reasoning, GK, English Comprehension.',
-  },
-  {
-    category: 'Mock Test Format',
-    embibeRating: 2,
-    minCUETRating: 5,
-    embibe: 'Mock tests exist but may not mirror CUET\'s 3-section × 50Q × 60min format.',
-    mincuet: 'Exact CUET format: 3 sections, 50 questions each, 60 minutes each, +5/−1 marking.',
-  },
-  {
-    category: 'Session Length',
-    embibeRating: 2,
-    minCUETRating: 5,
-    embibe: 'Long-form study modules; requires 1–2 hour sessions.',
-    mincuet: 'Designed for 10-minute daily sessions — perfect for Class 12 students balancing boards + CUET.',
-  },
-  {
-    category: 'Central University Focus',
-    embibeRating: 2,
-    minCUETRating: 5,
-    embibe: 'General college admission content; not DU/JNU/BHU-specific.',
-    mincuet: 'Content and guidance tailored to DU, JNU, BHU, and other Central University admissions.',
-  },
-  {
-    category: 'Pricing',
-    embibeRating: 2,
-    minCUETRating: 5,
-    embibe: '₹15,000–₹50,000/year for full CUET coaching bundles.',
-    mincuet: 'Free to start. No credit card. Practice unlimited with full mocks at no cost.',
-  },
+};
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "Is 10minCUET better than Allen Kota for CUET UG?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "They are fundamentally different products. Allen Kota delivers teacher-led instruction, live doubt-clearing, structured daily schedules, and an intense peer competition environment. 10minCUET delivers daily Bloom-level mastery tracking per sub-concept in 10 minutes a day — no teachers, no live classes. Allen is the right choice if you need structure, live faculty, and peer benchmarking. 10minCUET is the right complement if you need daily calibration on which specific sub-concepts are below the Apply level that CUET UG requires.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "How much does Allen Kota cost compared to 10minCUET?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Allen Kota's classroom courses for two-year CUET preparation range from ₹80,000 to ₹1.2 lakh per year in tuition fees alone, not including hostel (₹8,000–15,000/month) and living expenses. Total two-year cost for a residential Kota student often exceeds ₹4–5 lakh. 10minCUET's annual plan costs ₹2,499 — approximately 1–2% of the equivalent Allen cost. These are not direct substitutes — Allen delivers full-syllabus instruction, 10minCUET delivers daily sub-concept mastery tracking.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Can I use both Allen Kota and 10minCUET together?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes — and this is one of the most effective combinations for Kota students. Use Allen for structured daily instruction and peer competition. After each Allen class, do a 10-minute 10minCUET session on the same sub-concept to verify whether today's lecture actually built Apply-level (L3) understanding. The Bloom-level update gives you real-time calibration that weekly Allen batch tests cannot provide at sub-concept granularity.",
+      },
+    },
+  ],
+};
+
+const rows = [
+  { feature: "Annual tuition cost", a: "₹2,499/year", b: "₹80,000–1.2L/year", winner: "a" as const },
+  { feature: "Daily time commitment", a: "10 minutes", b: "8 hours (classroom)", winner: "a" as const },
+  { feature: "Location required", a: "Anywhere — fully online", b: "Kota only (residential)", winner: "a" as const },
+  { feature: "Format", a: "Adaptive Bloom-level quiz per sub-concept", b: "Classroom lectures + batch tests", winner: "tie" as const },
+  { feature: "Bloom level tracking", a: "Per sub-concept, updated every session", b: "Not available", winner: "a" as const },
+  { feature: "Live teacher interaction", a: "Not available", b: "Daily — experienced faculty", winner: "b" as const },
+  { feature: "Doubt solving", a: "Not available", b: "Available — structured doubt sessions", winner: "b" as const },
+  { feature: "Peer competition", a: "Not available", b: "Strong — daily batch ranking", winner: "b" as const },
+  { feature: "Parent visibility", a: "Weekly Bloom report + parent account", b: "Periodic PTMs, batch rankings", winner: "a" as const },
+  { feature: "Sub-concept weak spot detection", a: "Automatic, daily, per sub-concept", b: "Weekly batch test, batch-level only", winner: "a" as const },
+  { feature: "College predictor + tools", a: "Free, built-in", b: "Available via Resonance/Allen portal", winner: "tie" as const },
+  { feature: "Content coverage", a: "24 high-frequency topics", b: "Full CUET + Board syllabus", winner: "b" as const },
 ];
 
-function Stars({ count }: { count: number }) {
-  return (
-    <div className="flex gap-0.5">
-      {Array.from({ length: 5 }).map((_, i) => (
-        <span key={i} className={`text-lg ${i < count ? 'text-yellow-400' : 'text-gray-200'}`}>★</span>
-      ))}
-    </div>
-  );
-}
-
-const subjects = [
-  { name: 'Languages (English/Hindi)', cuet: '✓ Full coverage', embibe: '△ Partial' },
-  { name: 'Domain Subject', cuet: '✓ All 27 domains', embibe: '△ Limited CUET mapping' },
-  { name: 'General Test', cuet: '✓ CUET-pattern QA, LR, GK, English', embibe: '△ Generic aptitude' },
+const body = [
+  "Allen Career Institute is India's largest CUET coaching network, headquartered in Kota. It has produced an outsized share of top-100 AIR students over the past three decades. For students who thrive in structured, high-intensity peer environments — and whose families can manage the financial and logistical demands of Kota — Allen is a legitimate and proven pathway.",
+  "The structural limitations of the Allen model are well-documented. First, cost: two years in Kota including hostel and living expenses typically exceeds ₹4–5 lakh. Second, attrition: a significant proportion of Kota students underperform relative to expectations, partly due to the emotional difficulty of relocating at 16, and partly because the batch model cannot personalise instruction to individual sub-concept gaps. Third, feedback lag: Allen's weekly batch tests give you a rank in the batch — not a sub-concept-level diagnosis of why you lost marks.",
+  "10minCUET addresses the third limitation directly. The Bloom-level tracker runs after every 10-minute session — not once a week. It identifies, at the sub-concept level, whether today's study brought you from L2 (Understand) to L3 (Apply). An Allen student who does a 10-minute 10minCUET session after each day's class gets daily precision feedback that the batch system cannot provide.",
+  "On parent visibility: Allen communicates through periodic Parent-Teacher Meetings and batch rankings. 10minCUET's parent dashboard shows a weekly Bloom level map per sub-concept — which specific topics are below L3, and how much progress has been made in the last 7 days. For parents who want granular visibility without waiting for the next PTM, this is a meaningful difference.",
+  "The two platforms are not competitors in the conventional sense. Many of the most successful recent CUET candidates used both: Allen for structured instruction, intensive peer competition, and experienced faculty; 10minCUET for daily sub-concept mastery calibration. The 10 minutes after Allen class homework is not competing with Allen — it is making Allen more effective.",
 ];
 
-export default function ComparePage() {
+export default function AllenComparePage() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
+
       {/* Nav */}
-      <nav className="sticky top-0 z-50 bg-white border-b border-gray-100">
-        <div className="max-w-5xl mx-auto px-4 h-14 flex items-center gap-4">
-          <Link href="/" className="text-brand-600 font-bold text-lg">← 10minCUET</Link>
-          <span className="text-gray-400 text-sm">/ Compare with Embibe</span>
+      <nav className="border-b border-gray-100 bg-white/80 backdrop-blur-sm sticky top-0 z-20">
+        <div className="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
+          <Link href="/" className="font-black text-gray-900 text-lg">
+            10min<span className="text-orange-500">CUET</span>
+          </Link>
+          <Link
+            href="/register"
+            className="bg-orange-500 text-white text-sm font-bold px-4 py-2 rounded-full hover:bg-orange-600 transition-all"
+          >
+            Start Free →
+          </Link>
         </div>
       </nav>
 
-      <div className="max-w-5xl mx-auto px-4 py-16">
-        {/* Hero */}
-        <div className="text-center mb-16">
-          <div className="inline-block bg-brand-100 text-brand-700 text-sm font-semibold px-3 py-1 rounded-full mb-4">
-            CUET Platform Comparison
-          </div>
-          <h1 className="text-4xl font-extrabold mb-4">10minCUET vs Embibe</h1>
-          <p className="text-gray-500 text-lg max-w-2xl mx-auto">
-            Embibe is a great general-purpose learning platform. But CUET prep is different — it needs a platform built for NTA CUET, Central University admissions, and your Class 12 reality.
-          </p>
-        </div>
+      {/* Hero */}
+      <section className="max-w-4xl mx-auto px-4 pt-16 pb-10 text-center">
+        <p className="text-sm font-semibold text-orange-500 uppercase tracking-widest mb-4">
+          Comparison
+        </p>
+        <h1 className="text-3xl sm:text-4xl font-black text-gray-900 leading-tight mb-6">
+          10minCUET vs Allen Kota — CUET UG Prep Compared
+        </h1>
+        <p className="text-lg text-gray-500 max-w-2xl mx-auto leading-relaxed">
+          Allen Kota is India&apos;s largest CUET coaching institution. 10minCUET is a 10-minute
+          daily Bloom-level mastery tracker. Here&apos;s an honest breakdown of what each does —
+          and what it costs.
+        </p>
+      </section>
 
-        {/* Pricing callout */}
-        <div className="grid md:grid-cols-2 gap-6 mb-16">
-          <div className="bg-white rounded-2xl border border-gray-200 p-6 shadow-sm">
-            <div className="text-sm text-gray-400 font-medium mb-1">Embibe CUET Coaching</div>
-            <div className="text-4xl font-extrabold text-gray-800 mb-2">₹15K–₹50K<span className="text-base font-normal text-gray-400">/year</span></div>
-            <ul className="text-sm text-gray-500 space-y-2">
-              <li>• Subscription-based full access</li>
-              <li>• General exam content adapted for CUET</li>
-              <li>• Large platform, not CUET-first</li>
-              <li>• Long-form video lectures</li>
-            </ul>
-          </div>
-          <div className="bg-gradient-to-br from-brand-600 to-indigo-700 rounded-2xl p-6 shadow-lg text-white relative overflow-hidden">
-            <div className="absolute top-4 right-4 bg-white/20 text-white text-xs font-bold px-2 py-1 rounded-full">
-              Recommended
+      {/* Comparison table */}
+      <section className="max-w-4xl mx-auto px-4 pb-12">
+        <div className="bg-white border border-gray-100 rounded-2xl shadow-sm overflow-hidden">
+          <div className="grid grid-cols-[1fr_1fr_1fr] bg-gray-50 border-b border-gray-100">
+            <div className="p-4 text-sm font-black text-gray-500">Feature</div>
+            <div className="p-4 text-sm font-black text-orange-600 border-l border-gray-100">
+              10minCUET
             </div>
-            <div className="text-sm text-brand-200 font-medium mb-1">10minCUET</div>
-            <div className="text-4xl font-extrabold mb-2">₹0<span className="text-base font-normal text-brand-200"> free to start</span></div>
-            <ul className="text-sm text-brand-100 space-y-2">
-              <li>• Built exclusively for NTA CUET</li>
-              <li>• 10-minute sessions for busy Class 12 students</li>
-              <li>• Full mock: 3×50Q×60min, +5/−1 marking</li>
-              <li>• Central University (DU/JNU/BHU) focused</li>
-            </ul>
-            <Link href="/mock" className="mt-5 inline-block bg-white text-brand-600 font-bold px-6 py-2.5 rounded-xl hover:bg-brand-50 transition-colors text-sm">
-              Start Free Mock →
-            </Link>
-          </div>
-        </div>
-
-        {/* Subject coverage table */}
-        <div className="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden mb-12">
-          <div className="bg-gray-50 px-6 py-4 border-b border-gray-100">
-            <h2 className="font-semibold text-gray-800">CUET Section Coverage</h2>
-          </div>
-          <div className="divide-y divide-gray-100">
-            <div className="grid grid-cols-3 px-6 py-3 text-xs font-semibold text-gray-400 uppercase tracking-wide">
-              <span>CUET Section</span>
-              <span className="text-center">10minCUET</span>
-              <span className="text-center">Embibe</span>
+            <div className="p-4 text-sm font-black text-gray-700 border-l border-gray-100">
+              Allen Kota
             </div>
-            {subjects.map((s) => (
-              <div key={s.name} className="grid grid-cols-3 px-6 py-4 text-sm items-center">
-                <span className="text-gray-700 font-medium">{s.name}</span>
-                <span className="text-center text-green-600 font-medium">{s.cuet}</span>
-                <span className="text-center text-orange-500">{s.embibe}</span>
-              </div>
-            ))}
           </div>
-        </div>
-
-        {/* Detailed comparison */}
-        <h2 className="text-2xl font-bold mb-8 text-center">Feature-by-Feature Comparison</h2>
-        <div className="space-y-6">
-          {features.map((f) => (
-            <div key={f.category} className="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
-              <div className="bg-gray-50 px-6 py-3 border-b border-gray-100">
-                <span className="font-semibold text-gray-700">{f.category}</span>
+          {rows.map((row, i) => (
+            <div
+              key={row.feature}
+              className={`grid grid-cols-[1fr_1fr_1fr] border-b border-gray-50 ${i % 2 === 0 ? "bg-white" : "bg-gray-50/50"}`}
+            >
+              <div className="p-4 text-sm text-gray-600 font-medium">{row.feature}</div>
+              <div
+                className={`p-4 text-sm border-l border-gray-100 ${row.winner === "a" ? "text-orange-600 font-bold" : "text-gray-600"}`}
+              >
+                {row.a}
+                {row.winner === "a" && (
+                  <span className="ml-1 text-xs bg-orange-100 text-orange-600 px-1.5 py-0.5 rounded-full font-semibold">
+                    ✓
+                  </span>
+                )}
               </div>
-              <div className="grid md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-gray-100">
-                <div className="p-6">
-                  <div className="flex items-center justify-between mb-2">
-                    <span className="text-sm font-semibold text-brand-600">10minCUET</span>
-                    <Stars count={f.minCUETRating} />
-                  </div>
-                  <p className="text-sm text-gray-600">{f.mincuet}</p>
-                </div>
-                <div className="p-6">
-                  <div className="flex items-center justify-between mb-2">
-                    <span className="text-sm font-semibold text-gray-500">Embibe</span>
-                    <Stars count={f.embibeRating} />
-                  </div>
-                  <p className="text-sm text-gray-500">{f.embibe}</p>
-                </div>
+              <div
+                className={`p-4 text-sm border-l border-gray-100 ${row.winner === "b" ? "text-gray-900 font-bold" : "text-gray-500"}`}
+              >
+                {row.b}
+                {row.winner === "b" && (
+                  <span className="ml-1 text-xs bg-gray-100 text-gray-600 px-1.5 py-0.5 rounded-full font-semibold">
+                    ✓
+                  </span>
+                )}
               </div>
             </div>
           ))}
         </div>
+      </section>
 
-        {/* Competitors note */}
-        <div className="mt-12 bg-gray-100 rounded-2xl p-6 text-sm text-gray-500 text-center">
-          <p>
-            <strong className="text-gray-700">Other CUET platforms</strong> — Vidyamandir Classes, Vedantu CUET, Unacademy CUET — charge ₹10K–₹40K/year and offer similar full-course structures.
-            10minCUET's edge: <strong className="text-gray-700">10-minute daily sessions + exact NTA mock format + free to start.</strong>
-          </p>
+      {/* Body */}
+      <section className="bg-gray-50 py-16">
+        <div className="max-w-3xl mx-auto px-4">
+          <h2 className="text-2xl font-black text-gray-900 mb-6">The full picture</h2>
+          <div className="space-y-4 text-gray-600 leading-relaxed">
+            {body.map((p, i) => (
+              <p key={i}>{p}</p>
+            ))}
+          </div>
         </div>
+      </section>
 
-        {/* CTA */}
-        <div className="mt-12 text-center">
-          <h2 className="text-3xl font-bold mb-4">Start your CUET prep today — it's free.</h2>
-          <p className="text-gray-500 mb-8">No coaching fees. No subscription. Just focused CUET practice.</p>
-          <Link
-            href="/mock"
-            className="bg-brand-600 text-white font-bold px-10 py-4 rounded-xl hover:bg-brand-700 transition-colors text-lg inline-block"
-          >
-            Take Free CUET Mock →
+      {/* FAQ */}
+      <section className="py-16 max-w-3xl mx-auto px-4">
+        <h2 className="text-2xl font-black text-gray-900 mb-8">Frequently asked questions</h2>
+        <div className="space-y-6">
+          {faqJsonLd.mainEntity.map((faq) => (
+            <div key={faq.name} className="bg-white border border-gray-100 rounded-2xl p-6 shadow-sm">
+              <h3 className="font-black text-gray-900 mb-3">{faq.name}</h3>
+              <p className="text-sm text-gray-600 leading-relaxed">{faq.acceptedAnswer.text}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Internal links */}
+      <section className="max-w-3xl mx-auto px-4 pb-12">
+        <h2 className="text-lg font-black text-gray-900 mb-4">Related comparisons</h2>
+        <div className="flex flex-wrap gap-3">
+          <Link href="/compare/10minjee-vs-unacademy" className="text-sm text-orange-500 border border-orange-200 px-4 py-2 rounded-full hover:bg-orange-50 transition-all">
+            10minCUET vs Unacademy
+          </Link>
+          <Link href="/compare/10minjee-vs-physics-wallah" className="text-sm text-orange-500 border border-orange-200 px-4 py-2 rounded-full hover:bg-orange-50 transition-all">
+            10minCUET vs Physics Wallah
+          </Link>
+          <Link href="/compare/byjus" className="text-sm text-orange-500 border border-orange-200 px-4 py-2 rounded-full hover:bg-orange-50 transition-all">
+            10minCUET vs BYJU&apos;S
+          </Link>
+          <Link href="/compare/10minjee-vs-coaching" className="text-sm text-orange-500 border border-orange-200 px-4 py-2 rounded-full hover:bg-orange-50 transition-all">
+            10minCUET vs Coaching Institutes
+          </Link>
+          <Link href="/methodology" className="text-sm text-orange-500 border border-orange-200 px-4 py-2 rounded-full hover:bg-orange-50 transition-all">
+            Our Methodology
           </Link>
         </div>
-      </div>
+      </section>
+
+      {/* CTA */}
+      <section className="bg-orange-500 py-16">
+        <div className="max-w-3xl mx-auto px-4 text-center text-white">
+          <h2 className="text-3xl font-black mb-4">
+            Add Daily Precision to Your CUET Prep — Start Free
+          </h2>
+          <p className="text-orange-100 text-lg mb-8">
+            One free diagnostic. No card needed. See your Bloom level in 10 minutes.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link
+              href="/register"
+              className="inline-block bg-white text-orange-500 font-black text-lg px-8 py-4 rounded-2xl hover:bg-orange-50 transition-all shadow-xl"
+            >
+              Start Free →
+            </Link>
+            <Link
+              href="/pricing"
+              className="inline-block border-2 border-white/50 text-white font-semibold text-lg px-8 py-4 rounded-2xl hover:border-white transition-all"
+            >
+              See Pricing
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="border-t border-gray-100 py-8 text-center">
+        <div className="max-w-5xl mx-auto px-4">
+          <p className="font-black text-gray-900 text-lg mb-1">
+            10min<span className="text-orange-500">CUET</span>
+          </p>
+          <div className="flex justify-center gap-4 mt-4 text-xs text-gray-400 flex-wrap">
+            <Link href="/topics" className="hover:text-gray-600">Topics</Link>
+            <span>·</span>
+            <Link href="/pricing" className="hover:text-gray-600">Pricing</Link>
+            <span>·</span>
+            <Link href="/about" className="hover:text-gray-600">About</Link>
+            <span>·</span>
+            <Link href="/contact" className="hover:text-gray-600">Contact</Link>
+            <span>·</span>
+            <Link href="/privacy-policy" className="hover:text-gray-600">Privacy</Link>
+          </div>
+          <p className="text-xs text-gray-300 mt-4">
+            © 2025 EAZEALLIANCE SERVICES PRIVATE LIMITED. All rights reserved.
+          </p>
+        </div>
+      </footer>
     </div>
   );
 }
