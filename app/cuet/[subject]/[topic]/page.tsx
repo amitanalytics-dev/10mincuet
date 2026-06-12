@@ -60,12 +60,12 @@ export async function generateMetadata({
     title: `${topic.name} for CUET UG — Complete Guide, Questions & NCERT Reference`,
     description: `Master ${topic.name} for CUET UG. ${topic.avgQuestionsPerPaper} questions per paper, ${topic.paperCoverage}% paper coverage. Includes Bloom-level questions, sub-concepts, and NCERT chapter reference.`,
     alternates: {
-      canonical: `https://10minjee.com/jee/${subject}/${topicSlug}`,
+      canonical: `https://10mincuet.com/cuet/${subject}/${topicSlug}`,
     },
     openGraph: {
       title: `${topic.name} — CUET UG Guide`,
       description: topic.whyThisTopic,
-      url: `https://10minjee.com/jee/${subject}/${topicSlug}`,
+      url: `https://10mincuet.com/cuet/${subject}/${topicSlug}`,
       type: "article",
     },
     keywords: [
@@ -116,11 +116,11 @@ export default async function TopicSEOPage({
             publisher: {
               "@type": "Organization",
               name: "10minCUET",
-              url: "https://10minjee.com",
+              url: "https://10mincuet.com",
             },
             mainEntityOfPage: {
               "@type": "WebPage",
-              "@id": `https://10minjee.com/jee/${subject}/${topicSlug}`,
+              "@id": `https://10mincuet.com/cuet/${subject}/${topicSlug}`,
             },
           }),
         }}
@@ -134,13 +134,13 @@ export default async function TopicSEOPage({
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             itemListElement: [
-              { "@type": "ListItem", position: 1, name: "Home", item: "https://10minjee.com" },
-              { "@type": "ListItem", position: 2, name: "CUET Topics", item: "https://10minjee.com/jee" },
+              { "@type": "ListItem", position: 1, name: "Home", item: "https://10mincuet.com" },
+              { "@type": "ListItem", position: 2, name: "CUET Topics", item: "https://10mincuet.com/cuet" },
               {
                 "@type": "ListItem",
                 position: 3,
                 name: topic.name,
-                item: `https://10minjee.com/jee/${subject}/${topicSlug}`,
+                item: `https://10mincuet.com/cuet/${subject}/${topicSlug}`,
               },
             ],
           }),
@@ -154,7 +154,7 @@ export default async function TopicSEOPage({
             Home
           </Link>{" "}
           →{" "}
-          <Link href="/jee" className="hover:text-orange-500 transition-colors">
+          <Link href="/cuet" className="hover:text-orange-500 transition-colors">
             CUET Topics
           </Link>{" "}
           → <span className="text-gray-700">{topic.name}</span>
@@ -250,7 +250,7 @@ export default async function TopicSEOPage({
               .map((t) => (
                 <Link
                   key={t.name}
-                  href={`/jee/${toSubjectSlug(subj.name)}/${toTopicSlug(t.name)}`}
+                  href={`/cuet/${toSubjectSlug(subj.name)}/${toTopicSlug(t.name)}`}
                   className="border border-gray-100 rounded-xl px-4 py-3 hover:border-orange-300 hover:shadow-sm transition-all flex items-center justify-between text-sm"
                 >
                   <span className="text-gray-800 font-medium">{t.name}</span>

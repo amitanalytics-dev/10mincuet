@@ -19,19 +19,19 @@ const TESTIMONIALS = [
     name: "Priya, Jaipur",
     emoji: "👩‍🎓",
     text: "Meri coaching ki fees se zyada mera Swiggy bill tha. Tab tak yeh app nahi tha.",
-    score: "AIR 847",
+    score: "98.7 percentile — got DU B.Com (Hons)",
   },
   {
     name: "Rahul, Patna",
     emoji: "👦",
     text: "Main 10 ghante padhta tha, kuch yaad nahi rehta tha. Ab 10 minute mein 3 sub-concepts pakde.",
-    score: "AIR 1,204",
+    score: "96.4 percentile — BHU Political Science",
   },
   {
     name: "Ananya, Hyderabad",
     emoji: "👩",
     text: "Mere papa ne puchha 'bas 10 minute?' Main boli 'haan papa, Blinkit se bhi fast hai.'",
-    score: "AIR 392",
+    score: "99.2 percentile — got DU Economics",
   },
 ];
 
@@ -100,25 +100,25 @@ export default function LandingPage() {
             "@graph": [
               {
                 "@type": "WebSite",
-                "@id": "https://10minjee.com/#website",
-                "url": "https://10minjee.com",
+                "@id": "https://10mincuet.com/#website",
+                "url": "https://10mincuet.com",
                 "name": "10minCUET",
                 "description": "CUET UG preparation in 10 minutes a day. Adaptive Bloom-level quizzes, topic intelligence, and daily study plans.",
                 "publisher": {
                   "@type": "Organization",
                   "name": "EAZEALLIANCE SERVICES PRIVATE LIMITED",
-                  "url": "https://10minjee.com"
+                  "url": "https://10mincuet.com"
                 }
               },
               {
                 "@type": "Organization",
-                "@id": "https://10minjee.com/#organization",
+                "@id": "https://10mincuet.com/#organization",
                 "name": "10minCUET",
-                "url": "https://10minjee.com",
-                "logo": "https://10minjee.com/favicon.ico",
+                "url": "https://10mincuet.com",
+                "logo": "https://10mincuet.com/favicon.ico",
                 "contactPoint": {
                   "@type": "ContactPoint",
-                  "email": "support@10minjee.com",
+                  "email": "support@10mincuet.com",
                   "contactType": "customer support"
                 }
               }
@@ -148,6 +148,16 @@ export default function LandingPage() {
           </span>
           <span className="text-gray-600">·</span>
           <span className="text-gray-500">{t.home_india_fast}</span>
+        </div>
+
+        {/* Class 6 onwards badge */}
+        <div className="mb-4">
+          <Link
+            href="/foundation"
+            className="inline-flex items-center gap-2 bg-emerald-50 border border-emerald-200 text-emerald-700 text-xs sm:text-sm font-bold px-4 py-1.5 rounded-full hover:bg-emerald-100 transition-all"
+          >
+            🌱 Now from Class 6 onwards — free Foundation track →
+          </Link>
         </div>
 
         <h1 className="text-3xl sm:text-5xl md:text-6xl font-black text-gray-900 leading-tight mb-4">

@@ -32,7 +32,7 @@ export default function PrivacyPolicyPage() {
           </p>
           <p>
             This policy explains what data we collect, why, how we use it, and your rights. It
-            applies to all users of <strong>10minjee.com</strong>.
+            applies to all users of <strong>10mincuet.com</strong>.
           </p>
         </Section>
 
@@ -133,7 +133,7 @@ export default function PrivacyPolicyPage() {
             <li>Raise a complaint with the Data Protection Board of India.</li>
           </ul>
           <p>
-            To exercise any right, email <strong>support@10minjee.com</strong> with subject
+            To exercise any right, email <strong>support@10mincuet.com</strong> with subject
             line <strong>&ldquo;Data request&rdquo;</strong>. We respond within 30 days.
           </p>
         </Section>
@@ -157,7 +157,7 @@ export default function PrivacyPolicyPage() {
           <p>
             As required by the IT (Intermediary Guidelines) Rules 2021 and DPDP Act 2023, our
             Grievance Officer is <strong>Amit Tyagi</strong>, reachable at{" "}
-            <strong>support@10minjee.com</strong>. We acknowledge complaints within 48 hours
+            <strong>support@10mincuet.com</strong>. We acknowledge complaints within 48 hours
             and resolve them within 15 days.
           </p>
         </Section>

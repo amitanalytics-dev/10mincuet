@@ -76,11 +76,11 @@ export async function generateMetadata({
   return {
     title: post.title,
     description: post.description,
-    alternates: { canonical: `https://10minjee.com/blog/${post.slug}` },
+    alternates: { canonical: `https://10mincuet.com/blog/${post.slug}` },
     openGraph: {
       title: post.title,
       description: post.description,
-      url: `https://10minjee.com/blog/${post.slug}`,
+      url: `https://10mincuet.com/blog/${post.slug}`,
       type: "article",
       publishedTime: post.publishedAt,
     },
@@ -117,20 +117,20 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
     author: {
       "@type": "Person",
       name: "Amit Tyagi",
-      url: "https://10minjee.com/about",
+      url: "https://10mincuet.com/about",
     },
-    publisher: { "@type": "Organization", name: "10minCUET", url: "https://10minjee.com" },
+    publisher: { "@type": "Organization", name: "10minCUET", url: "https://10mincuet.com" },
     datePublished: post.publishedAt,
-    url: `https://10minjee.com/blog/${post.slug}`,
+    url: `https://10mincuet.com/blog/${post.slug}`,
   };
 
   const breadcrumbJsonLd = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://10minjee.com" },
-      { "@type": "ListItem", position: 2, name: "Blog", item: "https://10minjee.com/blog" },
-      { "@type": "ListItem", position: 3, name: post.title, item: `https://10minjee.com/blog/${post.slug}` },
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://10mincuet.com" },
+      { "@type": "ListItem", position: 2, name: "Blog", item: "https://10mincuet.com/blog" },
+      { "@type": "ListItem", position: 3, name: post.title, item: `https://10mincuet.com/blog/${post.slug}` },
     ],
   };
 

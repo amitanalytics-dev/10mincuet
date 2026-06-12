@@ -1,13 +1,13 @@
 "use client";
 import { useState, useEffect } from "react";
 
-const JEE_DATE = new Date("2027-01-20T09:30:00+05:30"); // CUET UG Session 1 2027
+const CUET_UG_DATE = new Date("2027-05-15T09:00:00+05:30"); // CUET UG 2027 (expected first session)
 
 export function ExamCountdown() {
   const [days, setDays] = useState(0);
 
   useEffect(() => {
-    const diff = JEE_DATE.getTime() - Date.now();
+    const diff = CUET_UG_DATE.getTime() - Date.now();
     setDays(Math.max(0, Math.ceil(diff / (1000 * 60 * 60 * 24))));
   }, []);
 

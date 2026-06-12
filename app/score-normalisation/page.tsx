@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description:
     "Understand how NTA normalises CUET UG scores across sessions and shifts. Learn why your 180 and your friend's 180 can give different percentiles. Historical cutoffs 2021–2024.",
   openGraph: {
-    title: "NTA Normalisation Explained | 10minCUET",
+    title: "NTA Normalisation Explained",
     description:
       "Plain-language breakdown of how NTA calculates your CUET UG percentile. Includes interactive calculator and historical cutoff data.",
     url: "/score-normalisation",

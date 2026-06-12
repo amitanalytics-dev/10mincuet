@@ -80,7 +80,7 @@ export default function RefundPolicyPage() {
         <Section title="How to request a refund.">
           <ol className="list-decimal list-inside space-y-2 ml-2">
             <li>
-              Email <strong>support@10minjee.com</strong> from your registered email address.
+              Email <strong>support@10mincuet.com</strong> from your registered email address.
             </li>
             <li>Include your Razorpay payment ID (visible in your confirmation email).</li>
             <li>State the reason briefly — no long explanation needed.</li>
@@ -110,9 +110,9 @@ export default function RefundPolicyPage() {
             <br />
             GST: 09AAHCE2255K1ZF
             <br />
-            Contact: support@10minjee.com
+            Contact: support@10mincuet.com
             <br />
-            Platform: 10minjee.com
+            Platform: 10mincuet.com
           </p>
         </Section>
 

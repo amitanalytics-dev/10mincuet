@@ -5,7 +5,7 @@ import { Resend } from "resend";
 import { getConvexClient } from "../../../lib/convexClient";
 import { api } from "convex/_generated/api";
 
-const FROM = "10minCUET <noreply@10minjee.com>";
+const FROM = "10minCUET <noreply@10mincuet.com>";
 
 function getResend(): Resend {
   const key = process.env.RESEND_API_KEY;
@@ -26,32 +26,32 @@ function getWeekStart(): number {
 
 function activeHtml(name: string, rankText: string, readinessScore: number): string {
   return `<div style="font-family:sans-serif;max-width:600px;margin:auto">
-  <h2 style="color:#f97316">10min<span style="color:#111">JEE</span></h2>
+  <h2 style="color:#f97316">10min<span style="color:#111">CUET</span></h2>
   <p>Hey ${name}! You're on fire this week.</p>
   <p style="font-size:24px;font-weight:900;color:#111">${rankText}</p>
   <p>Your readiness score: <strong>${readinessScore}%</strong></p>
-  <a href="https://10minjee.com/topics" style="background:#f97316;color:white;padding:12px 24px;border-radius:8px;text-decoration:none;font-weight:bold">Continue Studying</a>
+  <a href="https://10mincuet.com/topics" style="background:#f97316;color:white;padding:12px 24px;border-radius:8px;text-decoration:none;font-weight:bold">Continue Studying</a>
 </div>`;
 }
 
 function dormantHtml(name: string): string {
   return `<div style="font-family:sans-serif;max-width:600px;margin:auto">
-  <h2 style="color:#f97316">10min<span style="color:#111">JEE</span></h2>
+  <h2 style="color:#f97316">10min<span style="color:#111">CUET</span></h2>
   <p>Hey ${name}, we noticed you haven't studied in a few days.</p>
-  <p>A 10-minute session today keeps your JEE prep streak alive.</p>
+  <p>A 10-minute session today keeps your CUET prep streak alive.</p>
   <p style="font-size:32px">📚</p>
-  <a href="https://10minjee.com/topics" style="background:#f97316;color:white;padding:12px 24px;border-radius:8px;text-decoration:none;font-weight:bold">Resume Studying</a>
+  <a href="https://10mincuet.com/topics" style="background:#f97316;color:white;padding:12px 24px;border-radius:8px;text-decoration:none;font-weight:bold">Resume Studying</a>
 </div>`;
 }
 
 function atRiskHtml(name: string): string {
   return `<div style="font-family:sans-serif;max-width:600px;margin:auto">
-  <h2 style="color:#f97316">10min<span style="color:#111">JEE</span></h2>
+  <h2 style="color:#f97316">10min<span style="color:#111">CUET</span></h2>
   <p>Hey ${name}, we miss you! ❤️</p>
-  <p>It's been a week. JEE waits for no one.</p>
+  <p>It's been a week. CUET waits for no one.</p>
   <p>Come back today — we've added 1 free premium day to your account.</p>
-  <a href="https://10minjee.com/topics" style="background:#f97316;color:white;padding:12px 24px;border-radius:8px;text-decoration:none;font-weight:bold">Claim Your Free Day</a>
-  <p style="color:#888;font-size:12px">Unsubscribe: email support@10minjee.com</p>
+  <a href="https://10mincuet.com/topics" style="background:#f97316;color:white;padding:12px 24px;border-radius:8px;text-decoration:none;font-weight:bold">Claim Your Free Day</a>
+  <p style="color:#888;font-size:12px">Unsubscribe: email support@10mincuet.com</p>
 </div>`;
 }
 
@@ -128,7 +128,7 @@ export async function POST(req: Request) {
       dormantBatch.push({
         from: FROM,
         to: user.email,
-        subject: `${user.name}, your JEE prep streak is waiting 📚`,
+        subject: `${user.name}, your CUET prep streak is waiting 📚`,
         html: dormantHtml(user.name),
       });
     } else if (user.segment === "at-risk") {

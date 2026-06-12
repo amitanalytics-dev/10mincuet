@@ -9,12 +9,12 @@ export const metadata: Metadata = {
   title: "CUET UG Topics — Complete Sub-concept Guide with NCERT Reference",
   description:
     "Master all 24 CUET UG topics across Physics, Chemistry and Maths. Bloom-level questions, NCERT page references, and sub-concept breakdown for every topic.",
-  alternates: { canonical: "https://10minjee.com/jee" },
+  alternates: { canonical: "https://10mincuet.com/cuet" },
   openGraph: {
     title: "CUET UG Topics — Complete Guide",
     description:
       "Every high-value topic. Sub-concept breakdown. NCERT reference. Bloom-level questions.",
-    url: "https://10minjee.com/jee",
+    url: "https://10mincuet.com/cuet",
     type: "website",
   },
   keywords: [
@@ -37,7 +37,7 @@ function toTopicSlug(name: string) {
     .replace(/(^-|-$)/g, "");
 }
 
-export default function JEEHubPage() {
+export default function CUETHubPage() {
   return (
     <div className="min-h-screen bg-white">
       <PublicNav />
@@ -52,11 +52,11 @@ export default function JEEHubPage() {
             name: "CUET UG Topics — Complete Guide",
             description:
               "All 24 high-value CUET UG topics with sub-concept breakdown, NCERT reference, and Bloom-level practice.",
-            url: "https://10minjee.com/jee",
+            url: "https://10mincuet.com/cuet",
             publisher: {
               "@type": "Organization",
               name: "10minCUET",
-              url: "https://10minjee.com",
+              url: "https://10mincuet.com",
             },
           }),
         }}
@@ -94,7 +94,7 @@ export default function JEEHubPage() {
                 return (
                   <Link
                     key={topic.name}
-                    href={`/jee/${subjectSlug}/${topicSlug}`}
+                    href={`/cuet/${subjectSlug}/${topicSlug}`}
                     className="border border-gray-100 rounded-xl p-4 hover:border-orange-300 hover:shadow-sm transition-all flex items-center justify-between group"
                   >
                     <div>

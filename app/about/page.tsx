@@ -3,14 +3,14 @@ import Link from "next/link";
 
 export function generateMetadata(): Metadata {
   return {
-    title: "About 10minCUET — Meet Riishabh Mehrotra | 10minCUET",
+    title: "About 10minCUET — Meet Riishabh Mehrotra",
     description:
       "Meet Riishabh Mehrotra, ISB graduate and founder of 10minCUET. Built after analysing 10 years of CUET UG papers. Adaptive learning powered by Bloom's Taxonomy.",
-    alternates: { canonical: "https://10minjee.com/about" },
+    alternates: { canonical: "https://10mincuet.com/about" },
     openGraph: {
       type: "website",
-      url: "https://10minjee.com/about",
-      title: "About 10minCUET — Meet Riishabh Mehrotra | 10minCUET",
+      url: "https://10mincuet.com/about",
+      title: "About 10minCUET — Meet Riishabh Mehrotra",
       description:
         "Meet Riishabh Mehrotra, ISB graduate and founder of 10minCUET. Built after analysing 10 years of CUET UG papers. Adaptive learning powered by Bloom's Taxonomy.",
     },
@@ -22,31 +22,31 @@ const organizationJsonLd = {
   "@graph": [
     {
       "@type": "Organization",
-      "@id": "https://10minjee.com/#organization",
+      "@id": "https://10mincuet.com/#organization",
       name: "EAZEALLIANCE SERVICES PRIVATE LIMITED",
       alternateName: "10minCUET",
-      url: "https://10minjee.com",
-      logo: "https://10minjee.com/favicon.ico",
+      url: "https://10mincuet.com",
+      logo: "https://10mincuet.com/favicon.ico",
       foundingDate: "2024",
       description:
         "CUET UG preparation platform powered by Bloom's Taxonomy. 432 original questions, 10-minute adaptive sessions, sub-concept tracking.",
       contactPoint: {
         "@type": "ContactPoint",
-        email: "support@10minjee.com",
+        email: "support@10mincuet.com",
         contactType: "customer support",
         availableLanguage: ["en", "hi"],
       },
     },
     {
       "@type": "Person",
-      "@id": "https://10minjee.com/#founder",
+      "@id": "https://10mincuet.com/#founder",
       name: "Riishabh Mehrotra",
       jobTitle: "Founder & CEO",
       worksFor: {
         "@type": "Organization",
         name: "EAZEALLIANCE SERVICES PRIVATE LIMITED",
       },
-      url: "https://10minjee.com",
+      url: "https://10mincuet.com",
       alumniOf: {
         "@type": "CollegeOrUniversity",
         name: "Indian School of Business",

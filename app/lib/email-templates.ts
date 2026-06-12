@@ -1,6 +1,6 @@
 import "server-only";
 
-const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL ?? "https://10minjee.com";
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL ?? "https://10mincuet.com";
 
 // ─── Shared building blocks ───────────────────────────────────────────────────
 
@@ -26,9 +26,9 @@ function branded(content: string, email: string, preheader = ""): string {
                 <tr>
                   <td>
                     <div style="font-size:26px;font-weight:900;color:#fff;letter-spacing:-0.5px;line-height:1">
-                      10min<span style="color:#fff1d0">JEE</span>
+                      10min<span style="color:#fff1d0">CUET</span>
                     </div>
-                    <div style="font-size:12px;color:#ffedd5;margin-top:4px">India's #1 fast JEE prep platform</div>
+                    <div style="font-size:12px;color:#ffedd5;margin-top:4px">India's #1 fast CUET prep platform</div>
                   </td>
                   <td align="right">
                     <span style="font-size:36px;line-height:1">🎯</span>
@@ -54,12 +54,12 @@ function branded(content: string, email: string, preheader = ""): string {
               <p style="margin:8px 0 0;font-size:11px;color:#9ca3af">
                 <a href="${BASE_URL}/topics" style="color:#f97316;text-decoration:none;font-weight:600">Continue Learning</a>
                 &nbsp;·&nbsp;
-                <a href="mailto:support@10minjee.com" style="color:#9ca3af;text-decoration:none">Support</a>
+                <a href="mailto:support@10mincuet.com" style="color:#9ca3af;text-decoration:none">Support</a>
                 &nbsp;·&nbsp;
                 <a href="${BASE_URL}/unsubscribe?email=${encodeURIComponent(email)}" style="color:#9ca3af;text-decoration:none">Unsubscribe</a>
               </p>
               <p style="margin:6px 0 0;font-size:10px;color:#d1d5db">
-                10minjee.com &nbsp;·&nbsp; GST 09AAHCE2255K1ZF
+                10mincuet.com &nbsp;·&nbsp; GST 09AAHCE2255K1ZF
               </p>
             </td>
           </tr>
@@ -102,7 +102,7 @@ export function welcomeDay1Html(name: string, email: string): string {
       Welcome, ${name}! 🎉
     </h1>
     <p style="margin:0 0 24px;font-size:15px;color:#6b7280;line-height:1.6">
-      Your 10minCUET account is live. You're now on the fastest path to cracking JEE.
+      Your 10minCUET account is live. You're now on the fastest path to cracking CUET.
     </p>
 
     <!-- Hero card -->
@@ -158,7 +158,7 @@ export function welcomeDay1Html(name: string, email: string): string {
       <p style="margin:16px 0 0;font-size:12px;color:#9ca3af">Takes only 10 minutes. No pressure.</p>
     </div>
   `;
-  return branded(content, email, `You're in! Take your first 10-minute mock and see your JEE readiness score.`);
+  return branded(content, email, `You're in! Take your first 10-minute mock and see your CUET readiness score.`);
 }
 
 export function welcomeDay2MockTakenHtml(name: string, email: string, score: number, bloomLevel: number): string {
@@ -168,7 +168,7 @@ export function welcomeDay2MockTakenHtml(name: string, email: string, score: num
       ${name}, here's your results breakdown 📊
     </h1>
     <p style="margin:0 0 24px;font-size:15px;color:#6b7280;line-height:1.6">
-      You scored <strong style="color:#f97316">${score}%</strong> on your first mock. Here's what that means for your JEE prep.
+      You scored <strong style="color:#f97316">${score}%</strong> on your first mock. Here's what that means for your CUET prep.
     </p>
 
     <div style="background:#f0fdf4;border-radius:12px;padding:20px;border-left:4px solid #16a34a;margin-bottom:24px">
@@ -196,7 +196,7 @@ export function welcomeDay2NoMockHtml(name: string, email: string): string {
       ${name}, ready to test yourself? 🤔
     </h1>
     <p style="margin:0 0 24px;font-size:15px;color:#6b7280;line-height:1.6">
-      Most students who delay their first mock score <strong>22% lower</strong> in their final JEE attempt. Don't be that student.
+      Most students who delay their first mock score <strong>22% lower</strong> in their final CUET attempt. Don't be that student.
     </p>
 
     <!-- Urgency block -->
@@ -229,7 +229,7 @@ export function welcomeDay7Html(name: string, email: string, improvement: number
       ${name}, you've improved ${improvement}% since joining 🔥
     </h1>
     <p style="margin:0 0 24px;font-size:15px;color:#6b7280;line-height:1.6">
-      One week in. Your Bloom level is climbing. Here's how students like you are cracking JEE with 10minCUET.
+      One week in. Your Bloom level is climbing. Here's how students like you are cracking CUET with 10minCUET.
     </p>
 
     <!-- Topper story -->
@@ -238,7 +238,7 @@ export function welcomeDay7Html(name: string, email: string, improvement: number
         <div style="width:44px;height:44px;background:#f97316;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px">🏆</div>
         <div>
           <div style="font-weight:800;color:#92400e;font-size:15px">${topperName}</div>
-          <div style="font-size:12px;color:#b45309">JEE Advanced 2024 — AIR 847</div>
+          <div style="font-size:12px;color:#b45309">CUET UG 2024 — 99.1 percentile</div>
         </div>
       </div>
       <p style="margin:0;font-size:13px;color:#78350f;line-height:1.7;font-style:italic">
@@ -250,7 +250,7 @@ export function welcomeDay7Html(name: string, email: string, improvement: number
     <div style="background:#f5f3ff;border-radius:12px;padding:20px;border-left:4px solid #7c3aed;margin-bottom:24px">
       <h3 style="margin:0 0 8px;font-size:14px;font-weight:700;color:#5b21b6">Unlock your full potential</h3>
       <p style="margin:0;font-size:13px;color:#6d28d9;line-height:1.6">
-        Premium users see <strong>3× faster Bloom-level growth</strong> with unlimited practice, full JEE mock tests, and personalised weak-topic drilling. Starting at ₹149/month.
+        Premium users see <strong>3× faster Bloom-level growth</strong> with unlimited practice, full CUET mock tests, and personalised weak-topic drilling. Starting at ₹149/month.
       </p>
     </div>
 
@@ -379,11 +379,11 @@ export function weeklyDigestHtml(
 ): string {
   const bloom = ["", "Remember", "Understand", "Apply", "Analyse", "Evaluate", "Create"][Math.round(stats.avgBloom)] ?? "Apply";
   const referralUrl = `${BASE_URL}?ref=${referralCode}`;
-  const whatsappReferral = encodeURIComponent(`Join me on 10minCUET — India's fastest JEE prep platform! Use my invite link and we both get 50% off premium: ${referralUrl}`);
+  const whatsappReferral = encodeURIComponent(`Join me on 10minCUET — India's fastest CUET prep platform! Use my invite link and we both get 50% off premium: ${referralUrl}`);
 
   const content = `
     <h1 style="margin:0 0 6px;font-size:22px;font-weight:900;color:#111">
-      Your weekly JEE progress, ${name} 📈
+      Your weekly CUET progress, ${name} 📈
     </h1>
     <p style="margin:0 0 24px;font-size:14px;color:#6b7280">
       You're <strong style="color:#f97316">${stats.improvement}% closer</strong> to your goal this week
@@ -489,7 +489,7 @@ export function reEngagementDay7Html(
 
     <div style="background:#fff7ed;border-radius:12px;padding:16px;border-left:4px solid #f97316;margin-bottom:24px">
       <p style="margin:0;font-size:13px;color:#9a3412;line-height:1.6">
-        <strong>⚡ Just 10 minutes today</strong> can push you from ${bloom} to ${nextBloom} on ${lastTopic}. That's one level closer to cracking JEE.
+        <strong>⚡ Just 10 minutes today</strong> can push you from ${bloom} to ${nextBloom} on ${lastTopic}. That's one level closer to cracking CUET.
       </p>
     </div>
 
@@ -534,7 +534,7 @@ export function reEngagementDay14Html(
     ` : `
     <div style="background:#fef9c3;border-radius:12px;padding:16px;border-left:4px solid #eab308;margin-bottom:24px">
       <p style="margin:0;font-size:13px;color:#854d0e">
-        <strong>Did you know?</strong> Students who study with friends are 2× more likely to complete their JEE prep. Invite a friend and keep each other accountable!
+        <strong>Did you know?</strong> Students who study with friends are 2× more likely to complete their CUET prep. Invite a friend and keep each other accountable!
       </p>
     </div>
     `}
@@ -557,10 +557,10 @@ export function reEngagementDay14Html(
 export function reEngagementDay21Html(name: string, email: string): string {
   const content = `
     <h1 style="margin:0 0 8px;font-size:22px;font-weight:900;color:#111">
-      ${name}, don't let your JEE prep stall ⏰
+      ${name}, don't let your CUET prep stall ⏰
     </h1>
     <p style="margin:0 0 24px;font-size:15px;color:#6b7280;line-height:1.6">
-      It's been 3 weeks. We miss you. And your JEE score misses the daily practice.
+      It's been 3 weeks. We miss you. And your CUET score misses the daily practice.
     </p>
 
     <!-- Pricing comparison -->
@@ -603,7 +603,7 @@ export function reEngagementDay21Html(name: string, email: string): string {
       <p style="margin:16px 0 0;font-size:12px;color:#9ca3af">Cancel anytime. No questions asked.</p>
     </div>
   `;
-  return branded(content, email, `Your free JEE prep streak is at risk — upgrade to premium and lock in your progress.`);
+  return branded(content, email, `Your free CUET prep streak is at risk — upgrade to premium and lock in your progress.`);
 }
 
 // ─── 5. REFERRAL SERIES ──────────────────────────────────────────────────────
@@ -618,7 +618,7 @@ export function referralFriendJoinedHtml(
       ${originalUserName}, your friend just joined! 🎉
     </h1>
     <p style="margin:0 0 24px;font-size:15px;color:#6b7280;line-height:1.6">
-      <strong style="color:#f97316">${friendName}</strong> just started their JEE prep on 10minCUET — thanks to your invite!
+      <strong style="color:#f97316">${friendName}</strong> just started their CUET prep on 10minCUET — thanks to your invite!
     </p>
 
     <div style="background:linear-gradient(135deg,#fff7ed 0%,#ffedd5 100%);border-radius:16px;padding:24px;border:1px solid #fed7aa;margin-bottom:24px;text-align:center">

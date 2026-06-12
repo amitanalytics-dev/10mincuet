@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description:
     "How 10minCUET collects, uses and protects your data. GDPR and Indian IT Act compliant. Last updated May 2025.",
   alternates: {
-    canonical: "https://10minjee.com/privacy-policy",
+    canonical: "https://10mincuet.com/privacy-policy",
   },
   robots: {
     index: false,
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    url: "https://10minjee.com/privacy-policy",
+    url: "https://10mincuet.com/privacy-policy",
     title: "Privacy Policy — 10minCUET",
     description:
       "How 10minCUET collects, uses and protects your data. GDPR and Indian IT Act compliant. Last updated May 2025.",

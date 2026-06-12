@@ -5,10 +5,10 @@ export const metadata: Metadata = {
   title: "10minCUET Methodology — Bloom's Taxonomy Applied to CUET UG",
   description:
     "The research-backed methodology behind 10minCUET. Bloom's Taxonomy (Bloom 1956, Anderson & Krathwohl 2001) applied to CUET UG sub-concepts. Spaced repetition science from Cepeda et al. (2006) and Roediger & Karpicke (2006). Based on 432 questions mapped across 10 years of NTA papers.",
-  alternates: { canonical: "https://10minjee.com/methodology" },
+  alternates: { canonical: "https://10mincuet.com/methodology" },
   openGraph: {
     type: "website",
-    url: "https://10minjee.com/methodology",
+    url: "https://10mincuet.com/methodology",
     title: "10minCUET Methodology — Bloom's Taxonomy Applied to CUET UG",
     description:
       "The research-backed methodology behind 10minCUET. Bloom's Taxonomy applied to CUET UG sub-concepts. 10 years of NTA paper analysis. 432 questions mapped by Bloom level.",
@@ -604,7 +604,7 @@ export default function MethodologyPage() {
             <span>·</span>
             <Link href="/pricing" className="hover:text-gray-600">Pricing</Link>
             <span>·</span>
-            <Link href="/compare/10minjee-vs-coaching" className="hover:text-gray-600">vs Coaching</Link>
+            <Link href="/compare/10mincuet-vs-coaching" className="hover:text-gray-600">vs Coaching</Link>
             <span>·</span>
             <Link href="/contact" className="hover:text-gray-600">Contact</Link>
           </div>

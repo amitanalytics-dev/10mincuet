@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description:
     "10minCUET refund and cancellation policy. 7-day full refund on all paid plans. No questions asked.",
   alternates: {
-    canonical: "https://10minjee.com/refund-policy",
+    canonical: "https://10mincuet.com/refund-policy",
   },
   robots: {
     index: false,
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    url: "https://10minjee.com/refund-policy",
+    url: "https://10mincuet.com/refund-policy",
     title: "Refund Policy — 10minCUET",
     description:
       "10minCUET refund and cancellation policy. 7-day full refund on all paid plans. No questions asked.",

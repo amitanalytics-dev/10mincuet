@@ -15,7 +15,7 @@ export async function POST(req: NextRequest) {
     messages: [
       {
         role: "user",
-        content: `You are an expert JEE Main teacher. Solve this question step by step, referencing the relevant NCERT chapter where applicable.
+        content: `You are an expert CUET UG teacher. Solve this question step by step, referencing the relevant NCERT chapter where applicable.
 
 Question: ${question}
 
@@ -25,7 +25,7 @@ Format your answer as:
 3. Step-by-step solution
 4. Common mistake to avoid
 
-Keep it concise — JEE student needs to understand fast.`,
+Keep it concise — CUET student needs to understand fast.`,
       },
     ],
   });

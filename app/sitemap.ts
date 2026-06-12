@@ -2,8 +2,9 @@ import type { MetadataRoute } from "next";
 import { ConvexHttpClient } from "convex/browser";
 import { api } from "convex/_generated/api";
 import { subjects } from "./data/topics";
+import { BLOGS } from "./data/blogs";
 
-const base = process.env.NEXT_PUBLIC_BASE_URL ?? "https://10minjee.com";
+const base = process.env.NEXT_PUBLIC_BASE_URL ?? "https://10mincuet.com";
 const now = new Date();
 
 // ─── Audience landing page slugs ─────────────────────────────────────────────
@@ -12,23 +13,13 @@ const AUDIENCE_SLUGS = [
   "class-12-students",
   "class-11-students",
   "self-study",
-  "kota-students",
   "parents",
-];
-
-// ─── Comparison page slugs ────────────────────────────────────────────────────
-const COMPARE_SLUGS = [
-  "10minjee-vs-unacademy",
-  "10minjee-vs-physics-wallah",
-  "10minjee-vs-coaching",
-  "self-study-vs-coaching-jee",
-  "jee-main-vs-jee-advanced",
 ];
 
 // ─── Static compare pages (not under [slug]) ─────────────────────────────────
 const STATIC_COMPARE_PAGES = [
-  { path: "allen",  canonical: "10minjee-vs-allen" },
-  { path: "byjus",  canonical: "10minjee-vs-byjus" },
+  { path: "allen" },
+  { path: "byjus" },
 ];
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
@@ -44,16 +35,21 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       slug: b.slug as string,
       publishedAt: new Date(b.publishedAt ?? b.createdAt).toISOString(),
     }));
+    if (blogPosts.length === 0) throw new Error("empty");
   } catch {
-    // Convex unavailable at build time — blog pages omitted from sitemap
+    // Convex unavailable at build time — fall back to the static blog catalogue
+    blogPosts = BLOGS.map((b) => ({
+      slug: b.slug,
+      publishedAt: new Date(b.publishedAt).toISOString(),
+    }));
   }
   // ── Core pages ──────────────────────────────────────────────────────────────
   const core: MetadataRoute.Sitemap = [
     { url: base,                              lastModified: now, changeFrequency: "weekly",  priority: 1.0 },
     { url: `${base}/topics`,                  lastModified: now, changeFrequency: "weekly",  priority: 0.9 },
+    { url: `${base}/foundation`,              lastModified: now, changeFrequency: "weekly",  priority: 0.9 },
     { url: `${base}/mock`,                    lastModified: now, changeFrequency: "weekly",  priority: 0.9 },
     { url: `${base}/blog`,                    lastModified: now, changeFrequency: "daily",   priority: 0.9 },
-    { url: `${base}/leaderboard`,             lastModified: now, changeFrequency: "hourly",  priority: 0.8 },
     { url: `${base}/teams`,                   lastModified: now, changeFrequency: "hourly",  priority: 0.8 },
     { url: `${base}/challenge`,               lastModified: now, changeFrequency: "daily",   priority: 0.7 },
     { url: `${base}/tournaments`,             lastModified: now, changeFrequency: "daily",   priority: 0.7 },
@@ -73,12 +69,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${base}/refund-policy`,           lastModified: now, changeFrequency: "yearly",  priority: 0.3 },
     { url: `${base}/privacy-policy`,          lastModified: now, changeFrequency: "yearly",  priority: 0.3 },
     { url: `${base}/champions`,               lastModified: now, changeFrequency: "weekly",  priority: 0.8 },
-    { url: `${base}/daily`,                   lastModified: now, changeFrequency: "daily",   priority: 0.8 },
     { url: `${base}/educators`,               lastModified: now, changeFrequency: "weekly",  priority: 0.7 },
-    { url: `${base}/parent-dashboard`,        lastModified: now, changeFrequency: "weekly",  priority: 0.7 },
-    { url: `${base}/study-rooms`,             lastModified: now, changeFrequency: "weekly",  priority: 0.7 },
-    { url: `${base}/bloom`,                   lastModified: now, changeFrequency: "weekly",  priority: 0.7 },
-    { url: `${base}/doubt-solver`,            lastModified: now, changeFrequency: "weekly",  priority: 0.8 },
     { url: `${base}/pledge`,                  lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${base}/for/teachers`,            lastModified: now, changeFrequency: "monthly", priority: 0.8 },
   ];
@@ -86,14 +77,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // ── Audience landing pages (/for/[audience]) ─────────────────────────────────
   const audiencePages: MetadataRoute.Sitemap = AUDIENCE_SLUGS.map((slug) => ({
     url: `${base}/for/${slug}`,
-    lastModified: now,
-    changeFrequency: "monthly" as const,
-    priority: 0.7,
-  }));
-
-  // ── Comparison pages (/compare/[slug]) ───────────────────────────────────────
-  const comparePages: MetadataRoute.Sitemap = COMPARE_SLUGS.map((slug) => ({
-    url: `${base}/compare/${slug}`,
     lastModified: now,
     changeFrequency: "monthly" as const,
     priority: 0.7,
@@ -107,8 +90,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.7,
   }));
 
-  // ── JEE topic SEO pages (/jee/[subject]/[topic]) ─────────────────────────────
-  const jeeTopicPages: MetadataRoute.Sitemap = [];
+  // ── CUET topic SEO pages (/cuet/[subject]/[topic]) ───────────────────────────
+  const cuetTopicPages: MetadataRoute.Sitemap = [];
   for (const subj of subjects) {
     const subjectSlug = subj.name.toLowerCase().replace(/\s+/g, "-");
     for (const topic of subj.topics) {
@@ -116,8 +99,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         .toLowerCase()
         .replace(/[^a-z0-9]+/g, "-")
         .replace(/(^-|-$)/g, "");
-      jeeTopicPages.push({
-        url: `${base}/jee/${subjectSlug}/${topicSlug}`,
+      cuetTopicPages.push({
+        url: `${base}/cuet/${subjectSlug}/${topicSlug}`,
         lastModified: now,
         changeFrequency: "monthly" as const,
         priority: 0.8,
@@ -125,8 +108,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     }
   }
   // Hub page
-  jeeTopicPages.push({
-    url: `${base}/jee`,
+  cuetTopicPages.push({
+    url: `${base}/cuet`,
     lastModified: now,
     changeFrequency: "weekly" as const,
     priority: 0.9,
@@ -140,5 +123,5 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.7,
   }));
 
-  return [...core, ...audiencePages, ...comparePages, ...staticComparePages, ...blogPages, ...jeeTopicPages];
+  return [...core, ...audiencePages, ...staticComparePages, ...blogPages, ...cuetTopicPages];
 }

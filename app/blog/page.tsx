@@ -11,11 +11,11 @@ export const metadata: Metadata = {
   title: "CUET Prep Blog — Strategy, Topic Guides & Exam Analysis",
   description:
     "In-depth CUET UG preparation articles: section strategy, domain subject guides, General Test prep, NTA pattern breakdowns and university cutoff analysis.",
-  alternates: { canonical: "https://10minjee.com/blog" },
+  alternates: { canonical: "https://10mincuet.com/blog" },
   openGraph: {
     title: "CUET Prep Blog — Strategy, Topic Guides & Exam Analysis",
     description: "CUET UG strategy, domain subject guides, General Test prep and exam analysis.",
-    url: "https://10minjee.com/blog",
+    url: "https://10mincuet.com/blog",
     type: "website",
   },
 };

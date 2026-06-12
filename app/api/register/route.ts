@@ -66,7 +66,7 @@ export async function POST(req: Request) {
 
         // Notify referrer that their friend joined (fire and forget)
         if (referrer.email) {
-          const baseUrl = process.env.NEXT_PUBLIC_BASE_URL ?? "https://10minjee.com";
+          const baseUrl = process.env.NEXT_PUBLIC_BASE_URL ?? "https://10mincuet.com";
           fetch(`${baseUrl}/api/email/referral`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },

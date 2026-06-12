@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     template: "%s | 10minCUET",
   },
   description:
-    "Crack CUET UG in 10 minutes a day. Languages, Domain subjects, General Test. Pick your 5 subjects, track Bloom level per subconcept. One exam, 280+ central universities.",
+    "Crack CUET UG in 10 minutes a day — starting from Class 6 with the free Foundation track. Languages, Domain subjects, General Test. Pick your 5 subjects, track Bloom level per subconcept. One exam, 280+ central universities.",
   keywords: [
     "CUET UG preparation", "CUET 2025", "CUET 2026",
     "CUET English", "CUET General Test", "CUET Mathematics",

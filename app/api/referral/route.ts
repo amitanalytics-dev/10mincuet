@@ -20,7 +20,7 @@ export async function GET(req: Request) {
     referrerId: user._id as Id<"users">,
   });
 
-  const host = process.env.NEXT_PUBLIC_BASE_URL ?? "https://10minjee.com";
+  const host = process.env.NEXT_PUBLIC_BASE_URL ?? "https://10mincuet.com";
   return Response.json({
     referralCode: user.referralCode,
     referralLink: `${host}/register?ref=${user.referralCode}`,

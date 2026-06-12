@@ -7,7 +7,7 @@ function getResend() {
   return new Resend(key);
 }
 
-const FROM = "10minCUET <noreply@10minjee.com>";
+const FROM = "10minCUET <noreply@10mincuet.com>";
 
 export async function sendOtp(email: string, code: string) {
   await getResend().emails.send({
@@ -16,7 +16,7 @@ export async function sendOtp(email: string, code: string) {
     subject: `Your 10minCUET verification code: ${code}`,
     html: `
       <div style="font-family:sans-serif;max-width:400px;margin:auto">
-        <h2 style="color:#f97316">10min<span style="color:#111">JEE</span></h2>
+        <h2 style="color:#f97316">10min<span style="color:#111">CUET</span></h2>
         <p>Your verification code is:</p>
         <div style="font-size:36px;font-weight:900;letter-spacing:8px;color:#111;padding:20px;background:#f9fafb;border-radius:12px;text-align:center">${code}</div>
         <p style="color:#888;font-size:12px">Expires in 10 minutes. Do not share this code.</p>
@@ -71,7 +71,7 @@ export async function sendGstInvoice({
       <!-- Header -->
       <div style="background:#f97316;padding:24px 28px;display:flex;align-items:center;justify-content:space-between">
         <div>
-          <div style="font-size:22px;font-weight:900;color:#fff">10min<span style="color:#fff1d0">JEE</span></div>
+          <div style="font-size:22px;font-weight:900;color:#fff">10min<span style="color:#fff1d0">CUET</span></div>
           <div style="font-size:11px;color:#fff1d0;margin-top:2px">EAZEALLIANCE SERVICES PRIVATE LIMITED</div>
         </div>
         <div style="text-align:right">
@@ -86,8 +86,8 @@ export async function sendGstInvoice({
           <div style="font-size:10px;font-weight:700;color:#9ca3af;text-transform:uppercase;letter-spacing:.05em;margin-bottom:6px">Seller</div>
           <div style="font-weight:700;color:#111">EAZEALLIANCE SERVICES PVT LTD</div>
           <div style="color:#6b7280;font-size:12px">GSTIN: 09AAHCE2255K1ZF</div>
-          <div style="color:#6b7280;font-size:12px">Email: support@10minjee.com</div>
-          <div style="color:#6b7280;font-size:12px">Web: 10minjee.com</div>
+          <div style="color:#6b7280;font-size:12px">Email: support@10mincuet.com</div>
+          <div style="color:#6b7280;font-size:12px">Web: 10mincuet.com</div>
         </div>
         <div style="flex:1">
           <div style="font-size:10px;font-weight:700;color:#9ca3af;text-transform:uppercase;letter-spacing:.05em;margin-bottom:6px">Billed To</div>
@@ -134,8 +134,8 @@ export async function sendGstInvoice({
 
       <!-- Footer -->
       <div style="padding:16px 28px;background:#f9fafb;border-top:1px solid #e5e7eb;text-align:center">
-        <p style="font-size:12px;color:#6b7280;margin:0">Thank you for choosing 10minCUET. Questions? Email <a href="mailto:support@10minjee.com" style="color:#f97316">support@10minjee.com</a></p>
-        <p style="font-size:11px;color:#9ca3af;margin-top:4px">10minjee.com · EAZEALLIANCE SERVICES PRIVATE LIMITED · GST 09AAHCE2255K1ZF</p>
+        <p style="font-size:12px;color:#6b7280;margin:0">Thank you for choosing 10minCUET. Questions? Email <a href="mailto:support@10mincuet.com" style="color:#f97316">support@10mincuet.com</a></p>
+        <p style="font-size:11px;color:#9ca3af;margin-top:4px">10mincuet.com · EAZEALLIANCE SERVICES PRIVATE LIMITED · GST 09AAHCE2255K1ZF</p>
       </div>
     </div>
   `;

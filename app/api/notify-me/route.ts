@@ -1,8 +1,8 @@
 import "server-only";
 import { Resend } from "resend";
 
-const FROM = "10minCUET <noreply@10minjee.com>";
-const ADMIN = "support@10minjee.com";
+const FROM = "10minCUET <noreply@10mincuet.com>";
+const ADMIN = "support@10mincuet.com";
 
 export async function POST(req: Request) {
   try {
@@ -21,7 +21,7 @@ export async function POST(req: Request) {
         subject: "We'll notify you when 10minCUET is back — hold tight",
         html: `
           <div style="font-family:sans-serif;max-width:440px;margin:auto;padding:32px 24px">
-            <div style="font-size:22px;font-weight:900;margin-bottom:4px">10min<span style="color:#f97316">JEE</span></div>
+            <div style="font-size:22px;font-weight:900;margin-bottom:4px">10min<span style="color:#f97316">CUET</span></div>
             <h2 style="font-size:18px;color:#111;margin:16px 0 8px">We're on it 🛠</h2>
             <p style="color:#555;font-size:14px;line-height:1.6">
               Our service is temporarily unavailable. You're on the list — we'll email you the moment it's back.
@@ -30,7 +30,7 @@ export async function POST(req: Request) {
               Average downtime: under 30 minutes. Your prep doesn't stop — write down one formula from your weakest chapter while you wait.
             </p>
             <p style="color:#9ca3af;font-size:12px;margin-top:24px">
-              10minCUET · <a href="https://10minjee.com" style="color:#f97316">10minjee.com</a>
+              10minCUET · <a href="https://10mincuet.com" style="color:#f97316">10mincuet.com</a>
             </p>
           </div>
         `,

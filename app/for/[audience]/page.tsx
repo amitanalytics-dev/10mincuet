@@ -263,10 +263,10 @@ export async function generateMetadata({
   return {
     title: data.title,
     description: data.description,
-    alternates: { canonical: `https://10minjee.com/for/${data.slug}` },
+    alternates: { canonical: `https://10mincuet.com/for/${data.slug}` },
     openGraph: {
       type: "website",
-      url: `https://10minjee.com/for/${data.slug}`,
+      url: `https://10mincuet.com/for/${data.slug}`,
       title: data.title,
       description: data.description,
     },
@@ -285,13 +285,13 @@ export default async function AudiencePage({
   const webPageJsonLd = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "@id": `https://10minjee.com/for/${data.slug}`,
+    "@id": `https://10mincuet.com/for/${data.slug}`,
     name: data.title,
     description: data.description,
-    url: `https://10minjee.com/for/${data.slug}`,
+    url: `https://10mincuet.com/for/${data.slug}`,
     inLanguage: "en-IN",
     isPartOf: {
-      "@id": "https://10minjee.com/#website",
+      "@id": "https://10mincuet.com/#website",
     },
   };
 

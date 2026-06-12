@@ -1,16 +1,16 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "CUET UG Score Normalisation Explained — NTA Method 2025",
+  title: "CUET UG Score Normalisation Explained — NTA Method 2026",
   description:
     "Understand how NTA normalises CUET UG scores across shifts. Calculate your normalised marks with our interactive tool. Updated for 2025.",
   alternates: {
-    canonical: "https://10minjee.com/score-normalisation",
+    canonical: "https://10mincuet.com/score-normalisation",
   },
   openGraph: {
     type: "website",
-    url: "https://10minjee.com/score-normalisation",
-    title: "CUET UG Score Normalisation Explained — NTA Method 2025",
+    url: "https://10mincuet.com/score-normalisation",
+    title: "CUET UG Score Normalisation Explained — NTA Method 2026",
     description:
       "Understand how NTA normalises CUET UG scores across shifts. Calculate your normalised marks with our interactive tool. Updated for 2025.",
   },

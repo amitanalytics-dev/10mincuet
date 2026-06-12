@@ -106,7 +106,7 @@ export default function TermsPage() {
           <h2 className="text-lg font-black text-gray-900 mb-3">9. Contact</h2>
           <p>
             For permissions or takedown concerns:{" "}
-            <span className="font-semibold text-gray-900">support@10minjee.com</span>
+            <span className="font-semibold text-gray-900">support@10mincuet.com</span>
           </p>
         </section>
 

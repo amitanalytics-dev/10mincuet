@@ -5,10 +5,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: "10minCUET Pricing — Start Free",
     description: "Free diagnostic. Bundle ₹349/month. Annual ₹2,499. No auto-charge.",
-    url: "https://10minjee.com/pricing",
+    url: "https://10mincuet.com/pricing",
     type: "website",
   },
-  alternates: { canonical: "https://10minjee.com/pricing" },
+  alternates: { canonical: "https://10mincuet.com/pricing" },
 };
 export default function PricingLayout({ children }: { children: React.ReactNode }) {
   return <>{children}</>;

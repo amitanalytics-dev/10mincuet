@@ -77,7 +77,7 @@ export async function GET(req: Request) {
       <!-- Header -->
       <div style="background:#111;padding:24px 28px;border-radius:16px 16px 0 0;display:flex;align-items:center;justify-content:space-between">
         <div>
-          <div style="font-size:20px;font-weight:900;color:#f97316">10min<span style="color:#fff">JEE</span></div>
+          <div style="font-size:20px;font-weight:900;color:#f97316">10min<span style="color:#fff">CUET</span></div>
           <div style="font-size:12px;color:#9ca3af;margin-top:2px">Daily Operations Report</div>
         </div>
         <div style="text-align:right;color:#9ca3af;font-size:12px">${date} · IST</div>
@@ -217,7 +217,7 @@ export async function GET(req: Request) {
   // Send to both recipients
   const resend = await import("resend").then((m) => new m.Resend(process.env.RESEND_API_KEY ?? "placeholder"));
   await resend.emails.send({
-    from: "10minCUET Reports <noreply@10minjee.com>",
+    from: "10minCUET Reports <noreply@10mincuet.com>",
     to: REPORT_RECIPIENTS,
     subject: `10minCUET Daily — ${stats.acquisition.newToday} new · ₹${stats.monetization.mrr.toLocaleString("en-IN")} MRR · ${date}`,
     html,

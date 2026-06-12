@@ -6,12 +6,12 @@ export const metadata: Metadata = {
   title: "IIT CUET Toppers — Rank 1 to 100 Stories & Prep Strategies",
   description:
     "Read how IIT CUET AIR 1–100 rankers prepared. Real strategies, study hours, weak subjects conquered, and lessons from India's top CUET UG and CUET Advanced scorers.",
-  alternates: { canonical: "https://10minjee.com/toppers" },
+  alternates: { canonical: "https://10mincuet.com/toppers" },
   openGraph: {
     title: "IIT CUET Toppers — Rank 1 to 100 Stories & Prep Strategies",
     description:
       "How did India's top CUET rankers prepare? Read their schedules, strategies, and what they'd do differently.",
-    url: "https://10minjee.com/toppers",
+    url: "https://10mincuet.com/toppers",
     type: "website",
   },
 };

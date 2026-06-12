@@ -25,6 +25,9 @@ const PUBLIC_PATHS = [
   "/tournaments",
   // Champions page is public (browse without login)
   "/champions",
+  // SEO / content pages — crawlers and logged-out users must see these
+  "/topics", "/cuet", "/jee", "/foundation", "/about", "/methodology",
+  "/for", "/compare", "/sprint", "/cutoffs", "/toppers", "/score-normalisation",
 ];
 
 export default function AuthGate({ children }: { children: React.ReactNode }) {

@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "10minCUET for Teachers — Assign to Your Students",
   description:
     "CUET coaching teachers: assign 10minCUET to your students for 10-minute daily practice with Bloom-level tracking. ₹999/month for 60 students.",
-  alternates: { canonical: "https://10minjee.com/for/teachers" },
+  alternates: { canonical: "https://10mincuet.com/for/teachers" },
 };
 
 export default function TeachersPage() {

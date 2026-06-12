@@ -3,7 +3,9 @@
 import { useState, useEffect, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
-import { subjects, getCoveragePercent, type Subject, type Topic } from "../data/topics";
+import { subjects, getCoveragePercent, type Subject, type SubjectDomain, type Topic } from "../data/topics";
+
+const DOMAIN_ORDER: SubjectDomain[] = ["Languages", "General Test", "Science", "Commerce", "Humanities"];
 import { NCERT_MAP } from "../data/ncert-mapping";
 import { slugify } from "../utils/slug";
 import { getTopicProgress, getBloomInfo, type BloomLevel } from "../data/bloom";
@@ -250,7 +252,7 @@ function TopicCard({ topic, accent, subjectSlug }: { topic: Topic; accent: strin
           {/* Study together buttons */}
           <div className="px-5 py-3 flex flex-col gap-2">
             <a
-              href={`https://wa.me/?text=Let%27s%20study%20${encodeURIComponent(topic.name)}%20together%20on%2010minCUET%20%F0%9F%93%9A%0A10%20minutes%2C%20track%20your%20Bloom%20level%3A%20https%3A%2F%2F10minjee.com%2Ftopics`}
+              href={`https://wa.me/?text=Let%27s%20study%20${encodeURIComponent(topic.name)}%20together%20on%2010minCUET%20%F0%9F%93%9A%0A10%20minutes%2C%20track%20your%20Bloom%20level%3A%20https%3A%2F%2F10mincuet.com%2Ftopics`}
               target="_blank"
               rel="noopener noreferrer"
               className="text-green-600 text-xs font-semibold flex items-center gap-1 hover:text-green-700 transition-colors"
@@ -411,14 +413,39 @@ export default function TopicsPage() {
       <Suspense>
         <OnboardingBanner />
       </Suspense>
-      {/* Subject filter strip */}
+      {/* Page heading */}
       <div className="bg-white border-b border-gray-100">
-        <div className="max-w-6xl mx-auto px-4 py-3">
-          <div className="flex items-center gap-2 flex-wrap">
-            {filteredSubjects.map((s, i) => (
-              <SubjectBadge key={s.name} subject={s} active={i === activeIdx} onClick={() => setActiveIdx(i)} />
-            ))}
-          </div>
+        <div className="max-w-6xl mx-auto px-4 pt-6 pb-2">
+          <h1 className="text-3xl font-black text-gray-900 mb-1">
+            CUET UG Topics — Science, Commerce &amp; Humanities
+          </h1>
+          <p className="text-sm text-gray-500">
+            12 CUET domain subjects + English + General Test — pick your stream below.
+          </p>
+        </div>
+        {/* Subject filter strip — grouped by CUET stream */}
+        <div className="max-w-6xl mx-auto px-4 py-3 space-y-3">
+          {DOMAIN_ORDER.map((domain) => {
+            const group = filteredSubjects
+              .map((s, i) => ({ subject: s, idx: i }))
+              .filter(({ subject }) => subject.domain === domain);
+            if (group.length === 0) return null;
+            return (
+              <div key={domain} className="flex items-center gap-2 flex-wrap">
+                <span className="text-[11px] font-black uppercase tracking-widest text-gray-400 w-24 shrink-0">
+                  {domain}
+                </span>
+                {group.map(({ subject, idx }) => (
+                  <SubjectBadge
+                    key={subject.name}
+                    subject={subject}
+                    active={idx === activeIdx}
+                    onClick={() => setActiveIdx(idx)}
+                  />
+                ))}
+              </div>
+            );
+          })}
         </div>
       </div>
 

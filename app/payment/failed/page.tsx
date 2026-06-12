@@ -25,14 +25,14 @@ export default function PaymentFailedPage() {
           If money was debited but you see this page, email us with your UPI/card reference number.
         </p>
         <a
-          href="mailto:support@10minjee.com?subject=Payment%20Issue%20—%2010minCUET"
+          href="mailto:support@10mincuet.com?subject=Payment%20Issue%20—%2010minCUET"
           className="text-sm text-orange-500 font-semibold hover:underline"
         >
           Contact support →
         </a>
         <div className="mt-8 pt-6 border-t border-gray-100 text-xs text-gray-300 space-y-1">
           <p>EAZEALLIANCE SERVICES PRIVATE LIMITED · GST 09AAHCE2255K1ZF</p>
-          <p>10minjee.com</p>
+          <p>10mincuet.com</p>
         </div>
       </div>
     </div>

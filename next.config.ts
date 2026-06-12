@@ -16,6 +16,8 @@ const nextConfig: NextConfig = {
       { source: "/chapters", destination: "/topics", permanent: true },
       { source: "/score-predictor", destination: "/predictor", permanent: true },
       { source: "/streak", destination: "/sprint", permanent: true },
+      { source: "/jee", destination: "/cuet", permanent: true },
+      { source: "/jee/:path*", destination: "/cuet/:path*", permanent: true },
     ];
   },
 };

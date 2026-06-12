@@ -21,10 +21,10 @@ function getResend(): Resend {
   return new Resend(key);
 }
 
-const FROM_NOREPLY = "10minCUET <noreply@10minjee.com>";
-const FROM_RESULTS = "10minCUET Results <results@10minjee.com>";
-const FROM_DIGEST = "10minCUET <digest@10minjee.com>";
-const FROM_REFERRAL = "10minCUET <referral@10minjee.com>";
+const FROM_NOREPLY = "10minCUET <noreply@10mincuet.com>";
+const FROM_RESULTS = "10minCUET Results <results@10mincuet.com>";
+const FROM_DIGEST = "10minCUET <digest@10mincuet.com>";
+const FROM_REFERRAL = "10minCUET <referral@10mincuet.com>";
 
 // ─── Welcome Series ───────────────────────────────────────────────────────────
 
@@ -57,7 +57,7 @@ export async function sendWelcomeDay2NoMock(email: string, name: string) {
   return getResend().emails.send({
     from: FROM_NOREPLY,
     to: email,
-    subject: "Ready to see your JEE readiness score? (10 mins) 🤔",
+    subject: "Ready to see your CUET readiness score? (10 mins) 🤔",
     html: welcomeDay2NoMockHtml(name, email),
     tags: [{ name: "sequence", value: "welcome" }, { name: "day", value: "2-no-mock" }],
   });
@@ -119,7 +119,7 @@ export async function sendBatchWeeklyDigest(users: WeeklyDigestUser[]) {
     const emails = batch.map((u) => ({
       from: FROM_DIGEST,
       to: u.email,
-      subject: `Your Weekly JEE Progress — You're ${u.stats.improvement}% closer to your goal`,
+      subject: `Your Weekly CUET Progress — You're ${u.stats.improvement}% closer to your goal`,
       html: weeklyDigestHtml(u.name, u.email, u.stats, u.referralCode),
       tags: [{ name: "sequence", value: "weekly-digest" }],
     }));
@@ -165,7 +165,7 @@ export async function sendReEngagementDay21(email: string, name: string) {
   return getResend().emails.send({
     from: FROM_NOREPLY,
     to: email,
-    subject: `${name}, don't let your JEE prep stall — upgrade for ₹149/mo ⏰`,
+    subject: `${name}, don't let your CUET prep stall — upgrade for ₹149/mo ⏰`,
     html: reEngagementDay21Html(name, email),
     tags: [{ name: "sequence", value: "re-engagement" }, { name: "day", value: "21" }],
   });
@@ -181,7 +181,7 @@ export async function sendReferralFriendJoined(
   return getResend().emails.send({
     from: FROM_REFERRAL,
     to: originalUserEmail,
-    subject: `${friendName} just started their JEE prep! 🎉`,
+    subject: `${friendName} just started their CUET prep! 🎉`,
     html: referralFriendJoinedHtml(originalUserName, originalUserEmail, friendName),
     tags: [{ name: "sequence", value: "referral" }, { name: "event", value: "friend-joined" }],
   });

@@ -22,10 +22,10 @@ export default function ContactPage() {
               For payments, refunds, technical issues, and general queries.
             </p>
             <a
-              href="mailto:support@10minjee.com"
+              href="mailto:support@10mincuet.com"
               className="text-orange-500 font-semibold text-sm hover:underline"
             >
-              support@10minjee.com
+              support@10mincuet.com
             </a>
             <p className="text-xs text-gray-400 mt-2">We respond within 1 business day.</p>
           </div>
@@ -37,7 +37,7 @@ export default function ContactPage() {
               Money deducted but access not granted? Email with your Razorpay payment ID.
             </p>
             <a
-              href="mailto:support@10minjee.com?subject=Payment%20Issue%20%E2%80%94%2010minCUET"
+              href="mailto:support@10mincuet.com?subject=Payment%20Issue%20%E2%80%94%2010minCUET"
               className="text-orange-500 font-semibold text-sm hover:underline"
             >
               Report a payment issue →
@@ -63,7 +63,7 @@ export default function ContactPage() {
               EAZEALLIANCE SERVICES PRIVATE LIMITED
             </p>
             <p className="text-xs text-gray-500 mt-1">GST: 09AAHCE2255K1ZF</p>
-            <p className="text-xs text-gray-500">Platform: 10minjee.com</p>
+            <p className="text-xs text-gray-500">Platform: 10mincuet.com</p>
           </div>
         </div>
 

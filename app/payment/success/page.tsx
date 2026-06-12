@@ -27,7 +27,7 @@ export default function PaymentSuccessPage() {
         <div className="mt-8 pt-6 border-t border-gray-100 text-xs text-gray-300 space-y-1">
           <p>Payment processed by Razorpay</p>
           <p>EAZEALLIANCE SERVICES PRIVATE LIMITED · GST 09AAHCE2255K1ZF</p>
-          <p>10minjee.com · support@10minjee.com</p>
+          <p>10mincuet.com · support@10mincuet.com</p>
         </div>
       </div>
     </div>

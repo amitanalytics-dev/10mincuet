@@ -42,7 +42,7 @@ export const BLOOM_LEVELS: BloomInfo[] = [
     level: 3,
     name: "Apply",
     verb: "Solve",
-    description: "Can solve standard JEE-type numerical problems",
+    description: "Can solve standard CUET-type numerical problems",
     color: "#34D399",
     bgColor: "#ECFDF5",
     textColor: "#065F46",

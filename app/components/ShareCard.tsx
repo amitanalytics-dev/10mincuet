@@ -21,14 +21,14 @@ export function ShareCard({ type, data }: ShareCardProps) {
   const [copied, setCopied] = useState(false);
 
   const shareText = {
-    rank: `🎯 I scored ${data.score}/360 (${data.percentile}th percentile) on 10minCUET mock test! 10 minutes a day is all it takes. Can you beat me? https://10minjee.com`,
-    streak: `🔥 Day ${data.streakDays} streak on 10minCUET! Consistent beats intense. Join me: https://10minjee.com`,
-    bloom: `📈 Just leveled up in ${data.topic}! Went from Bloom Level ${data.fromLevel} to ${data.toLevel} on 10minCUET. Your weak spots don't lie. https://10minjee.com`,
+    rank: `🎯 I scored ${data.score}/360 (${data.percentile}th percentile) on 10minCUET mock test! 10 minutes a day is all it takes. Can you beat me? https://10mincuet.com`,
+    streak: `🔥 Day ${data.streakDays} streak on 10minCUET! Consistent beats intense. Join me: https://10mincuet.com`,
+    bloom: `📈 Just leveled up in ${data.topic}! Went from Bloom Level ${data.fromLevel} to ${data.toLevel} on 10minCUET. Your weak spots don't lie. https://10mincuet.com`,
   }[type];
 
   async function handleShare() {
     if (typeof navigator !== "undefined" && navigator.share) {
-      await navigator.share({ text: shareText, url: "https://10minjee.com" });
+      await navigator.share({ text: shareText, url: "https://10mincuet.com" });
     } else {
       await navigator.clipboard.writeText(shareText);
       setCopied(true);

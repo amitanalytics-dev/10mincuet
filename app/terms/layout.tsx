@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description:
     "Terms of use for 10minCUET platform by EAZEALLIANCE SERVICES PRIVATE LIMITED. Covers subscriptions, referral program, and content usage.",
   alternates: {
-    canonical: "https://10minjee.com/terms",
+    canonical: "https://10mincuet.com/terms",
   },
   robots: {
     index: false,
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    url: "https://10minjee.com/terms",
+    url: "https://10mincuet.com/terms",
     title: "Terms of Use — 10minCUET",
     description:
       "Terms of use for 10minCUET platform by EAZEALLIANCE SERVICES PRIVATE LIMITED. Covers subscriptions, referral program, and content usage.",

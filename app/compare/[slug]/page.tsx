@@ -3,9 +3,9 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 
 type CompareSlug =
-  | "10minjee-vs-unacademy"
-  | "10minjee-vs-physics-wallah"
-  | "10minjee-vs-coaching"
+  | "10mincuet-vs-unacademy"
+  | "10mincuet-vs-physics-wallah"
+  | "10mincuet-vs-coaching"
   | "self-study-vs-coaching-jee"
   | "jee-main-vs-jee-advanced";
 
@@ -24,9 +24,9 @@ interface CompareData {
 }
 
 const compareMap: Record<CompareSlug, CompareData> = {
-  "10minjee-vs-unacademy": {
-    slug: "10minjee-vs-unacademy",
-    title: "10minCUET vs Unacademy — CUET Prep Platform Comparison 2025",
+  "10mincuet-vs-unacademy": {
+    slug: "10mincuet-vs-unacademy",
+    title: "10minCUET vs Unacademy — CUET Prep Platform Comparison 2026",
     description:
       "10minCUET vs Unacademy for CUET UG 2025. Compare session format, pricing, Bloom tracking, and student outcomes. Which platform actually improves your CUET score?",
     h1: "10minCUET vs Unacademy — CUET UG Prep Platform Compared",
@@ -69,9 +69,9 @@ const compareMap: Record<CompareSlug, CompareData> = {
     ],
     cta: "See What 10minCUET Tracks That Unacademy Doesn't",
   },
-  "10minjee-vs-physics-wallah": {
-    slug: "10minjee-vs-physics-wallah",
-    title: "10minCUET vs Physics Wallah (PW) — CUET Prep Comparison 2025",
+  "10mincuet-vs-physics-wallah": {
+    slug: "10mincuet-vs-physics-wallah",
+    title: "10minCUET vs Physics Wallah (PW) — CUET Prep Comparison 2026",
     description:
       "10minCUET vs Physics Wallah for CUET UG 2025. Comparing Bloom-level tracking vs video lectures, adaptive quizzes vs PW test series. Honest breakdown.",
     h1: "10minCUET vs Physics Wallah — CUET UG Prep Compared",
@@ -114,9 +114,9 @@ const compareMap: Record<CompareSlug, CompareData> = {
     ],
     cta: "Test Your PW Knowledge — Try 10minCUET Free",
   },
-  "10minjee-vs-coaching": {
-    slug: "10minjee-vs-coaching",
-    title: "10minCUET vs CUET Coaching Institutes — Is Coaching Worth It? 2025",
+  "10mincuet-vs-coaching": {
+    slug: "10mincuet-vs-coaching",
+    title: "10minCUET vs CUET Coaching Institutes — Is Coaching Worth It? 2026",
     description:
       "10minCUET vs traditional CUET coaching (Allen, Resonance, FIITJEE). Compare cost, time, sub-concept mastery tracking, and CUET outcomes. Make an informed decision.",
     h1: "10minCUET vs CUET Coaching Institutes — Honest Comparison for 2025",
@@ -161,7 +161,7 @@ const compareMap: Record<CompareSlug, CompareData> = {
   },
   "self-study-vs-coaching-jee": {
     slug: "self-study-vs-coaching-jee",
-    title: "Self-Study vs Coaching for CUET UG 2025 — Honest Guide",
+    title: "Self-Study vs Coaching for CUET UG 2026 — Honest Guide",
     description:
       "Self-study or coaching for CUET UG 2025? Honest data on success rates, costs, time commitment, and what actually makes the difference. Includes Bloom's Taxonomy framework.",
     h1: "Self-Study vs Coaching for CUET UG — What the Data Says in 2025",
@@ -204,7 +204,7 @@ const compareMap: Record<CompareSlug, CompareData> = {
   },
   "jee-main-vs-jee-advanced": {
     slug: "jee-main-vs-jee-advanced",
-    title: "CUET UG vs CUET Advanced 2025 — Differences, Difficulty, Strategy",
+    title: "CUET UG vs CUET Advanced 2026 — Differences, Difficulty, Strategy",
     description:
       "CUET UG vs CUET Advanced explained. Eligibility, syllabus differences, Bloom-level demands, paper pattern, and strategy. Based on 10-year NTA paper analysis.",
     h1: "CUET UG vs CUET Advanced — Key Differences Every Student Must Know",
@@ -264,10 +264,10 @@ export async function generateMetadata({
   return {
     title: data.title,
     description: data.description,
-    alternates: { canonical: `https://10minjee.com/compare/${slug}` },
+    alternates: { canonical: `https://10mincuet.com/compare/${slug}` },
     openGraph: {
       type: "website",
-      url: `https://10minjee.com/compare/${slug}`,
+      url: `https://10mincuet.com/compare/${slug}`,
       title: data.title,
       description: data.description,
     },

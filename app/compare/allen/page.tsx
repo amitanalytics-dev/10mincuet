@@ -2,14 +2,14 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "10minCUET vs Allen Kota — CUET Prep Comparison 2025",
+  title: "10minCUET vs Allen Kota — CUET Prep Comparison 2026",
   description:
     "10minCUET vs Allen Kota for CUET UG 2025. Compare price (₹2,499/yr vs ₹80,000–1.2L/yr), format (10 min/day vs 8hr classroom), Bloom tracking, and parent visibility. Honest breakdown.",
-  alternates: { canonical: "https://10minjee.com/compare/10minjee-vs-allen" },
+  alternates: { canonical: "https://10mincuet.com/compare/allen" },
   openGraph: {
     type: "website",
-    url: "https://10minjee.com/compare/10minjee-vs-allen",
-    title: "10minCUET vs Allen Kota — CUET Prep Comparison 2025",
+    url: "https://10mincuet.com/compare/allen",
+    title: "10minCUET vs Allen Kota — CUET Prep Comparison 2026",
     description:
       "Price, format, Bloom tracking, and parent visibility compared. Honest breakdown for CUET UG 2025 students.",
   },
@@ -179,16 +179,16 @@ export default function AllenComparePage() {
       <section className="max-w-3xl mx-auto px-4 pb-12">
         <h2 className="text-lg font-black text-gray-900 mb-4">Related comparisons</h2>
         <div className="flex flex-wrap gap-3">
-          <Link href="/compare/10minjee-vs-unacademy" className="text-sm text-orange-500 border border-orange-200 px-4 py-2 rounded-full hover:bg-orange-50 transition-all">
+          <Link href="/compare/10mincuet-vs-unacademy" className="text-sm text-orange-500 border border-orange-200 px-4 py-2 rounded-full hover:bg-orange-50 transition-all">
             10minCUET vs Unacademy
           </Link>
-          <Link href="/compare/10minjee-vs-physics-wallah" className="text-sm text-orange-500 border border-orange-200 px-4 py-2 rounded-full hover:bg-orange-50 transition-all">
+          <Link href="/compare/10mincuet-vs-physics-wallah" className="text-sm text-orange-500 border border-orange-200 px-4 py-2 rounded-full hover:bg-orange-50 transition-all">
             10minCUET vs Physics Wallah
           </Link>
           <Link href="/compare/byjus" className="text-sm text-orange-500 border border-orange-200 px-4 py-2 rounded-full hover:bg-orange-50 transition-all">
             10minCUET vs BYJU&apos;S
           </Link>
-          <Link href="/compare/10minjee-vs-coaching" className="text-sm text-orange-500 border border-orange-200 px-4 py-2 rounded-full hover:bg-orange-50 transition-all">
+          <Link href="/compare/10mincuet-vs-coaching" className="text-sm text-orange-500 border border-orange-200 px-4 py-2 rounded-full hover:bg-orange-50 transition-all">
             10minCUET vs Coaching Institutes
           </Link>
           <Link href="/methodology" className="text-sm text-orange-500 border border-orange-200 px-4 py-2 rounded-full hover:bg-orange-50 transition-all">
