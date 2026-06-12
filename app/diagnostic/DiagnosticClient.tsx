@@ -3,6 +3,7 @@
 import { useMemo, useState } from "react";
 import Link from "next/link";
 import { PublicNav } from "../components/PublicNav";
+import { enqueueWrongAnswer } from "../lib/revisionQueue";
 
 export type DiagQuestion = {
   id: string;
@@ -201,6 +202,12 @@ export function DiagnosticClient({
                 onClick={() => {
                   setPicked(i);
                   setAnswers((prev) => [...prev, { q, correct: i === q.correct }]);
+                  if (i !== q.correct) {
+                    enqueueWrongAnswer({
+                      id: q.id, text: q.text, options: q.options, correct: q.correct,
+                      explanation: q.explanation, topicSlug: q.topic, area: q.area,
+                    });
+                  }
                 }}
                 className={`w-full text-left border-2 rounded-xl px-4 py-3 text-sm font-medium text-gray-800 transition-all ${cls}`}
               >

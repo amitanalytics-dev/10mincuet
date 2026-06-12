@@ -6,6 +6,7 @@ import { LanguageSwitcher } from "./LanguageSwitcher";
 import { ExamCountdown } from "./ExamCountdown";
 import { AUTH_KEY, TOKEN_KEY } from "../utils/auth";
 import { useLanguage } from "../context/LanguageContext";
+import { countDue } from "../lib/revisionQueue";
 
 export function SiteNav() {
   const pathname = usePathname();
@@ -15,6 +16,11 @@ export function SiteNav() {
   const [streak, setStreak] = useState<{ streak: number; activeToday: boolean } | null>(null);
   const [access, setAccess] = useState<{ hasPremium: boolean; reason: string; daysLeft?: number } | null>(null);
   const { t } = useLanguage();
+  const [revisionDue, setRevisionDue] = useState(0);
+
+  useEffect(() => {
+    setRevisionDue(countDue());
+  }, [pathname]);
 
   const PUBLIC_LINKS = [
     { href: "/topics",      label: t.nav_topics },
@@ -142,6 +148,16 @@ export function SiteNav() {
 
         {/* Right side */}
         <div className="flex items-center gap-2 shrink-0">
+          {revisionDue > 0 && (
+            <Link
+              href="/revision"
+              title="Questions due for spaced-repetition revision"
+              className="text-xs font-bold px-2.5 py-1.5 rounded-full bg-purple-100 text-purple-700 hover:bg-purple-200 transition-colors flex items-center gap-1"
+            >
+              <span>📒</span>
+              <span className="tabular-nums">{revisionDue} due</span>
+            </Link>
+          )}
           {loggedIn && streak && streak.streak > 0 && (
             <Link
               href="/sprint"

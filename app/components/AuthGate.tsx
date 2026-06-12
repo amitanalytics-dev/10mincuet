@@ -17,6 +17,8 @@ const PUBLIC_PATHS = [
   "/mock",
   // Anonymous diagnostic funnel (public, no signup needed)
   "/diagnostic",
+  // Spaced-repetition revision queue (localStorage, works logged-out)
+  "/revision",
   // Public leaderboard
   "/leaderboard",
   // Public teams + season standings

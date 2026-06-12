@@ -18,6 +18,7 @@ import {
 import { BloomBadge } from "../../../components/BloomBadge";
 import { getDeviceId, getDailyQuizSeed, selectDailyQuestions } from "../../../utils/quiz";
 import { QuestionFeedback } from "../../../components/QuestionFeedback";
+import { enqueueWrongAnswer } from "../../../lib/revisionQueue";
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 
@@ -301,6 +302,15 @@ export default function PracticePage({
       return;
     }
     setSubmitted(true);
+    // Spaced repetition: queue wrong answers for revision on day 2/7/21
+    questions.forEach((q, i) => {
+      if (answers[i] !== q.correct) {
+        enqueueWrongAnswer({
+          id: q.id, text: q.text, options: q.options, correct: q.correct,
+          explanation: q.explanation, topicSlug: topic, subConcept: q.subConcept,
+        });
+      }
+    });
     const correct = answers.filter(
       (a, i) => a !== null && a === questions[i]?.correct
     ).length;

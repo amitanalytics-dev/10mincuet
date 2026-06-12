@@ -20,6 +20,7 @@ import {
   selectDailyQuestions,
 } from "../../../utils/quiz";
 import { QuestionFeedback } from "../../../components/QuestionFeedback";
+import { enqueueWrongAnswer } from "../../../lib/revisionQueue";
 
 // ─── Sub-components ──────────────────────────────────────────────────────────
 
@@ -215,6 +216,16 @@ export default function QuizPage({
     const finalScore = answers.filter(
       (a, i) => a !== null && a === questions[i]?.correct
     ).length;
+
+    // Spaced repetition: queue wrong answers for revision on day 2/7/21
+    questions.forEach((q, i) => {
+      if (answers[i] !== q.correct) {
+        enqueueWrongAnswer({
+          id: q.id, text: q.text, options: q.options, correct: q.correct,
+          explanation: q.explanation, topicSlug: topic, subConcept: q.subConcept,
+        });
+      }
+    });
 
     // Save quiz score to localStorage
     localStorage.setItem(
