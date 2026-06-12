@@ -1,3 +1,4 @@
+import { BASE_URL } from "@/app/lib/site";
 import type { Metadata } from "next";
 import Link from "next/link";
 
@@ -5,10 +6,10 @@ export const metadata: Metadata = {
   title: "10minCUET vs Allen Kota — CUET Prep Comparison 2026",
   description:
     "10minCUET vs Allen Kota for CUET UG 2025. Compare price (₹2,499/yr vs ₹80,000–1.2L/yr), format (10 min/day vs 8hr classroom), Bloom tracking, and parent visibility. Honest breakdown.",
-  alternates: { canonical: "https://10mincuet.com/compare/allen" },
+  alternates: { canonical: `${BASE_URL}/compare/allen` },
   openGraph: {
     type: "website",
-    url: "https://10mincuet.com/compare/allen",
+    url: `${BASE_URL}/compare/allen`,
     title: "10minCUET vs Allen Kota — CUET Prep Comparison 2026",
     description:
       "Price, format, Bloom tracking, and parent visibility compared. Honest breakdown for CUET UG 2025 students.",

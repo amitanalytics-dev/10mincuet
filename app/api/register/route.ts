@@ -1,4 +1,5 @@
 // @ts-nocheck
+import { BASE_URL } from "@/app/lib/site";
 // Run 'npx convex dev' first to generate convex/_generated/
 import "server-only";
 import bcrypt from "bcryptjs";
@@ -66,7 +67,7 @@ export async function POST(req: Request) {
 
         // Notify referrer that their friend joined (fire and forget)
         if (referrer.email) {
-          const baseUrl = process.env.NEXT_PUBLIC_BASE_URL ?? "https://10mincuet.com";
+          const baseUrl = process.env.NEXT_PUBLIC_BASE_URL ?? BASE_URL;
           fetch(`${baseUrl}/api/email/referral`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },

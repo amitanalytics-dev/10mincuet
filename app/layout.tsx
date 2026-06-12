@@ -1,3 +1,4 @@
+import { BASE_URL } from "@/app/lib/site";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -20,7 +21,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL ?? "https://10mincuet.com"),
+  metadataBase: new URL(BASE_URL),
   title: {
     default: "10minCUET — CUET Prep in 10 Minutes a Day",
     template: "%s | 10minCUET",
@@ -39,7 +40,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_IN",
-    url: "https://10mincuet.com",
+    url: BASE_URL,
     siteName: "10minCUET",
     title: "10minCUET — CUET Prep in 10 Minutes a Day",
     description:
@@ -83,14 +84,14 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Person",
-              "@id": "https://10mincuet.com/#founder",
+              "@id": `${BASE_URL}/#founder`,
               "name": "Amit Tyagi",
               "jobTitle": "Founder",
               "worksFor": {
                 "@type": "Organization",
                 "name": "EAZEALLIANCE SERVICES PRIVATE LIMITED",
               },
-              "url": "https://10mincuet.com",
+              "url": BASE_URL,
               "alumniOf": {
                 "@type": "CollegeOrUniversity",
                 "name": "Indian School of Business",

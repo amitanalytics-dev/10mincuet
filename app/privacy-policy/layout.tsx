@@ -1,3 +1,4 @@
+import { BASE_URL } from "@/app/lib/site";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -5,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "How 10minCUET collects, uses and protects your data. GDPR and Indian IT Act compliant. Last updated May 2025.",
   alternates: {
-    canonical: "https://10mincuet.com/privacy-policy",
+    canonical: `${BASE_URL}/privacy-policy`,
   },
   robots: {
     index: false,
@@ -13,7 +14,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    url: "https://10mincuet.com/privacy-policy",
+    url: `${BASE_URL}/privacy-policy`,
     title: "Privacy Policy — 10minCUET",
     description:
       "How 10minCUET collects, uses and protects your data. GDPR and Indian IT Act compliant. Last updated May 2025.",

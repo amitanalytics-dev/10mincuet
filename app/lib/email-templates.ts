@@ -1,6 +1,6 @@
 import "server-only";
 
-const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL ?? "https://10mincuet.com";
+import { BASE_URL } from "@/app/lib/site";
 
 // ─── Shared building blocks ───────────────────────────────────────────────────
 

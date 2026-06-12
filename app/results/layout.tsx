@@ -1,3 +1,4 @@
+import { BASE_URL } from "@/app/lib/site";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -5,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "Track your Bloom level per CUET UG sub-concept. See your weakest topics, your strongest areas, and your Bloom progression over time.",
   alternates: {
-    canonical: "https://10mincuet.com/results",
+    canonical: `${BASE_URL}/results`,
   },
   robots: {
     index: false,
@@ -13,7 +14,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    url: "https://10mincuet.com/results",
+    url: `${BASE_URL}/results`,
     title: "My CUET Progress — Bloom Level Tracker",
     description:
       "Track your Bloom level per CUET UG sub-concept. See your weakest topics, your strongest areas, and your Bloom progression over time.",

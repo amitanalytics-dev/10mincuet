@@ -1,3 +1,4 @@
+import { BASE_URL } from "@/app/lib/site";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -5,11 +6,11 @@ export const metadata: Metadata = {
   description:
     "Reach the 10minCUET team. For support, refunds, bulk access, coaching partnerships, or press enquiries. We reply within 24 hours.",
   alternates: {
-    canonical: "https://10mincuet.com/contact",
+    canonical: `${BASE_URL}/contact`,
   },
   openGraph: {
     type: "website",
-    url: "https://10mincuet.com/contact",
+    url: `${BASE_URL}/contact`,
     title: "Contact 10minCUET — Support, Feedback & Partnerships",
     description:
       "Reach the 10minCUET team. For support, refunds, bulk access, coaching partnerships, or press enquiries. We reply within 24 hours.",

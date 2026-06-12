@@ -1,4 +1,5 @@
 "use client";
+import { BASE_URL } from "@/app/lib/site";
 
 import { useState, useEffect, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
@@ -252,7 +253,7 @@ function TopicCard({ topic, accent, subjectSlug }: { topic: Topic; accent: strin
           {/* Study together buttons */}
           <div className="px-5 py-3 flex flex-col gap-2">
             <a
-              href={`https://wa.me/?text=Let%27s%20study%20${encodeURIComponent(topic.name)}%20together%20on%2010minCUET%20%F0%9F%93%9A%0A10%20minutes%2C%20track%20your%20Bloom%20level%3A%20https%3A%2F%2F10mincuet.com%2Ftopics`}
+              href={`https://wa.me/?text=Let%27s%20study%20${encodeURIComponent(topic.name)}%20together%20on%2010minCUET%20%F0%9F%93%9A%0A10%20minutes%2C%20track%20your%20Bloom%20level%3A%20${encodeURIComponent(BASE_URL)}%2Ftopics`}
               target="_blank"
               rel="noopener noreferrer"
               className="text-green-600 text-xs font-semibold flex items-center gap-1 hover:text-green-700 transition-colors"

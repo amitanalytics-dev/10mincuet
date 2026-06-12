@@ -1,3 +1,4 @@
+import { BASE_URL } from "@/app/lib/site";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -5,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "Terms of use for 10minCUET platform by EAZEALLIANCE SERVICES PRIVATE LIMITED. Covers subscriptions, referral program, and content usage.",
   alternates: {
-    canonical: "https://10mincuet.com/terms",
+    canonical: `${BASE_URL}/terms`,
   },
   robots: {
     index: false,
@@ -13,7 +14,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    url: "https://10mincuet.com/terms",
+    url: `${BASE_URL}/terms`,
     title: "Terms of Use — 10minCUET",
     description:
       "Terms of use for 10minCUET platform by EAZEALLIANCE SERVICES PRIVATE LIMITED. Covers subscriptions, referral program, and content usage.",

@@ -1,4 +1,5 @@
 // @ts-nocheck
+import { BASE_URL } from "@/app/lib/site";
 // Run 'npx convex dev' first to generate convex/_generated/
 import "server-only";
 import { verifyToken, getAuthHeader } from "../../lib/auth.server";
@@ -20,7 +21,7 @@ export async function GET(req: Request) {
     referrerId: user._id as Id<"users">,
   });
 
-  const host = process.env.NEXT_PUBLIC_BASE_URL ?? "https://10mincuet.com";
+  const host = process.env.NEXT_PUBLIC_BASE_URL ?? BASE_URL;
   return Response.json({
     referralCode: user.referralCode,
     referralLink: `${host}/register?ref=${user.referralCode}`,

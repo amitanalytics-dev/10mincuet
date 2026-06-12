@@ -1,10 +1,11 @@
+import { BASE_URL } from "@/app/lib/site";
 import type { MetadataRoute } from "next";
 import { ConvexHttpClient } from "convex/browser";
 import { api } from "convex/_generated/api";
 import { subjects } from "./data/topics";
 import { BLOGS } from "./data/blogs";
 
-const base = process.env.NEXT_PUBLIC_BASE_URL ?? "https://10mincuet.com";
+const base = BASE_URL;
 const now = new Date();
 
 // ─── Audience landing page slugs ─────────────────────────────────────────────

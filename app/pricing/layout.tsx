@@ -1,3 +1,4 @@
+import { BASE_URL } from "@/app/lib/site";
 import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Pricing — 10minCUET | CUET Prep Plans from ₹0",
@@ -5,10 +6,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: "10minCUET Pricing — Start Free",
     description: "Free diagnostic. Bundle ₹349/month. Annual ₹2,499. No auto-charge.",
-    url: "https://10mincuet.com/pricing",
+    url: `${BASE_URL}/pricing`,
     type: "website",
   },
-  alternates: { canonical: "https://10mincuet.com/pricing" },
+  alternates: { canonical: `${BASE_URL}/pricing` },
 };
 export default function PricingLayout({ children }: { children: React.ReactNode }) {
   return <>{children}</>;

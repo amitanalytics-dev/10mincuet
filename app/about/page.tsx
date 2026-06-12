@@ -1,3 +1,4 @@
+import { BASE_URL } from "@/app/lib/site";
 import type { Metadata } from "next";
 import Link from "next/link";
 
@@ -6,10 +7,10 @@ export function generateMetadata(): Metadata {
     title: "About 10minCUET — Meet Riishabh Mehrotra",
     description:
       "Meet Riishabh Mehrotra, ISB graduate and founder of 10minCUET. Built after analysing 10 years of CUET UG papers. Adaptive learning powered by Bloom's Taxonomy.",
-    alternates: { canonical: "https://10mincuet.com/about" },
+    alternates: { canonical: `${BASE_URL}/about` },
     openGraph: {
       type: "website",
-      url: "https://10mincuet.com/about",
+      url: `${BASE_URL}/about`,
       title: "About 10minCUET — Meet Riishabh Mehrotra",
       description:
         "Meet Riishabh Mehrotra, ISB graduate and founder of 10minCUET. Built after analysing 10 years of CUET UG papers. Adaptive learning powered by Bloom's Taxonomy.",
@@ -22,11 +23,11 @@ const organizationJsonLd = {
   "@graph": [
     {
       "@type": "Organization",
-      "@id": "https://10mincuet.com/#organization",
+      "@id": `${BASE_URL}/#organization`,
       name: "EAZEALLIANCE SERVICES PRIVATE LIMITED",
       alternateName: "10minCUET",
-      url: "https://10mincuet.com",
-      logo: "https://10mincuet.com/favicon.ico",
+      url: BASE_URL,
+      logo: `${BASE_URL}/favicon.ico`,
       foundingDate: "2024",
       description:
         "CUET UG preparation platform powered by Bloom's Taxonomy. 432 original questions, 10-minute adaptive sessions, sub-concept tracking.",
@@ -39,14 +40,14 @@ const organizationJsonLd = {
     },
     {
       "@type": "Person",
-      "@id": "https://10mincuet.com/#founder",
+      "@id": `${BASE_URL}/#founder`,
       name: "Riishabh Mehrotra",
       jobTitle: "Founder & CEO",
       worksFor: {
         "@type": "Organization",
         name: "EAZEALLIANCE SERVICES PRIVATE LIMITED",
       },
-      url: "https://10mincuet.com",
+      url: BASE_URL,
       alumniOf: {
         "@type": "CollegeOrUniversity",
         name: "Indian School of Business",

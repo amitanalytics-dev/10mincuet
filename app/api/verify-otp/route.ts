@@ -5,7 +5,7 @@ import { getConvexClient } from "../../lib/convexClient";
 import { signToken } from "../../lib/auth.server";
 import { api } from "convex/_generated/api";
 
-const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL ?? "https://10mincuet.com";
+import { BASE_URL } from "@/app/lib/site";
 
 export async function POST(req: Request) {
   const convex = getConvexClient();

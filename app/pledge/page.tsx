@@ -1,3 +1,4 @@
+import { BASE_URL } from "@/app/lib/site";
 import type { Metadata } from "next";
 import Link from "next/link";
 
@@ -29,7 +30,7 @@ export default function PledgePage() {
         <div className="space-y-3">
           <a
             href={`https://wa.me/?text=${encodeURIComponent(
-              "🎯 I just committed to cracking CUET 2026 with 10 minutes daily practice on 10minCUET! Consistent beats intense. Join me: https://10mincuet.com/pledge"
+              "🎯 I just committed to cracking CUET 2026 with 10 minutes daily practice on 10minCUET! Consistent beats intense. Join me: ${BASE_URL}/pledge"
             )}`}
             target="_blank"
             rel="noopener noreferrer"

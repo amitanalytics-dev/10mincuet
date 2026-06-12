@@ -1,4 +1,5 @@
 "use client";
+import { BASE_URL } from "@/app/lib/site";
 import { useState } from "react";
 
 interface ShareCardProps {
@@ -21,14 +22,14 @@ export function ShareCard({ type, data }: ShareCardProps) {
   const [copied, setCopied] = useState(false);
 
   const shareText = {
-    rank: `🎯 I scored ${data.score}/360 (${data.percentile}th percentile) on 10minCUET mock test! 10 minutes a day is all it takes. Can you beat me? https://10mincuet.com`,
-    streak: `🔥 Day ${data.streakDays} streak on 10minCUET! Consistent beats intense. Join me: https://10mincuet.com`,
-    bloom: `📈 Just leveled up in ${data.topic}! Went from Bloom Level ${data.fromLevel} to ${data.toLevel} on 10minCUET. Your weak spots don't lie. https://10mincuet.com`,
+    rank: `🎯 I scored ${data.score}/360 (${data.percentile}th percentile) on 10minCUET mock test! 10 minutes a day is all it takes. Can you beat me? ${BASE_URL}`,
+    streak: `🔥 Day ${data.streakDays} streak on 10minCUET! Consistent beats intense. Join me: ${BASE_URL}`,
+    bloom: `📈 Just leveled up in ${data.topic}! Went from Bloom Level ${data.fromLevel} to ${data.toLevel} on 10minCUET. Your weak spots don't lie. ${BASE_URL}`,
   }[type];
 
   async function handleShare() {
     if (typeof navigator !== "undefined" && navigator.share) {
-      await navigator.share({ text: shareText, url: "https://10mincuet.com" });
+      await navigator.share({ text: shareText, url: BASE_URL });
     } else {
       await navigator.clipboard.writeText(shareText);
       setCopied(true);

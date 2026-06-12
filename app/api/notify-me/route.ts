@@ -1,3 +1,4 @@
+import { BASE_URL } from "@/app/lib/site";
 import "server-only";
 import { Resend } from "resend";
 
@@ -30,7 +31,7 @@ export async function POST(req: Request) {
               Average downtime: under 30 minutes. Your prep doesn't stop — write down one formula from your weakest chapter while you wait.
             </p>
             <p style="color:#9ca3af;font-size:12px;margin-top:24px">
-              10minCUET · <a href="https://10mincuet.com" style="color:#f97316">10mincuet.com</a>
+              10minCUET · <a href="${BASE_URL}" style="color:#f97316">10mincuet.com</a>
             </p>
           </div>
         `,

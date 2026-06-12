@@ -1,3 +1,4 @@
+import { BASE_URL } from "@/app/lib/site";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -264,10 +265,10 @@ export async function generateMetadata({
   return {
     title: data.title,
     description: data.description,
-    alternates: { canonical: `https://10mincuet.com/compare/${slug}` },
+    alternates: { canonical: `${BASE_URL}/compare/${slug}` },
     openGraph: {
       type: "website",
-      url: `https://10mincuet.com/compare/${slug}`,
+      url: `${BASE_URL}/compare/${slug}`,
       title: data.title,
       description: data.description,
     },

@@ -1,4 +1,5 @@
 "use client";
+import { BASE_URL } from "@/app/lib/site";
 
 import Link from "next/link";
 import { useState, useEffect } from "react";
@@ -100,22 +101,22 @@ export default function LandingPage() {
             "@graph": [
               {
                 "@type": "WebSite",
-                "@id": "https://10mincuet.com/#website",
-                "url": "https://10mincuet.com",
+                "@id": `${BASE_URL}/#website`,
+                "url": BASE_URL,
                 "name": "10minCUET",
                 "description": "CUET UG preparation in 10 minutes a day. Adaptive Bloom-level quizzes, topic intelligence, and daily study plans.",
                 "publisher": {
                   "@type": "Organization",
                   "name": "EAZEALLIANCE SERVICES PRIVATE LIMITED",
-                  "url": "https://10mincuet.com"
+                  "url": BASE_URL
                 }
               },
               {
                 "@type": "Organization",
-                "@id": "https://10mincuet.com/#organization",
+                "@id": `${BASE_URL}/#organization`,
                 "name": "10minCUET",
-                "url": "https://10mincuet.com",
-                "logo": "https://10mincuet.com/favicon.ico",
+                "url": BASE_URL,
+                "logo": `${BASE_URL}/favicon.ico`,
                 "contactPoint": {
                   "@type": "ContactPoint",
                   "email": "support@10mincuet.com",

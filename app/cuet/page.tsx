@@ -1,3 +1,4 @@
+import { BASE_URL } from "@/app/lib/site";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { subjects } from "../data/topics";
@@ -9,12 +10,12 @@ export const metadata: Metadata = {
   title: "CUET UG Topics — Complete Sub-concept Guide with NCERT Reference",
   description:
     "Master all 24 CUET UG topics across Physics, Chemistry and Maths. Bloom-level questions, NCERT page references, and sub-concept breakdown for every topic.",
-  alternates: { canonical: "https://10mincuet.com/cuet" },
+  alternates: { canonical: `${BASE_URL}/cuet` },
   openGraph: {
     title: "CUET UG Topics — Complete Guide",
     description:
       "Every high-value topic. Sub-concept breakdown. NCERT reference. Bloom-level questions.",
-    url: "https://10mincuet.com/cuet",
+    url: `${BASE_URL}/cuet`,
     type: "website",
   },
   keywords: [
@@ -52,11 +53,11 @@ export default function CUETHubPage() {
             name: "CUET UG Topics — Complete Guide",
             description:
               "All 24 high-value CUET UG topics with sub-concept breakdown, NCERT reference, and Bloom-level practice.",
-            url: "https://10mincuet.com/cuet",
+            url: `${BASE_URL}/cuet`,
             publisher: {
               "@type": "Organization",
               name: "10minCUET",
-              url: "https://10mincuet.com",
+              url: BASE_URL,
             },
           }),
         }}

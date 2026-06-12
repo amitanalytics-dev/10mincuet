@@ -1,3 +1,4 @@
+import { BASE_URL } from "@/app/lib/site";
 import type { Metadata } from "next";
 import Link from "next/link";
 
@@ -5,10 +6,10 @@ export const metadata: Metadata = {
   title: "10minCUET vs BYJU'S — CUET Prep Comparison 2026",
   description:
     "10minCUET vs BYJU'S for CUET UG 2025. Compare price (₹2,499/yr vs ₹20,000–40,000/yr), format (10 min adaptive quiz vs app-based video lectures), Bloom tracking, and learning outcomes. Honest breakdown.",
-  alternates: { canonical: "https://10mincuet.com/compare/byjus" },
+  alternates: { canonical: `${BASE_URL}/compare/byjus` },
   openGraph: {
     type: "website",
-    url: "https://10mincuet.com/compare/byjus",
+    url: `${BASE_URL}/compare/byjus`,
     title: "10minCUET vs BYJU'S — CUET Prep Comparison 2026",
     description:
       "Price, format, Bloom tracking, and learning outcomes compared. 10minCUET vs BYJU'S for CUET UG 2025 — honest breakdown.",

@@ -1,3 +1,4 @@
+import { BASE_URL } from "@/app/lib/site";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -5,11 +6,11 @@ export const metadata: Metadata = {
   description:
     "Custom 30-day CUET UG study plan from today to your exam. Covers Physics, Chemistry, Math based on your weak sub-concepts. Free.",
   alternates: {
-    canonical: "https://10mincuet.com/sprint",
+    canonical: `${BASE_URL}/sprint`,
   },
   openGraph: {
     type: "website",
-    url: "https://10mincuet.com/sprint",
+    url: `${BASE_URL}/sprint`,
     title: "30-Day CUET UG Sprint Plan — Personalised Daily Schedule",
     description:
       "Custom 30-day CUET UG study plan from today to your exam. Covers Physics, Chemistry, Math based on your weak sub-concepts. Free.",

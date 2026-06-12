@@ -1,15 +1,16 @@
+import { BASE_URL } from "@/app/lib/site";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "CUET Foundation — Class 6 to 10 NCERT Prep",
   description:
     "Build your CUET UG base early. Free Foundation track for Classes 6–10: NCERT Science, Maths, Social Science and English, each chapter mapped to the CUET topic it feeds into.",
-  alternates: { canonical: "https://10mincuet.com/foundation" },
+  alternates: { canonical: `${BASE_URL}/foundation` },
   openGraph: {
     title: "CUET Foundation — Class 6 to 10 NCERT Prep — 10minCUET",
     description:
       "Start CUET prep from Class 6. NCERT chapters for Classes 6–10 mapped to the CUET UG topics they feed into. Completely free.",
-    url: "https://10mincuet.com/foundation",
+    url: `${BASE_URL}/foundation`,
     type: "website",
   },
   keywords: [

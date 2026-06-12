@@ -1,3 +1,4 @@
+import { BASE_URL } from "@/app/lib/site";
 import Link from "next/link";
 import { ConvexHttpClient } from "convex/browser";
 import { api } from "convex/_generated/api";
@@ -11,11 +12,11 @@ export const metadata: Metadata = {
   title: "CUET Prep Blog — Strategy, Topic Guides & Exam Analysis",
   description:
     "In-depth CUET UG preparation articles: section strategy, domain subject guides, General Test prep, NTA pattern breakdowns and university cutoff analysis.",
-  alternates: { canonical: "https://10mincuet.com/blog" },
+  alternates: { canonical: `${BASE_URL}/blog` },
   openGraph: {
     title: "CUET Prep Blog — Strategy, Topic Guides & Exam Analysis",
     description: "CUET UG strategy, domain subject guides, General Test prep and exam analysis.",
-    url: "https://10mincuet.com/blog",
+    url: `${BASE_URL}/blog`,
     type: "website",
   },
 };

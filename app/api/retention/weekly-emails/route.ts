@@ -1,4 +1,5 @@
 // @ts-nocheck
+import { BASE_URL } from "@/app/lib/site";
 // Run 'npx convex dev' first to generate convex/_generated/
 import "server-only";
 import { Resend } from "resend";
@@ -30,7 +31,7 @@ function activeHtml(name: string, rankText: string, readinessScore: number): str
   <p>Hey ${name}! You're on fire this week.</p>
   <p style="font-size:24px;font-weight:900;color:#111">${rankText}</p>
   <p>Your readiness score: <strong>${readinessScore}%</strong></p>
-  <a href="https://10mincuet.com/topics" style="background:#f97316;color:white;padding:12px 24px;border-radius:8px;text-decoration:none;font-weight:bold">Continue Studying</a>
+  <a href="${BASE_URL}/topics" style="background:#f97316;color:white;padding:12px 24px;border-radius:8px;text-decoration:none;font-weight:bold">Continue Studying</a>
 </div>`;
 }
 
@@ -40,7 +41,7 @@ function dormantHtml(name: string): string {
   <p>Hey ${name}, we noticed you haven't studied in a few days.</p>
   <p>A 10-minute session today keeps your CUET prep streak alive.</p>
   <p style="font-size:32px">📚</p>
-  <a href="https://10mincuet.com/topics" style="background:#f97316;color:white;padding:12px 24px;border-radius:8px;text-decoration:none;font-weight:bold">Resume Studying</a>
+  <a href="${BASE_URL}/topics" style="background:#f97316;color:white;padding:12px 24px;border-radius:8px;text-decoration:none;font-weight:bold">Resume Studying</a>
 </div>`;
 }
 
@@ -50,7 +51,7 @@ function atRiskHtml(name: string): string {
   <p>Hey ${name}, we miss you! ❤️</p>
   <p>It's been a week. CUET waits for no one.</p>
   <p>Come back today — we've added 1 free premium day to your account.</p>
-  <a href="https://10mincuet.com/topics" style="background:#f97316;color:white;padding:12px 24px;border-radius:8px;text-decoration:none;font-weight:bold">Claim Your Free Day</a>
+  <a href="${BASE_URL}/topics" style="background:#f97316;color:white;padding:12px 24px;border-radius:8px;text-decoration:none;font-weight:bold">Claim Your Free Day</a>
   <p style="color:#888;font-size:12px">Unsubscribe: email support@10mincuet.com</p>
 </div>`;
 }

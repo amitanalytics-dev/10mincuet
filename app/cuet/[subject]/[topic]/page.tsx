@@ -1,3 +1,4 @@
+import { BASE_URL } from "@/app/lib/site";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -60,12 +61,12 @@ export async function generateMetadata({
     title: `${topic.name} for CUET UG — Complete Guide, Questions & NCERT Reference`,
     description: `Master ${topic.name} for CUET UG. ${topic.avgQuestionsPerPaper} questions per paper, ${topic.paperCoverage}% paper coverage. Includes Bloom-level questions, sub-concepts, and NCERT chapter reference.`,
     alternates: {
-      canonical: `https://10mincuet.com/cuet/${subject}/${topicSlug}`,
+      canonical: `${BASE_URL}/cuet/${subject}/${topicSlug}`,
     },
     openGraph: {
       title: `${topic.name} — CUET UG Guide`,
       description: topic.whyThisTopic,
-      url: `https://10mincuet.com/cuet/${subject}/${topicSlug}`,
+      url: `${BASE_URL}/cuet/${subject}/${topicSlug}`,
       type: "article",
     },
     keywords: [
@@ -116,11 +117,11 @@ export default async function TopicSEOPage({
             publisher: {
               "@type": "Organization",
               name: "10minCUET",
-              url: "https://10mincuet.com",
+              url: BASE_URL,
             },
             mainEntityOfPage: {
               "@type": "WebPage",
-              "@id": `https://10mincuet.com/cuet/${subject}/${topicSlug}`,
+              "@id": `${BASE_URL}/cuet/${subject}/${topicSlug}`,
             },
           }),
         }}
@@ -134,13 +135,13 @@ export default async function TopicSEOPage({
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             itemListElement: [
-              { "@type": "ListItem", position: 1, name: "Home", item: "https://10mincuet.com" },
-              { "@type": "ListItem", position: 2, name: "CUET Topics", item: "https://10mincuet.com/cuet" },
+              { "@type": "ListItem", position: 1, name: "Home", item: BASE_URL },
+              { "@type": "ListItem", position: 2, name: "CUET Topics", item: `${BASE_URL}/cuet` },
               {
                 "@type": "ListItem",
                 position: 3,
                 name: topic.name,
-                item: `https://10mincuet.com/cuet/${subject}/${topicSlug}`,
+                item: `${BASE_URL}/cuet/${subject}/${topicSlug}`,
               },
             ],
           }),

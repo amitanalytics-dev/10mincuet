@@ -1,3 +1,4 @@
+import { BASE_URL } from "@/app/lib/site";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { ConvexHttpClient } from "convex/browser";
@@ -76,11 +77,11 @@ export async function generateMetadata({
   return {
     title: post.title,
     description: post.description,
-    alternates: { canonical: `https://10mincuet.com/blog/${post.slug}` },
+    alternates: { canonical: `${BASE_URL}/blog/${post.slug}` },
     openGraph: {
       title: post.title,
       description: post.description,
-      url: `https://10mincuet.com/blog/${post.slug}`,
+      url: `${BASE_URL}/blog/${post.slug}`,
       type: "article",
       publishedTime: post.publishedAt,
     },
@@ -117,20 +118,20 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
     author: {
       "@type": "Person",
       name: "Amit Tyagi",
-      url: "https://10mincuet.com/about",
+      url: `${BASE_URL}/about`,
     },
-    publisher: { "@type": "Organization", name: "10minCUET", url: "https://10mincuet.com" },
+    publisher: { "@type": "Organization", name: "10minCUET", url: BASE_URL },
     datePublished: post.publishedAt,
-    url: `https://10mincuet.com/blog/${post.slug}`,
+    url: `${BASE_URL}/blog/${post.slug}`,
   };
 
   const breadcrumbJsonLd = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://10mincuet.com" },
-      { "@type": "ListItem", position: 2, name: "Blog", item: "https://10mincuet.com/blog" },
-      { "@type": "ListItem", position: 3, name: post.title, item: `https://10mincuet.com/blog/${post.slug}` },
+      { "@type": "ListItem", position: 1, name: "Home", item: BASE_URL },
+      { "@type": "ListItem", position: 2, name: "Blog", item: `${BASE_URL}/blog` },
+      { "@type": "ListItem", position: 3, name: post.title, item: `${BASE_URL}/blog/${post.slug}` },
     ],
   };
 

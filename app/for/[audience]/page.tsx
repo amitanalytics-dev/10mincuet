@@ -1,3 +1,4 @@
+import { BASE_URL } from "@/app/lib/site";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -263,10 +264,10 @@ export async function generateMetadata({
   return {
     title: data.title,
     description: data.description,
-    alternates: { canonical: `https://10mincuet.com/for/${data.slug}` },
+    alternates: { canonical: `${BASE_URL}/for/${data.slug}` },
     openGraph: {
       type: "website",
-      url: `https://10mincuet.com/for/${data.slug}`,
+      url: `${BASE_URL}/for/${data.slug}`,
       title: data.title,
       description: data.description,
     },
@@ -285,13 +286,13 @@ export default async function AudiencePage({
   const webPageJsonLd = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "@id": `https://10mincuet.com/for/${data.slug}`,
+    "@id": `${BASE_URL}/for/${data.slug}`,
     name: data.title,
     description: data.description,
-    url: `https://10mincuet.com/for/${data.slug}`,
+    url: `${BASE_URL}/for/${data.slug}`,
     inLanguage: "en-IN",
     isPartOf: {
-      "@id": "https://10mincuet.com/#website",
+      "@id": `${BASE_URL}/#website`,
     },
   };
 

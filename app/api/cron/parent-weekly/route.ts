@@ -1,4 +1,5 @@
 // @ts-nocheck
+import { BASE_URL } from "@/app/lib/site";
 import "server-only";
 import { getConvexClient } from "../../../lib/convexClient";
 import { api } from "convex/_generated/api";
@@ -144,8 +145,8 @@ function buildParentEmailHtml(parentName: string, kids: any[]): string {
       </div>
       ${kidSections}
       <div style="text-align:center;padding:20px;font-size:12px;color:#9ca3af">
-        <a href="https://10mincuet.com/parent-dashboard" style="color:#f97316;font-weight:700">View Full Dashboard →</a><br><br>
-        10minCUET · <a href="https://10mincuet.com/unsubscribe" style="color:#9ca3af">Unsubscribe</a>
+        <a href="${BASE_URL}/parent-dashboard" style="color:#f97316;font-weight:700">View Full Dashboard →</a><br><br>
+        10minCUET · <a href="${BASE_URL}/unsubscribe" style="color:#9ca3af">Unsubscribe</a>
       </div>
     </div>
   </body></html>`;
