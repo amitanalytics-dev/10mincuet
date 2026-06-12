@@ -45,21 +45,12 @@ export const metadata: Metadata = {
     title: "10minCUET — CUET Prep in 10 Minutes a Day",
     description:
       "In India you get food, cabs, groceries in 10 minutes. Now CUET prep too. Pick your 5 subjects, Bloom-level tracking, central university predictor.",
-    images: [
-      {
-        url: "/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "10minCUET — CUET Prep in 10 Minutes a Day",
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "10minCUET — CUET Prep in 10 Minutes a Day",
     description:
       "Master CUET UG in 10 minutes a day. Pick your 5 of 27 domain subjects. Bloom-level tracking.",
-    images: ["/og-image.png"],
   },
   robots: {
     index: true,
