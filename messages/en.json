@@ -1,0 +1,22 @@
+{
+  "nav": {
+    "topics": "Topics",
+    "mock": "Mock Test",
+    "blog": "Blog",
+    "toppers": "IIT Toppers",
+    "pricing": "Pricing",
+    "signin": "Sign In",
+    "start": "Start Free"
+  },
+  "hero": {
+    "headline": "Complete JEE prep in 10 minutes a day",
+    "subheadline": "Pick a topic. Study for 10 minutes. Know your exact weak spot.",
+    "cta": "Start Free →",
+    "social": "1,278+ students already inside"
+  },
+  "lang": {
+    "switch": "Switch to {lang}?",
+    "confirm": "Yes, switch",
+    "dismiss": "No thanks"
+  }
+}

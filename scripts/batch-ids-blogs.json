@@ -1,0 +1,3622 @@
+[
+  {
+    "batchId": "msgbatch_01PdyrS8XmcF27DXQS5ezFfn",
+    "date": "2026-05-27",
+    "label": "300-blogs-bulk",
+    "status": "pending",
+    "submittedAt": 1779911946369,
+    "topicCount": 300,
+    "topics": [
+      {
+        "customId": "blog-300-physics-kinematics-f0",
+        "slug": "jee-physics-kinematics-f0",
+        "title": "Complete guide to Kinematics for JEE Main 2026",
+        "topic": "Kinematics",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 1",
+        "ncertChapter": "Kinematics",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-kinematics-f1",
+        "slug": "jee-physics-kinematics-f1",
+        "title": "How IIT toppers crack Kinematics in 10 minutes",
+        "topic": "Kinematics",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 1",
+        "ncertChapter": "Kinematics",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-kinematics-f2",
+        "slug": "jee-physics-kinematics-f2",
+        "title": "JEE Main Physics — Kinematics: what changed and what to do",
+        "topic": "Kinematics",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 1",
+        "ncertChapter": "Kinematics",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-kinematics-f3",
+        "slug": "jee-physics-kinematics-f3",
+        "title": "NCERT Physics Kinematics — 5 things JEE always tests",
+        "topic": "Kinematics",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 1",
+        "ncertChapter": "Kinematics",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-kinematics-f4",
+        "slug": "jee-physics-kinematics-f4",
+        "title": "Kinematics formulas, tricks and shortcuts for JEE Main 2026",
+        "topic": "Kinematics",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 1",
+        "ncertChapter": "Kinematics",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-laws-of-motion-f0",
+        "slug": "jee-physics-laws-of-motion-f0",
+        "title": "Complete guide to Laws of Motion for JEE Main 2026",
+        "topic": "Laws of Motion",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 1",
+        "ncertChapter": "Laws of Motion",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-laws-of-motion-f1",
+        "slug": "jee-physics-laws-of-motion-f1",
+        "title": "How IIT toppers crack Laws of Motion in 10 minutes",
+        "topic": "Laws of Motion",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 1",
+        "ncertChapter": "Laws of Motion",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-laws-of-motion-f2",
+        "slug": "jee-physics-laws-of-motion-f2",
+        "title": "JEE Main Physics — Laws of Motion: what changed and what to do",
+        "topic": "Laws of Motion",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 1",
+        "ncertChapter": "Laws of Motion",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-laws-of-motion-f3",
+        "slug": "jee-physics-laws-of-motion-f3",
+        "title": "NCERT Physics Laws of Motion — 5 things JEE always tests",
+        "topic": "Laws of Motion",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 1",
+        "ncertChapter": "Laws of Motion",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-laws-of-motion-f4",
+        "slug": "jee-physics-laws-of-motion-f4",
+        "title": "Laws of Motion formulas, tricks and shortcuts for JEE Main 2026",
+        "topic": "Laws of Motion",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 1",
+        "ncertChapter": "Laws of Motion",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-work-energy-power-f0",
+        "slug": "jee-physics-work-energy-power-f0",
+        "title": "Complete guide to Work Energy Power for JEE Main 2026",
+        "topic": "Work Energy Power",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 1",
+        "ncertChapter": "Work Energy Power",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-work-energy-power-f1",
+        "slug": "jee-physics-work-energy-power-f1",
+        "title": "How IIT toppers crack Work Energy Power in 10 minutes",
+        "topic": "Work Energy Power",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 1",
+        "ncertChapter": "Work Energy Power",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-work-energy-power-f2",
+        "slug": "jee-physics-work-energy-power-f2",
+        "title": "JEE Main Physics — Work Energy Power: what changed and what to do",
+        "topic": "Work Energy Power",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 1",
+        "ncertChapter": "Work Energy Power",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-work-energy-power-f3",
+        "slug": "jee-physics-work-energy-power-f3",
+        "title": "NCERT Physics Work Energy Power — 5 things JEE always tests",
+        "topic": "Work Energy Power",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 1",
+        "ncertChapter": "Work Energy Power",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-work-energy-power-f4",
+        "slug": "jee-physics-work-energy-power-f4",
+        "title": "Work Energy Power formulas, tricks and shortcuts for JEE Main 2026",
+        "topic": "Work Energy Power",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 1",
+        "ncertChapter": "Work Energy Power",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-rotational-motion-f0",
+        "slug": "jee-physics-rotational-motion-f0",
+        "title": "Complete guide to Rotational Motion for JEE Main 2026",
+        "topic": "Rotational Motion",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 1",
+        "ncertChapter": "Rotational Motion",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-rotational-motion-f1",
+        "slug": "jee-physics-rotational-motion-f1",
+        "title": "How IIT toppers crack Rotational Motion in 10 minutes",
+        "topic": "Rotational Motion",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 1",
+        "ncertChapter": "Rotational Motion",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-rotational-motion-f2",
+        "slug": "jee-physics-rotational-motion-f2",
+        "title": "JEE Main Physics — Rotational Motion: what changed and what to do",
+        "topic": "Rotational Motion",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 1",
+        "ncertChapter": "Rotational Motion",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-rotational-motion-f3",
+        "slug": "jee-physics-rotational-motion-f3",
+        "title": "NCERT Physics Rotational Motion — 5 things JEE always tests",
+        "topic": "Rotational Motion",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 1",
+        "ncertChapter": "Rotational Motion",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-rotational-motion-f4",
+        "slug": "jee-physics-rotational-motion-f4",
+        "title": "Rotational Motion formulas, tricks and shortcuts for JEE Main 2026",
+        "topic": "Rotational Motion",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 1",
+        "ncertChapter": "Rotational Motion",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-gravitation-f0",
+        "slug": "jee-physics-gravitation-f0",
+        "title": "Complete guide to Gravitation for JEE Main 2026",
+        "topic": "Gravitation",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 1",
+        "ncertChapter": "Gravitation",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-gravitation-f1",
+        "slug": "jee-physics-gravitation-f1",
+        "title": "How IIT toppers crack Gravitation in 10 minutes",
+        "topic": "Gravitation",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 1",
+        "ncertChapter": "Gravitation",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-gravitation-f2",
+        "slug": "jee-physics-gravitation-f2",
+        "title": "JEE Main Physics — Gravitation: what changed and what to do",
+        "topic": "Gravitation",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 1",
+        "ncertChapter": "Gravitation",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-gravitation-f3",
+        "slug": "jee-physics-gravitation-f3",
+        "title": "NCERT Physics Gravitation — 5 things JEE always tests",
+        "topic": "Gravitation",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 1",
+        "ncertChapter": "Gravitation",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-gravitation-f4",
+        "slug": "jee-physics-gravitation-f4",
+        "title": "Gravitation formulas, tricks and shortcuts for JEE Main 2026",
+        "topic": "Gravitation",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 1",
+        "ncertChapter": "Gravitation",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-simple-harmonic-motion-f0",
+        "slug": "jee-physics-simple-harmonic-motion-f0",
+        "title": "Complete guide to Simple Harmonic Motion for JEE Main 2026",
+        "topic": "Simple Harmonic Motion",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 2",
+        "ncertChapter": "Simple Harmonic Motion",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-simple-harmonic-motion-f1",
+        "slug": "jee-physics-simple-harmonic-motion-f1",
+        "title": "How IIT toppers crack Simple Harmonic Motion in 10 minutes",
+        "topic": "Simple Harmonic Motion",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 2",
+        "ncertChapter": "Simple Harmonic Motion",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-simple-harmonic-motion-f2",
+        "slug": "jee-physics-simple-harmonic-motion-f2",
+        "title": "JEE Main Physics — Simple Harmonic Motion: what changed and what to do",
+        "topic": "Simple Harmonic Motion",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 2",
+        "ncertChapter": "Simple Harmonic Motion",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-simple-harmonic-motion-f3",
+        "slug": "jee-physics-simple-harmonic-motion-f3",
+        "title": "NCERT Physics Simple Harmonic Motion — 5 things JEE always tests",
+        "topic": "Simple Harmonic Motion",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 2",
+        "ncertChapter": "Simple Harmonic Motion",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-simple-harmonic-motion-f4",
+        "slug": "jee-physics-simple-harmonic-motion-f4",
+        "title": "Simple Harmonic Motion formulas, tricks and shortcuts for JEE Main 2026",
+        "topic": "Simple Harmonic Motion",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 2",
+        "ncertChapter": "Simple Harmonic Motion",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-waves-f0",
+        "slug": "jee-physics-waves-f0",
+        "title": "Complete guide to Waves for JEE Main 2026",
+        "topic": "Waves",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 2",
+        "ncertChapter": "Waves",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-waves-f1",
+        "slug": "jee-physics-waves-f1",
+        "title": "How IIT toppers crack Waves in 10 minutes",
+        "topic": "Waves",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 2",
+        "ncertChapter": "Waves",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-waves-f2",
+        "slug": "jee-physics-waves-f2",
+        "title": "JEE Main Physics — Waves: what changed and what to do",
+        "topic": "Waves",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 2",
+        "ncertChapter": "Waves",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-waves-f3",
+        "slug": "jee-physics-waves-f3",
+        "title": "NCERT Physics Waves — 5 things JEE always tests",
+        "topic": "Waves",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 2",
+        "ncertChapter": "Waves",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-waves-f4",
+        "slug": "jee-physics-waves-f4",
+        "title": "Waves formulas, tricks and shortcuts for JEE Main 2026",
+        "topic": "Waves",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 2",
+        "ncertChapter": "Waves",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-thermodynamics-f0",
+        "slug": "jee-physics-thermodynamics-f0",
+        "title": "Complete guide to Thermodynamics for JEE Main 2026",
+        "topic": "Thermodynamics",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 2",
+        "ncertChapter": "Thermodynamics",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-thermodynamics-f1",
+        "slug": "jee-physics-thermodynamics-f1",
+        "title": "How IIT toppers crack Thermodynamics in 10 minutes",
+        "topic": "Thermodynamics",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 2",
+        "ncertChapter": "Thermodynamics",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-thermodynamics-f2",
+        "slug": "jee-physics-thermodynamics-f2",
+        "title": "JEE Main Physics — Thermodynamics: what changed and what to do",
+        "topic": "Thermodynamics",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 2",
+        "ncertChapter": "Thermodynamics",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-thermodynamics-f3",
+        "slug": "jee-physics-thermodynamics-f3",
+        "title": "NCERT Physics Thermodynamics — 5 things JEE always tests",
+        "topic": "Thermodynamics",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 2",
+        "ncertChapter": "Thermodynamics",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-thermodynamics-f4",
+        "slug": "jee-physics-thermodynamics-f4",
+        "title": "Thermodynamics formulas, tricks and shortcuts for JEE Main 2026",
+        "topic": "Thermodynamics",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 2",
+        "ncertChapter": "Thermodynamics",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-electrostatics-f0",
+        "slug": "jee-physics-electrostatics-f0",
+        "title": "Complete guide to Electrostatics for JEE Main 2026",
+        "topic": "Electrostatics",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 1",
+        "ncertChapter": "Electrostatics",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-electrostatics-f1",
+        "slug": "jee-physics-electrostatics-f1",
+        "title": "How IIT toppers crack Electrostatics in 10 minutes",
+        "topic": "Electrostatics",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 1",
+        "ncertChapter": "Electrostatics",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-electrostatics-f2",
+        "slug": "jee-physics-electrostatics-f2",
+        "title": "JEE Main Physics — Electrostatics: what changed and what to do",
+        "topic": "Electrostatics",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 1",
+        "ncertChapter": "Electrostatics",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-electrostatics-f3",
+        "slug": "jee-physics-electrostatics-f3",
+        "title": "NCERT Physics Electrostatics — 5 things JEE always tests",
+        "topic": "Electrostatics",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 1",
+        "ncertChapter": "Electrostatics",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-electrostatics-f4",
+        "slug": "jee-physics-electrostatics-f4",
+        "title": "Electrostatics formulas, tricks and shortcuts for JEE Main 2026",
+        "topic": "Electrostatics",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 1",
+        "ncertChapter": "Electrostatics",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-current-electricity-f0",
+        "slug": "jee-physics-current-electricity-f0",
+        "title": "Complete guide to Current Electricity for JEE Main 2026",
+        "topic": "Current Electricity",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 1",
+        "ncertChapter": "Current Electricity",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-current-electricity-f1",
+        "slug": "jee-physics-current-electricity-f1",
+        "title": "How IIT toppers crack Current Electricity in 10 minutes",
+        "topic": "Current Electricity",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 1",
+        "ncertChapter": "Current Electricity",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-current-electricity-f2",
+        "slug": "jee-physics-current-electricity-f2",
+        "title": "JEE Main Physics — Current Electricity: what changed and what to do",
+        "topic": "Current Electricity",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 1",
+        "ncertChapter": "Current Electricity",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-current-electricity-f3",
+        "slug": "jee-physics-current-electricity-f3",
+        "title": "NCERT Physics Current Electricity — 5 things JEE always tests",
+        "topic": "Current Electricity",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 1",
+        "ncertChapter": "Current Electricity",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-current-electricity-f4",
+        "slug": "jee-physics-current-electricity-f4",
+        "title": "Current Electricity formulas, tricks and shortcuts for JEE Main 2026",
+        "topic": "Current Electricity",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 1",
+        "ncertChapter": "Current Electricity",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-magnetic-effects-of-current-f0",
+        "slug": "jee-physics-magnetic-effects-of-current-f0",
+        "title": "Complete guide to Magnetic Effects of Current for JEE Main 2026",
+        "topic": "Magnetic Effects of Current",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 1",
+        "ncertChapter": "Magnetic Effects of Current",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-magnetic-effects-of-current-f1",
+        "slug": "jee-physics-magnetic-effects-of-current-f1",
+        "title": "How IIT toppers crack Magnetic Effects of Current in 10 minutes",
+        "topic": "Magnetic Effects of Current",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 1",
+        "ncertChapter": "Magnetic Effects of Current",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-magnetic-effects-of-current-f2",
+        "slug": "jee-physics-magnetic-effects-of-current-f2",
+        "title": "JEE Main Physics — Magnetic Effects of Current: what changed and what to do",
+        "topic": "Magnetic Effects of Current",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 1",
+        "ncertChapter": "Magnetic Effects of Current",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-magnetic-effects-of-current-f3",
+        "slug": "jee-physics-magnetic-effects-of-current-f3",
+        "title": "NCERT Physics Magnetic Effects of Current — 5 things JEE always tests",
+        "topic": "Magnetic Effects of Current",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 1",
+        "ncertChapter": "Magnetic Effects of Current",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-magnetic-effects-of-current-f4",
+        "slug": "jee-physics-magnetic-effects-of-current-f4",
+        "title": "Magnetic Effects of Current formulas, tricks and shortcuts for JEE Main 2026",
+        "topic": "Magnetic Effects of Current",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 1",
+        "ncertChapter": "Magnetic Effects of Current",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-electromagnetic-induction-f0",
+        "slug": "jee-physics-electromagnetic-induction-f0",
+        "title": "Complete guide to Electromagnetic Induction for JEE Main 2026",
+        "topic": "Electromagnetic Induction",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 1",
+        "ncertChapter": "Electromagnetic Induction",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-electromagnetic-induction-f1",
+        "slug": "jee-physics-electromagnetic-induction-f1",
+        "title": "How IIT toppers crack Electromagnetic Induction in 10 minutes",
+        "topic": "Electromagnetic Induction",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 1",
+        "ncertChapter": "Electromagnetic Induction",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-electromagnetic-induction-f2",
+        "slug": "jee-physics-electromagnetic-induction-f2",
+        "title": "JEE Main Physics — Electromagnetic Induction: what changed and what to do",
+        "topic": "Electromagnetic Induction",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 1",
+        "ncertChapter": "Electromagnetic Induction",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-electromagnetic-induction-f3",
+        "slug": "jee-physics-electromagnetic-induction-f3",
+        "title": "NCERT Physics Electromagnetic Induction — 5 things JEE always tests",
+        "topic": "Electromagnetic Induction",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 1",
+        "ncertChapter": "Electromagnetic Induction",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-electromagnetic-induction-f4",
+        "slug": "jee-physics-electromagnetic-induction-f4",
+        "title": "Electromagnetic Induction formulas, tricks and shortcuts for JEE Main 2026",
+        "topic": "Electromagnetic Induction",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 1",
+        "ncertChapter": "Electromagnetic Induction",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-alternating-current-f0",
+        "slug": "jee-physics-alternating-current-f0",
+        "title": "Complete guide to Alternating Current for JEE Main 2026",
+        "topic": "Alternating Current",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 1",
+        "ncertChapter": "Alternating Current",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-alternating-current-f1",
+        "slug": "jee-physics-alternating-current-f1",
+        "title": "How IIT toppers crack Alternating Current in 10 minutes",
+        "topic": "Alternating Current",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 1",
+        "ncertChapter": "Alternating Current",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-alternating-current-f2",
+        "slug": "jee-physics-alternating-current-f2",
+        "title": "JEE Main Physics — Alternating Current: what changed and what to do",
+        "topic": "Alternating Current",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 1",
+        "ncertChapter": "Alternating Current",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-alternating-current-f3",
+        "slug": "jee-physics-alternating-current-f3",
+        "title": "NCERT Physics Alternating Current — 5 things JEE always tests",
+        "topic": "Alternating Current",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 1",
+        "ncertChapter": "Alternating Current",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-alternating-current-f4",
+        "slug": "jee-physics-alternating-current-f4",
+        "title": "Alternating Current formulas, tricks and shortcuts for JEE Main 2026",
+        "topic": "Alternating Current",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 1",
+        "ncertChapter": "Alternating Current",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-ray-optics-f0",
+        "slug": "jee-physics-ray-optics-f0",
+        "title": "Complete guide to Ray Optics for JEE Main 2026",
+        "topic": "Ray Optics",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 2",
+        "ncertChapter": "Ray Optics",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-ray-optics-f1",
+        "slug": "jee-physics-ray-optics-f1",
+        "title": "How IIT toppers crack Ray Optics in 10 minutes",
+        "topic": "Ray Optics",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 2",
+        "ncertChapter": "Ray Optics",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-ray-optics-f2",
+        "slug": "jee-physics-ray-optics-f2",
+        "title": "JEE Main Physics — Ray Optics: what changed and what to do",
+        "topic": "Ray Optics",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 2",
+        "ncertChapter": "Ray Optics",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-ray-optics-f3",
+        "slug": "jee-physics-ray-optics-f3",
+        "title": "NCERT Physics Ray Optics — 5 things JEE always tests",
+        "topic": "Ray Optics",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 2",
+        "ncertChapter": "Ray Optics",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-ray-optics-f4",
+        "slug": "jee-physics-ray-optics-f4",
+        "title": "Ray Optics formulas, tricks and shortcuts for JEE Main 2026",
+        "topic": "Ray Optics",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 2",
+        "ncertChapter": "Ray Optics",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-wave-optics-f0",
+        "slug": "jee-physics-wave-optics-f0",
+        "title": "Complete guide to Wave Optics for JEE Main 2026",
+        "topic": "Wave Optics",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 2",
+        "ncertChapter": "Wave Optics",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-wave-optics-f1",
+        "slug": "jee-physics-wave-optics-f1",
+        "title": "How IIT toppers crack Wave Optics in 10 minutes",
+        "topic": "Wave Optics",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 2",
+        "ncertChapter": "Wave Optics",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-wave-optics-f2",
+        "slug": "jee-physics-wave-optics-f2",
+        "title": "JEE Main Physics — Wave Optics: what changed and what to do",
+        "topic": "Wave Optics",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 2",
+        "ncertChapter": "Wave Optics",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-wave-optics-f3",
+        "slug": "jee-physics-wave-optics-f3",
+        "title": "NCERT Physics Wave Optics — 5 things JEE always tests",
+        "topic": "Wave Optics",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 2",
+        "ncertChapter": "Wave Optics",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-wave-optics-f4",
+        "slug": "jee-physics-wave-optics-f4",
+        "title": "Wave Optics formulas, tricks and shortcuts for JEE Main 2026",
+        "topic": "Wave Optics",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 2",
+        "ncertChapter": "Wave Optics",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-dual-nature-of-matter-f0",
+        "slug": "jee-physics-dual-nature-of-matter-f0",
+        "title": "Complete guide to Dual Nature of Matter for JEE Main 2026",
+        "topic": "Dual Nature of Matter",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 2",
+        "ncertChapter": "Dual Nature of Matter",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-dual-nature-of-matter-f1",
+        "slug": "jee-physics-dual-nature-of-matter-f1",
+        "title": "How IIT toppers crack Dual Nature of Matter in 10 minutes",
+        "topic": "Dual Nature of Matter",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 2",
+        "ncertChapter": "Dual Nature of Matter",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-dual-nature-of-matter-f2",
+        "slug": "jee-physics-dual-nature-of-matter-f2",
+        "title": "JEE Main Physics — Dual Nature of Matter: what changed and what to do",
+        "topic": "Dual Nature of Matter",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 2",
+        "ncertChapter": "Dual Nature of Matter",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-dual-nature-of-matter-f3",
+        "slug": "jee-physics-dual-nature-of-matter-f3",
+        "title": "NCERT Physics Dual Nature of Matter — 5 things JEE always tests",
+        "topic": "Dual Nature of Matter",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 2",
+        "ncertChapter": "Dual Nature of Matter",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-dual-nature-of-matter-f4",
+        "slug": "jee-physics-dual-nature-of-matter-f4",
+        "title": "Dual Nature of Matter formulas, tricks and shortcuts for JEE Main 2026",
+        "topic": "Dual Nature of Matter",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 2",
+        "ncertChapter": "Dual Nature of Matter",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-atoms-and-nuclei-f0",
+        "slug": "jee-physics-atoms-and-nuclei-f0",
+        "title": "Complete guide to Atoms and Nuclei for JEE Main 2026",
+        "topic": "Atoms and Nuclei",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 2",
+        "ncertChapter": "Atoms and Nuclei",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-atoms-and-nuclei-f1",
+        "slug": "jee-physics-atoms-and-nuclei-f1",
+        "title": "How IIT toppers crack Atoms and Nuclei in 10 minutes",
+        "topic": "Atoms and Nuclei",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 2",
+        "ncertChapter": "Atoms and Nuclei",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-atoms-and-nuclei-f2",
+        "slug": "jee-physics-atoms-and-nuclei-f2",
+        "title": "JEE Main Physics — Atoms and Nuclei: what changed and what to do",
+        "topic": "Atoms and Nuclei",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 2",
+        "ncertChapter": "Atoms and Nuclei",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-atoms-and-nuclei-f3",
+        "slug": "jee-physics-atoms-and-nuclei-f3",
+        "title": "NCERT Physics Atoms and Nuclei — 5 things JEE always tests",
+        "topic": "Atoms and Nuclei",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 2",
+        "ncertChapter": "Atoms and Nuclei",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-atoms-and-nuclei-f4",
+        "slug": "jee-physics-atoms-and-nuclei-f4",
+        "title": "Atoms and Nuclei formulas, tricks and shortcuts for JEE Main 2026",
+        "topic": "Atoms and Nuclei",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 2",
+        "ncertChapter": "Atoms and Nuclei",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-semiconductor-devices-f0",
+        "slug": "jee-physics-semiconductor-devices-f0",
+        "title": "Complete guide to Semiconductor Devices for JEE Main 2026",
+        "topic": "Semiconductor Devices",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 2",
+        "ncertChapter": "Semiconductor Devices",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-semiconductor-devices-f1",
+        "slug": "jee-physics-semiconductor-devices-f1",
+        "title": "How IIT toppers crack Semiconductor Devices in 10 minutes",
+        "topic": "Semiconductor Devices",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 2",
+        "ncertChapter": "Semiconductor Devices",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-semiconductor-devices-f2",
+        "slug": "jee-physics-semiconductor-devices-f2",
+        "title": "JEE Main Physics — Semiconductor Devices: what changed and what to do",
+        "topic": "Semiconductor Devices",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 2",
+        "ncertChapter": "Semiconductor Devices",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-semiconductor-devices-f3",
+        "slug": "jee-physics-semiconductor-devices-f3",
+        "title": "NCERT Physics Semiconductor Devices — 5 things JEE always tests",
+        "topic": "Semiconductor Devices",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 2",
+        "ncertChapter": "Semiconductor Devices",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-semiconductor-devices-f4",
+        "slug": "jee-physics-semiconductor-devices-f4",
+        "title": "Semiconductor Devices formulas, tricks and shortcuts for JEE Main 2026",
+        "topic": "Semiconductor Devices",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 2",
+        "ncertChapter": "Semiconductor Devices",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-communication-systems-f0",
+        "slug": "jee-physics-communication-systems-f0",
+        "title": "Complete guide to Communication Systems for JEE Main 2026",
+        "topic": "Communication Systems",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 2",
+        "ncertChapter": "Communication Systems",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-communication-systems-f1",
+        "slug": "jee-physics-communication-systems-f1",
+        "title": "How IIT toppers crack Communication Systems in 10 minutes",
+        "topic": "Communication Systems",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 2",
+        "ncertChapter": "Communication Systems",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-communication-systems-f2",
+        "slug": "jee-physics-communication-systems-f2",
+        "title": "JEE Main Physics — Communication Systems: what changed and what to do",
+        "topic": "Communication Systems",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 2",
+        "ncertChapter": "Communication Systems",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-communication-systems-f3",
+        "slug": "jee-physics-communication-systems-f3",
+        "title": "NCERT Physics Communication Systems — 5 things JEE always tests",
+        "topic": "Communication Systems",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 2",
+        "ncertChapter": "Communication Systems",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-communication-systems-f4",
+        "slug": "jee-physics-communication-systems-f4",
+        "title": "Communication Systems formulas, tricks and shortcuts for JEE Main 2026",
+        "topic": "Communication Systems",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 2",
+        "ncertChapter": "Communication Systems",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-units-and-measurement-f0",
+        "slug": "jee-physics-units-and-measurement-f0",
+        "title": "Complete guide to Units and Measurement for JEE Main 2026",
+        "topic": "Units and Measurement",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 1",
+        "ncertChapter": "Units and Measurement",
+        "targetClasses": [
+          "11",
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-units-and-measurement-f1",
+        "slug": "jee-physics-units-and-measurement-f1",
+        "title": "How IIT toppers crack Units and Measurement in 10 minutes",
+        "topic": "Units and Measurement",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 1",
+        "ncertChapter": "Units and Measurement",
+        "targetClasses": [
+          "11",
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-units-and-measurement-f2",
+        "slug": "jee-physics-units-and-measurement-f2",
+        "title": "JEE Main Physics — Units and Measurement: what changed and what to do",
+        "topic": "Units and Measurement",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 1",
+        "ncertChapter": "Units and Measurement",
+        "targetClasses": [
+          "11",
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-units-and-measurement-f3",
+        "slug": "jee-physics-units-and-measurement-f3",
+        "title": "NCERT Physics Units and Measurement — 5 things JEE always tests",
+        "topic": "Units and Measurement",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 1",
+        "ncertChapter": "Units and Measurement",
+        "targetClasses": [
+          "11",
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-physics-units-and-measurement-f4",
+        "slug": "jee-physics-units-and-measurement-f4",
+        "title": "Units and Measurement formulas, tricks and shortcuts for JEE Main 2026",
+        "topic": "Units and Measurement",
+        "subject": "Physics",
+        "ncertBook": "Physics Part 1",
+        "ncertChapter": "Units and Measurement",
+        "targetClasses": [
+          "11",
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-structure-of-atom-f0",
+        "slug": "jee-chemistry-structure-of-atom-f0",
+        "title": "Complete guide to Structure of Atom for JEE Main 2026",
+        "topic": "Structure of Atom",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 1",
+        "ncertChapter": "Structure of Atom",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-structure-of-atom-f1",
+        "slug": "jee-chemistry-structure-of-atom-f1",
+        "title": "How IIT toppers crack Structure of Atom in 10 minutes",
+        "topic": "Structure of Atom",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 1",
+        "ncertChapter": "Structure of Atom",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-structure-of-atom-f2",
+        "slug": "jee-chemistry-structure-of-atom-f2",
+        "title": "JEE Main Chemistry — Structure of Atom: what changed and what to do",
+        "topic": "Structure of Atom",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 1",
+        "ncertChapter": "Structure of Atom",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-structure-of-atom-f3",
+        "slug": "jee-chemistry-structure-of-atom-f3",
+        "title": "NCERT Chemistry Structure of Atom — 5 things JEE always tests",
+        "topic": "Structure of Atom",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 1",
+        "ncertChapter": "Structure of Atom",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-structure-of-atom-f4",
+        "slug": "jee-chemistry-structure-of-atom-f4",
+        "title": "Structure of Atom formulas, tricks and shortcuts for JEE Main 2026",
+        "topic": "Structure of Atom",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 1",
+        "ncertChapter": "Structure of Atom",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-chemical-bonding-f0",
+        "slug": "jee-chemistry-chemical-bonding-f0",
+        "title": "Complete guide to Chemical Bonding for JEE Main 2026",
+        "topic": "Chemical Bonding",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 1",
+        "ncertChapter": "Chemical Bonding",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-chemical-bonding-f1",
+        "slug": "jee-chemistry-chemical-bonding-f1",
+        "title": "How IIT toppers crack Chemical Bonding in 10 minutes",
+        "topic": "Chemical Bonding",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 1",
+        "ncertChapter": "Chemical Bonding",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-chemical-bonding-f2",
+        "slug": "jee-chemistry-chemical-bonding-f2",
+        "title": "JEE Main Chemistry — Chemical Bonding: what changed and what to do",
+        "topic": "Chemical Bonding",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 1",
+        "ncertChapter": "Chemical Bonding",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-chemical-bonding-f3",
+        "slug": "jee-chemistry-chemical-bonding-f3",
+        "title": "NCERT Chemistry Chemical Bonding — 5 things JEE always tests",
+        "topic": "Chemical Bonding",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 1",
+        "ncertChapter": "Chemical Bonding",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-chemical-bonding-f4",
+        "slug": "jee-chemistry-chemical-bonding-f4",
+        "title": "Chemical Bonding formulas, tricks and shortcuts for JEE Main 2026",
+        "topic": "Chemical Bonding",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 1",
+        "ncertChapter": "Chemical Bonding",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-states-of-matter-f0",
+        "slug": "jee-chemistry-states-of-matter-f0",
+        "title": "Complete guide to States of Matter for JEE Main 2026",
+        "topic": "States of Matter",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 1",
+        "ncertChapter": "States of Matter",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-states-of-matter-f1",
+        "slug": "jee-chemistry-states-of-matter-f1",
+        "title": "How IIT toppers crack States of Matter in 10 minutes",
+        "topic": "States of Matter",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 1",
+        "ncertChapter": "States of Matter",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-states-of-matter-f2",
+        "slug": "jee-chemistry-states-of-matter-f2",
+        "title": "JEE Main Chemistry — States of Matter: what changed and what to do",
+        "topic": "States of Matter",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 1",
+        "ncertChapter": "States of Matter",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-states-of-matter-f3",
+        "slug": "jee-chemistry-states-of-matter-f3",
+        "title": "NCERT Chemistry States of Matter — 5 things JEE always tests",
+        "topic": "States of Matter",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 1",
+        "ncertChapter": "States of Matter",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-states-of-matter-f4",
+        "slug": "jee-chemistry-states-of-matter-f4",
+        "title": "States of Matter formulas, tricks and shortcuts for JEE Main 2026",
+        "topic": "States of Matter",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 1",
+        "ncertChapter": "States of Matter",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-thermodynamics-f0",
+        "slug": "jee-chemistry-thermodynamics-f0",
+        "title": "Complete guide to Thermodynamics for JEE Main 2026",
+        "topic": "Thermodynamics",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 1",
+        "ncertChapter": "Thermodynamics",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-thermodynamics-f1",
+        "slug": "jee-chemistry-thermodynamics-f1",
+        "title": "How IIT toppers crack Thermodynamics in 10 minutes",
+        "topic": "Thermodynamics",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 1",
+        "ncertChapter": "Thermodynamics",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-thermodynamics-f2",
+        "slug": "jee-chemistry-thermodynamics-f2",
+        "title": "JEE Main Chemistry — Thermodynamics: what changed and what to do",
+        "topic": "Thermodynamics",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 1",
+        "ncertChapter": "Thermodynamics",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-thermodynamics-f3",
+        "slug": "jee-chemistry-thermodynamics-f3",
+        "title": "NCERT Chemistry Thermodynamics — 5 things JEE always tests",
+        "topic": "Thermodynamics",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 1",
+        "ncertChapter": "Thermodynamics",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-thermodynamics-f4",
+        "slug": "jee-chemistry-thermodynamics-f4",
+        "title": "Thermodynamics formulas, tricks and shortcuts for JEE Main 2026",
+        "topic": "Thermodynamics",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 1",
+        "ncertChapter": "Thermodynamics",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-equilibrium-f0",
+        "slug": "jee-chemistry-equilibrium-f0",
+        "title": "Complete guide to Equilibrium for JEE Main 2026",
+        "topic": "Equilibrium",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 1",
+        "ncertChapter": "Equilibrium",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-equilibrium-f1",
+        "slug": "jee-chemistry-equilibrium-f1",
+        "title": "How IIT toppers crack Equilibrium in 10 minutes",
+        "topic": "Equilibrium",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 1",
+        "ncertChapter": "Equilibrium",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-equilibrium-f2",
+        "slug": "jee-chemistry-equilibrium-f2",
+        "title": "JEE Main Chemistry — Equilibrium: what changed and what to do",
+        "topic": "Equilibrium",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 1",
+        "ncertChapter": "Equilibrium",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-equilibrium-f3",
+        "slug": "jee-chemistry-equilibrium-f3",
+        "title": "NCERT Chemistry Equilibrium — 5 things JEE always tests",
+        "topic": "Equilibrium",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 1",
+        "ncertChapter": "Equilibrium",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-equilibrium-f4",
+        "slug": "jee-chemistry-equilibrium-f4",
+        "title": "Equilibrium formulas, tricks and shortcuts for JEE Main 2026",
+        "topic": "Equilibrium",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 1",
+        "ncertChapter": "Equilibrium",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-redox-reactions-f0",
+        "slug": "jee-chemistry-redox-reactions-f0",
+        "title": "Complete guide to Redox Reactions for JEE Main 2026",
+        "topic": "Redox Reactions",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 1",
+        "ncertChapter": "Redox Reactions",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-redox-reactions-f1",
+        "slug": "jee-chemistry-redox-reactions-f1",
+        "title": "How IIT toppers crack Redox Reactions in 10 minutes",
+        "topic": "Redox Reactions",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 1",
+        "ncertChapter": "Redox Reactions",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-redox-reactions-f2",
+        "slug": "jee-chemistry-redox-reactions-f2",
+        "title": "JEE Main Chemistry — Redox Reactions: what changed and what to do",
+        "topic": "Redox Reactions",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 1",
+        "ncertChapter": "Redox Reactions",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-redox-reactions-f3",
+        "slug": "jee-chemistry-redox-reactions-f3",
+        "title": "NCERT Chemistry Redox Reactions — 5 things JEE always tests",
+        "topic": "Redox Reactions",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 1",
+        "ncertChapter": "Redox Reactions",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-redox-reactions-f4",
+        "slug": "jee-chemistry-redox-reactions-f4",
+        "title": "Redox Reactions formulas, tricks and shortcuts for JEE Main 2026",
+        "topic": "Redox Reactions",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 1",
+        "ncertChapter": "Redox Reactions",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-periodic-table-f0",
+        "slug": "jee-chemistry-periodic-table-f0",
+        "title": "Complete guide to Periodic Table for JEE Main 2026",
+        "topic": "Periodic Table",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 1",
+        "ncertChapter": "Periodic Table",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-periodic-table-f1",
+        "slug": "jee-chemistry-periodic-table-f1",
+        "title": "How IIT toppers crack Periodic Table in 10 minutes",
+        "topic": "Periodic Table",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 1",
+        "ncertChapter": "Periodic Table",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-periodic-table-f2",
+        "slug": "jee-chemistry-periodic-table-f2",
+        "title": "JEE Main Chemistry — Periodic Table: what changed and what to do",
+        "topic": "Periodic Table",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 1",
+        "ncertChapter": "Periodic Table",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-periodic-table-f3",
+        "slug": "jee-chemistry-periodic-table-f3",
+        "title": "NCERT Chemistry Periodic Table — 5 things JEE always tests",
+        "topic": "Periodic Table",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 1",
+        "ncertChapter": "Periodic Table",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-periodic-table-f4",
+        "slug": "jee-chemistry-periodic-table-f4",
+        "title": "Periodic Table formulas, tricks and shortcuts for JEE Main 2026",
+        "topic": "Periodic Table",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 1",
+        "ncertChapter": "Periodic Table",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-p-block-elements-f0",
+        "slug": "jee-chemistry-p-block-elements-f0",
+        "title": "Complete guide to p-Block Elements for JEE Main 2026",
+        "topic": "p-Block Elements",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 2",
+        "ncertChapter": "p-Block Elements",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-p-block-elements-f1",
+        "slug": "jee-chemistry-p-block-elements-f1",
+        "title": "How IIT toppers crack p-Block Elements in 10 minutes",
+        "topic": "p-Block Elements",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 2",
+        "ncertChapter": "p-Block Elements",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-p-block-elements-f2",
+        "slug": "jee-chemistry-p-block-elements-f2",
+        "title": "JEE Main Chemistry — p-Block Elements: what changed and what to do",
+        "topic": "p-Block Elements",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 2",
+        "ncertChapter": "p-Block Elements",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-p-block-elements-f3",
+        "slug": "jee-chemistry-p-block-elements-f3",
+        "title": "NCERT Chemistry p-Block Elements — 5 things JEE always tests",
+        "topic": "p-Block Elements",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 2",
+        "ncertChapter": "p-Block Elements",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-p-block-elements-f4",
+        "slug": "jee-chemistry-p-block-elements-f4",
+        "title": "p-Block Elements formulas, tricks and shortcuts for JEE Main 2026",
+        "topic": "p-Block Elements",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 2",
+        "ncertChapter": "p-Block Elements",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-electrochemistry-f0",
+        "slug": "jee-chemistry-electrochemistry-f0",
+        "title": "Complete guide to Electrochemistry for JEE Main 2026",
+        "topic": "Electrochemistry",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 1",
+        "ncertChapter": "Electrochemistry",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-electrochemistry-f1",
+        "slug": "jee-chemistry-electrochemistry-f1",
+        "title": "How IIT toppers crack Electrochemistry in 10 minutes",
+        "topic": "Electrochemistry",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 1",
+        "ncertChapter": "Electrochemistry",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-electrochemistry-f2",
+        "slug": "jee-chemistry-electrochemistry-f2",
+        "title": "JEE Main Chemistry — Electrochemistry: what changed and what to do",
+        "topic": "Electrochemistry",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 1",
+        "ncertChapter": "Electrochemistry",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-electrochemistry-f3",
+        "slug": "jee-chemistry-electrochemistry-f3",
+        "title": "NCERT Chemistry Electrochemistry — 5 things JEE always tests",
+        "topic": "Electrochemistry",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 1",
+        "ncertChapter": "Electrochemistry",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-electrochemistry-f4",
+        "slug": "jee-chemistry-electrochemistry-f4",
+        "title": "Electrochemistry formulas, tricks and shortcuts for JEE Main 2026",
+        "topic": "Electrochemistry",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 1",
+        "ncertChapter": "Electrochemistry",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-chemical-kinetics-f0",
+        "slug": "jee-chemistry-chemical-kinetics-f0",
+        "title": "Complete guide to Chemical Kinetics for JEE Main 2026",
+        "topic": "Chemical Kinetics",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 1",
+        "ncertChapter": "Chemical Kinetics",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-chemical-kinetics-f1",
+        "slug": "jee-chemistry-chemical-kinetics-f1",
+        "title": "How IIT toppers crack Chemical Kinetics in 10 minutes",
+        "topic": "Chemical Kinetics",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 1",
+        "ncertChapter": "Chemical Kinetics",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-chemical-kinetics-f2",
+        "slug": "jee-chemistry-chemical-kinetics-f2",
+        "title": "JEE Main Chemistry — Chemical Kinetics: what changed and what to do",
+        "topic": "Chemical Kinetics",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 1",
+        "ncertChapter": "Chemical Kinetics",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-chemical-kinetics-f3",
+        "slug": "jee-chemistry-chemical-kinetics-f3",
+        "title": "NCERT Chemistry Chemical Kinetics — 5 things JEE always tests",
+        "topic": "Chemical Kinetics",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 1",
+        "ncertChapter": "Chemical Kinetics",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-chemical-kinetics-f4",
+        "slug": "jee-chemistry-chemical-kinetics-f4",
+        "title": "Chemical Kinetics formulas, tricks and shortcuts for JEE Main 2026",
+        "topic": "Chemical Kinetics",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 1",
+        "ncertChapter": "Chemical Kinetics",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-surface-chemistry-f0",
+        "slug": "jee-chemistry-surface-chemistry-f0",
+        "title": "Complete guide to Surface Chemistry for JEE Main 2026",
+        "topic": "Surface Chemistry",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 1",
+        "ncertChapter": "Surface Chemistry",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-surface-chemistry-f1",
+        "slug": "jee-chemistry-surface-chemistry-f1",
+        "title": "How IIT toppers crack Surface Chemistry in 10 minutes",
+        "topic": "Surface Chemistry",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 1",
+        "ncertChapter": "Surface Chemistry",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-surface-chemistry-f2",
+        "slug": "jee-chemistry-surface-chemistry-f2",
+        "title": "JEE Main Chemistry — Surface Chemistry: what changed and what to do",
+        "topic": "Surface Chemistry",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 1",
+        "ncertChapter": "Surface Chemistry",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-surface-chemistry-f3",
+        "slug": "jee-chemistry-surface-chemistry-f3",
+        "title": "NCERT Chemistry Surface Chemistry — 5 things JEE always tests",
+        "topic": "Surface Chemistry",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 1",
+        "ncertChapter": "Surface Chemistry",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-surface-chemistry-f4",
+        "slug": "jee-chemistry-surface-chemistry-f4",
+        "title": "Surface Chemistry formulas, tricks and shortcuts for JEE Main 2026",
+        "topic": "Surface Chemistry",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 1",
+        "ncertChapter": "Surface Chemistry",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-d-and-f-block-elements-f0",
+        "slug": "jee-chemistry-d-and-f-block-elements-f0",
+        "title": "Complete guide to d and f Block Elements for JEE Main 2026",
+        "topic": "d and f Block Elements",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 1",
+        "ncertChapter": "d and f Block Elements",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-d-and-f-block-elements-f1",
+        "slug": "jee-chemistry-d-and-f-block-elements-f1",
+        "title": "How IIT toppers crack d and f Block Elements in 10 minutes",
+        "topic": "d and f Block Elements",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 1",
+        "ncertChapter": "d and f Block Elements",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-d-and-f-block-elements-f2",
+        "slug": "jee-chemistry-d-and-f-block-elements-f2",
+        "title": "JEE Main Chemistry — d and f Block Elements: what changed and what to do",
+        "topic": "d and f Block Elements",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 1",
+        "ncertChapter": "d and f Block Elements",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-d-and-f-block-elements-f3",
+        "slug": "jee-chemistry-d-and-f-block-elements-f3",
+        "title": "NCERT Chemistry d and f Block Elements — 5 things JEE always tests",
+        "topic": "d and f Block Elements",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 1",
+        "ncertChapter": "d and f Block Elements",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-d-and-f-block-elements-f4",
+        "slug": "jee-chemistry-d-and-f-block-elements-f4",
+        "title": "d and f Block Elements formulas, tricks and shortcuts for JEE Main 2026",
+        "topic": "d and f Block Elements",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 1",
+        "ncertChapter": "d and f Block Elements",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-coordination-compounds-f0",
+        "slug": "jee-chemistry-coordination-compounds-f0",
+        "title": "Complete guide to Coordination Compounds for JEE Main 2026",
+        "topic": "Coordination Compounds",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 1",
+        "ncertChapter": "Coordination Compounds",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-coordination-compounds-f1",
+        "slug": "jee-chemistry-coordination-compounds-f1",
+        "title": "How IIT toppers crack Coordination Compounds in 10 minutes",
+        "topic": "Coordination Compounds",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 1",
+        "ncertChapter": "Coordination Compounds",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-coordination-compounds-f2",
+        "slug": "jee-chemistry-coordination-compounds-f2",
+        "title": "JEE Main Chemistry — Coordination Compounds: what changed and what to do",
+        "topic": "Coordination Compounds",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 1",
+        "ncertChapter": "Coordination Compounds",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-coordination-compounds-f3",
+        "slug": "jee-chemistry-coordination-compounds-f3",
+        "title": "NCERT Chemistry Coordination Compounds — 5 things JEE always tests",
+        "topic": "Coordination Compounds",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 1",
+        "ncertChapter": "Coordination Compounds",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-coordination-compounds-f4",
+        "slug": "jee-chemistry-coordination-compounds-f4",
+        "title": "Coordination Compounds formulas, tricks and shortcuts for JEE Main 2026",
+        "topic": "Coordination Compounds",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 1",
+        "ncertChapter": "Coordination Compounds",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-haloalkanes-f0",
+        "slug": "jee-chemistry-haloalkanes-f0",
+        "title": "Complete guide to Haloalkanes for JEE Main 2026",
+        "topic": "Haloalkanes",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 2",
+        "ncertChapter": "Haloalkanes",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-haloalkanes-f1",
+        "slug": "jee-chemistry-haloalkanes-f1",
+        "title": "How IIT toppers crack Haloalkanes in 10 minutes",
+        "topic": "Haloalkanes",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 2",
+        "ncertChapter": "Haloalkanes",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-haloalkanes-f2",
+        "slug": "jee-chemistry-haloalkanes-f2",
+        "title": "JEE Main Chemistry — Haloalkanes: what changed and what to do",
+        "topic": "Haloalkanes",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 2",
+        "ncertChapter": "Haloalkanes",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-haloalkanes-f3",
+        "slug": "jee-chemistry-haloalkanes-f3",
+        "title": "NCERT Chemistry Haloalkanes — 5 things JEE always tests",
+        "topic": "Haloalkanes",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 2",
+        "ncertChapter": "Haloalkanes",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-haloalkanes-f4",
+        "slug": "jee-chemistry-haloalkanes-f4",
+        "title": "Haloalkanes formulas, tricks and shortcuts for JEE Main 2026",
+        "topic": "Haloalkanes",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 2",
+        "ncertChapter": "Haloalkanes",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-aldehydes-and-ketones-f0",
+        "slug": "jee-chemistry-aldehydes-and-ketones-f0",
+        "title": "Complete guide to Aldehydes and Ketones for JEE Main 2026",
+        "topic": "Aldehydes and Ketones",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 2",
+        "ncertChapter": "Aldehydes and Ketones",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-aldehydes-and-ketones-f1",
+        "slug": "jee-chemistry-aldehydes-and-ketones-f1",
+        "title": "How IIT toppers crack Aldehydes and Ketones in 10 minutes",
+        "topic": "Aldehydes and Ketones",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 2",
+        "ncertChapter": "Aldehydes and Ketones",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-aldehydes-and-ketones-f2",
+        "slug": "jee-chemistry-aldehydes-and-ketones-f2",
+        "title": "JEE Main Chemistry — Aldehydes and Ketones: what changed and what to do",
+        "topic": "Aldehydes and Ketones",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 2",
+        "ncertChapter": "Aldehydes and Ketones",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-aldehydes-and-ketones-f3",
+        "slug": "jee-chemistry-aldehydes-and-ketones-f3",
+        "title": "NCERT Chemistry Aldehydes and Ketones — 5 things JEE always tests",
+        "topic": "Aldehydes and Ketones",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 2",
+        "ncertChapter": "Aldehydes and Ketones",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-aldehydes-and-ketones-f4",
+        "slug": "jee-chemistry-aldehydes-and-ketones-f4",
+        "title": "Aldehydes and Ketones formulas, tricks and shortcuts for JEE Main 2026",
+        "topic": "Aldehydes and Ketones",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 2",
+        "ncertChapter": "Aldehydes and Ketones",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-carboxylic-acids-f0",
+        "slug": "jee-chemistry-carboxylic-acids-f0",
+        "title": "Complete guide to Carboxylic Acids for JEE Main 2026",
+        "topic": "Carboxylic Acids",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 2",
+        "ncertChapter": "Carboxylic Acids",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-carboxylic-acids-f1",
+        "slug": "jee-chemistry-carboxylic-acids-f1",
+        "title": "How IIT toppers crack Carboxylic Acids in 10 minutes",
+        "topic": "Carboxylic Acids",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 2",
+        "ncertChapter": "Carboxylic Acids",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-carboxylic-acids-f2",
+        "slug": "jee-chemistry-carboxylic-acids-f2",
+        "title": "JEE Main Chemistry — Carboxylic Acids: what changed and what to do",
+        "topic": "Carboxylic Acids",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 2",
+        "ncertChapter": "Carboxylic Acids",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-carboxylic-acids-f3",
+        "slug": "jee-chemistry-carboxylic-acids-f3",
+        "title": "NCERT Chemistry Carboxylic Acids — 5 things JEE always tests",
+        "topic": "Carboxylic Acids",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 2",
+        "ncertChapter": "Carboxylic Acids",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-carboxylic-acids-f4",
+        "slug": "jee-chemistry-carboxylic-acids-f4",
+        "title": "Carboxylic Acids formulas, tricks and shortcuts for JEE Main 2026",
+        "topic": "Carboxylic Acids",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 2",
+        "ncertChapter": "Carboxylic Acids",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-amines-f0",
+        "slug": "jee-chemistry-amines-f0",
+        "title": "Complete guide to Amines for JEE Main 2026",
+        "topic": "Amines",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 2",
+        "ncertChapter": "Amines",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-amines-f1",
+        "slug": "jee-chemistry-amines-f1",
+        "title": "How IIT toppers crack Amines in 10 minutes",
+        "topic": "Amines",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 2",
+        "ncertChapter": "Amines",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-amines-f2",
+        "slug": "jee-chemistry-amines-f2",
+        "title": "JEE Main Chemistry — Amines: what changed and what to do",
+        "topic": "Amines",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 2",
+        "ncertChapter": "Amines",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-amines-f3",
+        "slug": "jee-chemistry-amines-f3",
+        "title": "NCERT Chemistry Amines — 5 things JEE always tests",
+        "topic": "Amines",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 2",
+        "ncertChapter": "Amines",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-amines-f4",
+        "slug": "jee-chemistry-amines-f4",
+        "title": "Amines formulas, tricks and shortcuts for JEE Main 2026",
+        "topic": "Amines",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 2",
+        "ncertChapter": "Amines",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-polymers-f0",
+        "slug": "jee-chemistry-polymers-f0",
+        "title": "Complete guide to Polymers for JEE Main 2026",
+        "topic": "Polymers",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 2",
+        "ncertChapter": "Polymers",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-polymers-f1",
+        "slug": "jee-chemistry-polymers-f1",
+        "title": "How IIT toppers crack Polymers in 10 minutes",
+        "topic": "Polymers",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 2",
+        "ncertChapter": "Polymers",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-polymers-f2",
+        "slug": "jee-chemistry-polymers-f2",
+        "title": "JEE Main Chemistry — Polymers: what changed and what to do",
+        "topic": "Polymers",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 2",
+        "ncertChapter": "Polymers",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-polymers-f3",
+        "slug": "jee-chemistry-polymers-f3",
+        "title": "NCERT Chemistry Polymers — 5 things JEE always tests",
+        "topic": "Polymers",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 2",
+        "ncertChapter": "Polymers",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-polymers-f4",
+        "slug": "jee-chemistry-polymers-f4",
+        "title": "Polymers formulas, tricks and shortcuts for JEE Main 2026",
+        "topic": "Polymers",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 2",
+        "ncertChapter": "Polymers",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-biomolecules-f0",
+        "slug": "jee-chemistry-biomolecules-f0",
+        "title": "Complete guide to Biomolecules for JEE Main 2026",
+        "topic": "Biomolecules",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 2",
+        "ncertChapter": "Biomolecules",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-biomolecules-f1",
+        "slug": "jee-chemistry-biomolecules-f1",
+        "title": "How IIT toppers crack Biomolecules in 10 minutes",
+        "topic": "Biomolecules",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 2",
+        "ncertChapter": "Biomolecules",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-biomolecules-f2",
+        "slug": "jee-chemistry-biomolecules-f2",
+        "title": "JEE Main Chemistry — Biomolecules: what changed and what to do",
+        "topic": "Biomolecules",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 2",
+        "ncertChapter": "Biomolecules",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-biomolecules-f3",
+        "slug": "jee-chemistry-biomolecules-f3",
+        "title": "NCERT Chemistry Biomolecules — 5 things JEE always tests",
+        "topic": "Biomolecules",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 2",
+        "ncertChapter": "Biomolecules",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-biomolecules-f4",
+        "slug": "jee-chemistry-biomolecules-f4",
+        "title": "Biomolecules formulas, tricks and shortcuts for JEE Main 2026",
+        "topic": "Biomolecules",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 2",
+        "ncertChapter": "Biomolecules",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-solutions-f0",
+        "slug": "jee-chemistry-solutions-f0",
+        "title": "Complete guide to Solutions for JEE Main 2026",
+        "topic": "Solutions",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 1",
+        "ncertChapter": "Solutions",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-solutions-f1",
+        "slug": "jee-chemistry-solutions-f1",
+        "title": "How IIT toppers crack Solutions in 10 minutes",
+        "topic": "Solutions",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 1",
+        "ncertChapter": "Solutions",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-solutions-f2",
+        "slug": "jee-chemistry-solutions-f2",
+        "title": "JEE Main Chemistry — Solutions: what changed and what to do",
+        "topic": "Solutions",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 1",
+        "ncertChapter": "Solutions",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-solutions-f3",
+        "slug": "jee-chemistry-solutions-f3",
+        "title": "NCERT Chemistry Solutions — 5 things JEE always tests",
+        "topic": "Solutions",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 1",
+        "ncertChapter": "Solutions",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-chemistry-solutions-f4",
+        "slug": "jee-chemistry-solutions-f4",
+        "title": "Solutions formulas, tricks and shortcuts for JEE Main 2026",
+        "topic": "Solutions",
+        "subject": "Chemistry",
+        "ncertBook": "Chemistry Part 1",
+        "ncertChapter": "Solutions",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-sets-and-relations-f0",
+        "slug": "jee-mathematics-sets-and-relations-f0",
+        "title": "Complete guide to Sets and Relations for JEE Main 2026",
+        "topic": "Sets and Relations",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 1",
+        "ncertChapter": "Sets and Relations",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-sets-and-relations-f1",
+        "slug": "jee-mathematics-sets-and-relations-f1",
+        "title": "How IIT toppers crack Sets and Relations in 10 minutes",
+        "topic": "Sets and Relations",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 1",
+        "ncertChapter": "Sets and Relations",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-sets-and-relations-f2",
+        "slug": "jee-mathematics-sets-and-relations-f2",
+        "title": "JEE Main Mathematics — Sets and Relations: what changed and what to do",
+        "topic": "Sets and Relations",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 1",
+        "ncertChapter": "Sets and Relations",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-sets-and-relations-f3",
+        "slug": "jee-mathematics-sets-and-relations-f3",
+        "title": "NCERT Mathematics Sets and Relations — 5 things JEE always tests",
+        "topic": "Sets and Relations",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 1",
+        "ncertChapter": "Sets and Relations",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-sets-and-relations-f4",
+        "slug": "jee-mathematics-sets-and-relations-f4",
+        "title": "Sets and Relations formulas, tricks and shortcuts for JEE Main 2026",
+        "topic": "Sets and Relations",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 1",
+        "ncertChapter": "Sets and Relations",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-complex-numbers-f0",
+        "slug": "jee-mathematics-complex-numbers-f0",
+        "title": "Complete guide to Complex Numbers for JEE Main 2026",
+        "topic": "Complex Numbers",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 1",
+        "ncertChapter": "Complex Numbers",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-complex-numbers-f1",
+        "slug": "jee-mathematics-complex-numbers-f1",
+        "title": "How IIT toppers crack Complex Numbers in 10 minutes",
+        "topic": "Complex Numbers",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 1",
+        "ncertChapter": "Complex Numbers",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-complex-numbers-f2",
+        "slug": "jee-mathematics-complex-numbers-f2",
+        "title": "JEE Main Mathematics — Complex Numbers: what changed and what to do",
+        "topic": "Complex Numbers",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 1",
+        "ncertChapter": "Complex Numbers",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-complex-numbers-f3",
+        "slug": "jee-mathematics-complex-numbers-f3",
+        "title": "NCERT Mathematics Complex Numbers — 5 things JEE always tests",
+        "topic": "Complex Numbers",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 1",
+        "ncertChapter": "Complex Numbers",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-complex-numbers-f4",
+        "slug": "jee-mathematics-complex-numbers-f4",
+        "title": "Complex Numbers formulas, tricks and shortcuts for JEE Main 2026",
+        "topic": "Complex Numbers",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 1",
+        "ncertChapter": "Complex Numbers",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-quadratic-equations-f0",
+        "slug": "jee-mathematics-quadratic-equations-f0",
+        "title": "Complete guide to Quadratic Equations for JEE Main 2026",
+        "topic": "Quadratic Equations",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 1",
+        "ncertChapter": "Quadratic Equations",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-quadratic-equations-f1",
+        "slug": "jee-mathematics-quadratic-equations-f1",
+        "title": "How IIT toppers crack Quadratic Equations in 10 minutes",
+        "topic": "Quadratic Equations",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 1",
+        "ncertChapter": "Quadratic Equations",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-quadratic-equations-f2",
+        "slug": "jee-mathematics-quadratic-equations-f2",
+        "title": "JEE Main Mathematics — Quadratic Equations: what changed and what to do",
+        "topic": "Quadratic Equations",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 1",
+        "ncertChapter": "Quadratic Equations",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-quadratic-equations-f3",
+        "slug": "jee-mathematics-quadratic-equations-f3",
+        "title": "NCERT Mathematics Quadratic Equations — 5 things JEE always tests",
+        "topic": "Quadratic Equations",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 1",
+        "ncertChapter": "Quadratic Equations",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-quadratic-equations-f4",
+        "slug": "jee-mathematics-quadratic-equations-f4",
+        "title": "Quadratic Equations formulas, tricks and shortcuts for JEE Main 2026",
+        "topic": "Quadratic Equations",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 1",
+        "ncertChapter": "Quadratic Equations",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-matrices-and-determinants-f0",
+        "slug": "jee-mathematics-matrices-and-determinants-f0",
+        "title": "Complete guide to Matrices and Determinants for JEE Main 2026",
+        "topic": "Matrices and Determinants",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 1",
+        "ncertChapter": "Matrices and Determinants",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-matrices-and-determinants-f1",
+        "slug": "jee-mathematics-matrices-and-determinants-f1",
+        "title": "How IIT toppers crack Matrices and Determinants in 10 minutes",
+        "topic": "Matrices and Determinants",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 1",
+        "ncertChapter": "Matrices and Determinants",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-matrices-and-determinants-f2",
+        "slug": "jee-mathematics-matrices-and-determinants-f2",
+        "title": "JEE Main Mathematics — Matrices and Determinants: what changed and what to do",
+        "topic": "Matrices and Determinants",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 1",
+        "ncertChapter": "Matrices and Determinants",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-matrices-and-determinants-f3",
+        "slug": "jee-mathematics-matrices-and-determinants-f3",
+        "title": "NCERT Mathematics Matrices and Determinants — 5 things JEE always tests",
+        "topic": "Matrices and Determinants",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 1",
+        "ncertChapter": "Matrices and Determinants",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-matrices-and-determinants-f4",
+        "slug": "jee-mathematics-matrices-and-determinants-f4",
+        "title": "Matrices and Determinants formulas, tricks and shortcuts for JEE Main 2026",
+        "topic": "Matrices and Determinants",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 1",
+        "ncertChapter": "Matrices and Determinants",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-permutations-and-combinations-f0",
+        "slug": "jee-mathematics-permutations-and-combinations-f0",
+        "title": "Complete guide to Permutations and Combinations for JEE Main 2026",
+        "topic": "Permutations and Combinations",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 1",
+        "ncertChapter": "Permutations and Combinations",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-permutations-and-combinations-f1",
+        "slug": "jee-mathematics-permutations-and-combinations-f1",
+        "title": "How IIT toppers crack Permutations and Combinations in 10 minutes",
+        "topic": "Permutations and Combinations",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 1",
+        "ncertChapter": "Permutations and Combinations",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-permutations-and-combinations-f2",
+        "slug": "jee-mathematics-permutations-and-combinations-f2",
+        "title": "JEE Main Mathematics — Permutations and Combinations: what changed and what to do",
+        "topic": "Permutations and Combinations",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 1",
+        "ncertChapter": "Permutations and Combinations",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-permutations-and-combinations-f3",
+        "slug": "jee-mathematics-permutations-and-combinations-f3",
+        "title": "NCERT Mathematics Permutations and Combinations — 5 things JEE always tests",
+        "topic": "Permutations and Combinations",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 1",
+        "ncertChapter": "Permutations and Combinations",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-permutations-and-combinations-f4",
+        "slug": "jee-mathematics-permutations-and-combinations-f4",
+        "title": "Permutations and Combinations formulas, tricks and shortcuts for JEE Main 2026",
+        "topic": "Permutations and Combinations",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 1",
+        "ncertChapter": "Permutations and Combinations",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-binomial-theorem-f0",
+        "slug": "jee-mathematics-binomial-theorem-f0",
+        "title": "Complete guide to Binomial Theorem for JEE Main 2026",
+        "topic": "Binomial Theorem",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 2",
+        "ncertChapter": "Binomial Theorem",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-binomial-theorem-f1",
+        "slug": "jee-mathematics-binomial-theorem-f1",
+        "title": "How IIT toppers crack Binomial Theorem in 10 minutes",
+        "topic": "Binomial Theorem",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 2",
+        "ncertChapter": "Binomial Theorem",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-binomial-theorem-f2",
+        "slug": "jee-mathematics-binomial-theorem-f2",
+        "title": "JEE Main Mathematics — Binomial Theorem: what changed and what to do",
+        "topic": "Binomial Theorem",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 2",
+        "ncertChapter": "Binomial Theorem",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-binomial-theorem-f3",
+        "slug": "jee-mathematics-binomial-theorem-f3",
+        "title": "NCERT Mathematics Binomial Theorem — 5 things JEE always tests",
+        "topic": "Binomial Theorem",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 2",
+        "ncertChapter": "Binomial Theorem",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-binomial-theorem-f4",
+        "slug": "jee-mathematics-binomial-theorem-f4",
+        "title": "Binomial Theorem formulas, tricks and shortcuts for JEE Main 2026",
+        "topic": "Binomial Theorem",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 2",
+        "ncertChapter": "Binomial Theorem",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-sequences-and-series-f0",
+        "slug": "jee-mathematics-sequences-and-series-f0",
+        "title": "Complete guide to Sequences and Series for JEE Main 2026",
+        "topic": "Sequences and Series",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 2",
+        "ncertChapter": "Sequences and Series",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-sequences-and-series-f1",
+        "slug": "jee-mathematics-sequences-and-series-f1",
+        "title": "How IIT toppers crack Sequences and Series in 10 minutes",
+        "topic": "Sequences and Series",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 2",
+        "ncertChapter": "Sequences and Series",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-sequences-and-series-f2",
+        "slug": "jee-mathematics-sequences-and-series-f2",
+        "title": "JEE Main Mathematics — Sequences and Series: what changed and what to do",
+        "topic": "Sequences and Series",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 2",
+        "ncertChapter": "Sequences and Series",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-sequences-and-series-f3",
+        "slug": "jee-mathematics-sequences-and-series-f3",
+        "title": "NCERT Mathematics Sequences and Series — 5 things JEE always tests",
+        "topic": "Sequences and Series",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 2",
+        "ncertChapter": "Sequences and Series",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-sequences-and-series-f4",
+        "slug": "jee-mathematics-sequences-and-series-f4",
+        "title": "Sequences and Series formulas, tricks and shortcuts for JEE Main 2026",
+        "topic": "Sequences and Series",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 2",
+        "ncertChapter": "Sequences and Series",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-straight-lines-f0",
+        "slug": "jee-mathematics-straight-lines-f0",
+        "title": "Complete guide to Straight Lines for JEE Main 2026",
+        "topic": "Straight Lines",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 2",
+        "ncertChapter": "Straight Lines",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-straight-lines-f1",
+        "slug": "jee-mathematics-straight-lines-f1",
+        "title": "How IIT toppers crack Straight Lines in 10 minutes",
+        "topic": "Straight Lines",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 2",
+        "ncertChapter": "Straight Lines",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-straight-lines-f2",
+        "slug": "jee-mathematics-straight-lines-f2",
+        "title": "JEE Main Mathematics — Straight Lines: what changed and what to do",
+        "topic": "Straight Lines",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 2",
+        "ncertChapter": "Straight Lines",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-straight-lines-f3",
+        "slug": "jee-mathematics-straight-lines-f3",
+        "title": "NCERT Mathematics Straight Lines — 5 things JEE always tests",
+        "topic": "Straight Lines",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 2",
+        "ncertChapter": "Straight Lines",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-straight-lines-f4",
+        "slug": "jee-mathematics-straight-lines-f4",
+        "title": "Straight Lines formulas, tricks and shortcuts for JEE Main 2026",
+        "topic": "Straight Lines",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 2",
+        "ncertChapter": "Straight Lines",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-circles-f0",
+        "slug": "jee-mathematics-circles-f0",
+        "title": "Complete guide to Circles for JEE Main 2026",
+        "topic": "Circles",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 2",
+        "ncertChapter": "Circles",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-circles-f1",
+        "slug": "jee-mathematics-circles-f1",
+        "title": "How IIT toppers crack Circles in 10 minutes",
+        "topic": "Circles",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 2",
+        "ncertChapter": "Circles",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-circles-f2",
+        "slug": "jee-mathematics-circles-f2",
+        "title": "JEE Main Mathematics — Circles: what changed and what to do",
+        "topic": "Circles",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 2",
+        "ncertChapter": "Circles",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-circles-f3",
+        "slug": "jee-mathematics-circles-f3",
+        "title": "NCERT Mathematics Circles — 5 things JEE always tests",
+        "topic": "Circles",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 2",
+        "ncertChapter": "Circles",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-circles-f4",
+        "slug": "jee-mathematics-circles-f4",
+        "title": "Circles formulas, tricks and shortcuts for JEE Main 2026",
+        "topic": "Circles",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 2",
+        "ncertChapter": "Circles",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-conic-sections-f0",
+        "slug": "jee-mathematics-conic-sections-f0",
+        "title": "Complete guide to Conic Sections for JEE Main 2026",
+        "topic": "Conic Sections",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 2",
+        "ncertChapter": "Conic Sections",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-conic-sections-f1",
+        "slug": "jee-mathematics-conic-sections-f1",
+        "title": "How IIT toppers crack Conic Sections in 10 minutes",
+        "topic": "Conic Sections",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 2",
+        "ncertChapter": "Conic Sections",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-conic-sections-f2",
+        "slug": "jee-mathematics-conic-sections-f2",
+        "title": "JEE Main Mathematics — Conic Sections: what changed and what to do",
+        "topic": "Conic Sections",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 2",
+        "ncertChapter": "Conic Sections",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-conic-sections-f3",
+        "slug": "jee-mathematics-conic-sections-f3",
+        "title": "NCERT Mathematics Conic Sections — 5 things JEE always tests",
+        "topic": "Conic Sections",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 2",
+        "ncertChapter": "Conic Sections",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-conic-sections-f4",
+        "slug": "jee-mathematics-conic-sections-f4",
+        "title": "Conic Sections formulas, tricks and shortcuts for JEE Main 2026",
+        "topic": "Conic Sections",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 2",
+        "ncertChapter": "Conic Sections",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-limits-and-derivatives-f0",
+        "slug": "jee-mathematics-limits-and-derivatives-f0",
+        "title": "Complete guide to Limits and Derivatives for JEE Main 2026",
+        "topic": "Limits and Derivatives",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 1",
+        "ncertChapter": "Limits and Derivatives",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-limits-and-derivatives-f1",
+        "slug": "jee-mathematics-limits-and-derivatives-f1",
+        "title": "How IIT toppers crack Limits and Derivatives in 10 minutes",
+        "topic": "Limits and Derivatives",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 1",
+        "ncertChapter": "Limits and Derivatives",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-limits-and-derivatives-f2",
+        "slug": "jee-mathematics-limits-and-derivatives-f2",
+        "title": "JEE Main Mathematics — Limits and Derivatives: what changed and what to do",
+        "topic": "Limits and Derivatives",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 1",
+        "ncertChapter": "Limits and Derivatives",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-limits-and-derivatives-f3",
+        "slug": "jee-mathematics-limits-and-derivatives-f3",
+        "title": "NCERT Mathematics Limits and Derivatives — 5 things JEE always tests",
+        "topic": "Limits and Derivatives",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 1",
+        "ncertChapter": "Limits and Derivatives",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-limits-and-derivatives-f4",
+        "slug": "jee-mathematics-limits-and-derivatives-f4",
+        "title": "Limits and Derivatives formulas, tricks and shortcuts for JEE Main 2026",
+        "topic": "Limits and Derivatives",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 1",
+        "ncertChapter": "Limits and Derivatives",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-continuity-and-differentiability-f0",
+        "slug": "jee-mathematics-continuity-and-differentiability-f0",
+        "title": "Complete guide to Continuity and Differentiability for JEE Main 2026",
+        "topic": "Continuity and Differentiability",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 1",
+        "ncertChapter": "Continuity and Differentiability",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-continuity-and-differentiability-f1",
+        "slug": "jee-mathematics-continuity-and-differentiability-f1",
+        "title": "How IIT toppers crack Continuity and Differentiability in 10 minutes",
+        "topic": "Continuity and Differentiability",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 1",
+        "ncertChapter": "Continuity and Differentiability",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-continuity-and-differentiability-f2",
+        "slug": "jee-mathematics-continuity-and-differentiability-f2",
+        "title": "JEE Main Mathematics — Continuity and Differentiability: what changed and what to do",
+        "topic": "Continuity and Differentiability",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 1",
+        "ncertChapter": "Continuity and Differentiability",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-continuity-and-differentiability-f3",
+        "slug": "jee-mathematics-continuity-and-differentiability-f3",
+        "title": "NCERT Mathematics Continuity and Differentiability — 5 things JEE always tests",
+        "topic": "Continuity and Differentiability",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 1",
+        "ncertChapter": "Continuity and Differentiability",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-continuity-and-differentiability-f4",
+        "slug": "jee-mathematics-continuity-and-differentiability-f4",
+        "title": "Continuity and Differentiability formulas, tricks and shortcuts for JEE Main 2026",
+        "topic": "Continuity and Differentiability",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 1",
+        "ncertChapter": "Continuity and Differentiability",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-application-of-derivatives-f0",
+        "slug": "jee-mathematics-application-of-derivatives-f0",
+        "title": "Complete guide to Application of Derivatives for JEE Main 2026",
+        "topic": "Application of Derivatives",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 1",
+        "ncertChapter": "Application of Derivatives",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-application-of-derivatives-f1",
+        "slug": "jee-mathematics-application-of-derivatives-f1",
+        "title": "How IIT toppers crack Application of Derivatives in 10 minutes",
+        "topic": "Application of Derivatives",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 1",
+        "ncertChapter": "Application of Derivatives",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-application-of-derivatives-f2",
+        "slug": "jee-mathematics-application-of-derivatives-f2",
+        "title": "JEE Main Mathematics — Application of Derivatives: what changed and what to do",
+        "topic": "Application of Derivatives",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 1",
+        "ncertChapter": "Application of Derivatives",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-application-of-derivatives-f3",
+        "slug": "jee-mathematics-application-of-derivatives-f3",
+        "title": "NCERT Mathematics Application of Derivatives — 5 things JEE always tests",
+        "topic": "Application of Derivatives",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 1",
+        "ncertChapter": "Application of Derivatives",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-application-of-derivatives-f4",
+        "slug": "jee-mathematics-application-of-derivatives-f4",
+        "title": "Application of Derivatives formulas, tricks and shortcuts for JEE Main 2026",
+        "topic": "Application of Derivatives",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 1",
+        "ncertChapter": "Application of Derivatives",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-integrals-f0",
+        "slug": "jee-mathematics-integrals-f0",
+        "title": "Complete guide to Integrals for JEE Main 2026",
+        "topic": "Integrals",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 2",
+        "ncertChapter": "Integrals",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-integrals-f1",
+        "slug": "jee-mathematics-integrals-f1",
+        "title": "How IIT toppers crack Integrals in 10 minutes",
+        "topic": "Integrals",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 2",
+        "ncertChapter": "Integrals",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-integrals-f2",
+        "slug": "jee-mathematics-integrals-f2",
+        "title": "JEE Main Mathematics — Integrals: what changed and what to do",
+        "topic": "Integrals",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 2",
+        "ncertChapter": "Integrals",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-integrals-f3",
+        "slug": "jee-mathematics-integrals-f3",
+        "title": "NCERT Mathematics Integrals — 5 things JEE always tests",
+        "topic": "Integrals",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 2",
+        "ncertChapter": "Integrals",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-integrals-f4",
+        "slug": "jee-mathematics-integrals-f4",
+        "title": "Integrals formulas, tricks and shortcuts for JEE Main 2026",
+        "topic": "Integrals",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 2",
+        "ncertChapter": "Integrals",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-application-of-integrals-f0",
+        "slug": "jee-mathematics-application-of-integrals-f0",
+        "title": "Complete guide to Application of Integrals for JEE Main 2026",
+        "topic": "Application of Integrals",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 2",
+        "ncertChapter": "Application of Integrals",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-application-of-integrals-f1",
+        "slug": "jee-mathematics-application-of-integrals-f1",
+        "title": "How IIT toppers crack Application of Integrals in 10 minutes",
+        "topic": "Application of Integrals",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 2",
+        "ncertChapter": "Application of Integrals",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-application-of-integrals-f2",
+        "slug": "jee-mathematics-application-of-integrals-f2",
+        "title": "JEE Main Mathematics — Application of Integrals: what changed and what to do",
+        "topic": "Application of Integrals",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 2",
+        "ncertChapter": "Application of Integrals",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-application-of-integrals-f3",
+        "slug": "jee-mathematics-application-of-integrals-f3",
+        "title": "NCERT Mathematics Application of Integrals — 5 things JEE always tests",
+        "topic": "Application of Integrals",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 2",
+        "ncertChapter": "Application of Integrals",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-application-of-integrals-f4",
+        "slug": "jee-mathematics-application-of-integrals-f4",
+        "title": "Application of Integrals formulas, tricks and shortcuts for JEE Main 2026",
+        "topic": "Application of Integrals",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 2",
+        "ncertChapter": "Application of Integrals",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-differential-equations-f0",
+        "slug": "jee-mathematics-differential-equations-f0",
+        "title": "Complete guide to Differential Equations for JEE Main 2026",
+        "topic": "Differential Equations",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 2",
+        "ncertChapter": "Differential Equations",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-differential-equations-f1",
+        "slug": "jee-mathematics-differential-equations-f1",
+        "title": "How IIT toppers crack Differential Equations in 10 minutes",
+        "topic": "Differential Equations",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 2",
+        "ncertChapter": "Differential Equations",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-differential-equations-f2",
+        "slug": "jee-mathematics-differential-equations-f2",
+        "title": "JEE Main Mathematics — Differential Equations: what changed and what to do",
+        "topic": "Differential Equations",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 2",
+        "ncertChapter": "Differential Equations",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-differential-equations-f3",
+        "slug": "jee-mathematics-differential-equations-f3",
+        "title": "NCERT Mathematics Differential Equations — 5 things JEE always tests",
+        "topic": "Differential Equations",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 2",
+        "ncertChapter": "Differential Equations",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-differential-equations-f4",
+        "slug": "jee-mathematics-differential-equations-f4",
+        "title": "Differential Equations formulas, tricks and shortcuts for JEE Main 2026",
+        "topic": "Differential Equations",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 2",
+        "ncertChapter": "Differential Equations",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-vector-algebra-f0",
+        "slug": "jee-mathematics-vector-algebra-f0",
+        "title": "Complete guide to Vector Algebra for JEE Main 2026",
+        "topic": "Vector Algebra",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 2",
+        "ncertChapter": "Vector Algebra",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-vector-algebra-f1",
+        "slug": "jee-mathematics-vector-algebra-f1",
+        "title": "How IIT toppers crack Vector Algebra in 10 minutes",
+        "topic": "Vector Algebra",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 2",
+        "ncertChapter": "Vector Algebra",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-vector-algebra-f2",
+        "slug": "jee-mathematics-vector-algebra-f2",
+        "title": "JEE Main Mathematics — Vector Algebra: what changed and what to do",
+        "topic": "Vector Algebra",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 2",
+        "ncertChapter": "Vector Algebra",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-vector-algebra-f3",
+        "slug": "jee-mathematics-vector-algebra-f3",
+        "title": "NCERT Mathematics Vector Algebra — 5 things JEE always tests",
+        "topic": "Vector Algebra",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 2",
+        "ncertChapter": "Vector Algebra",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-vector-algebra-f4",
+        "slug": "jee-mathematics-vector-algebra-f4",
+        "title": "Vector Algebra formulas, tricks and shortcuts for JEE Main 2026",
+        "topic": "Vector Algebra",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 2",
+        "ncertChapter": "Vector Algebra",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-3d-geometry-f0",
+        "slug": "jee-mathematics-3d-geometry-f0",
+        "title": "Complete guide to 3D Geometry for JEE Main 2026",
+        "topic": "3D Geometry",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 2",
+        "ncertChapter": "3D Geometry",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-3d-geometry-f1",
+        "slug": "jee-mathematics-3d-geometry-f1",
+        "title": "How IIT toppers crack 3D Geometry in 10 minutes",
+        "topic": "3D Geometry",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 2",
+        "ncertChapter": "3D Geometry",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-3d-geometry-f2",
+        "slug": "jee-mathematics-3d-geometry-f2",
+        "title": "JEE Main Mathematics — 3D Geometry: what changed and what to do",
+        "topic": "3D Geometry",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 2",
+        "ncertChapter": "3D Geometry",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-3d-geometry-f3",
+        "slug": "jee-mathematics-3d-geometry-f3",
+        "title": "NCERT Mathematics 3D Geometry — 5 things JEE always tests",
+        "topic": "3D Geometry",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 2",
+        "ncertChapter": "3D Geometry",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-3d-geometry-f4",
+        "slug": "jee-mathematics-3d-geometry-f4",
+        "title": "3D Geometry formulas, tricks and shortcuts for JEE Main 2026",
+        "topic": "3D Geometry",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 2",
+        "ncertChapter": "3D Geometry",
+        "targetClasses": [
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-probability-f0",
+        "slug": "jee-mathematics-probability-f0",
+        "title": "Complete guide to Probability for JEE Main 2026",
+        "topic": "Probability",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 2",
+        "ncertChapter": "Probability",
+        "targetClasses": [
+          "11",
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-probability-f1",
+        "slug": "jee-mathematics-probability-f1",
+        "title": "How IIT toppers crack Probability in 10 minutes",
+        "topic": "Probability",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 2",
+        "ncertChapter": "Probability",
+        "targetClasses": [
+          "11",
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-probability-f2",
+        "slug": "jee-mathematics-probability-f2",
+        "title": "JEE Main Mathematics — Probability: what changed and what to do",
+        "topic": "Probability",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 2",
+        "ncertChapter": "Probability",
+        "targetClasses": [
+          "11",
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-probability-f3",
+        "slug": "jee-mathematics-probability-f3",
+        "title": "NCERT Mathematics Probability — 5 things JEE always tests",
+        "topic": "Probability",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 2",
+        "ncertChapter": "Probability",
+        "targetClasses": [
+          "11",
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-probability-f4",
+        "slug": "jee-mathematics-probability-f4",
+        "title": "Probability formulas, tricks and shortcuts for JEE Main 2026",
+        "topic": "Probability",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 2",
+        "ncertChapter": "Probability",
+        "targetClasses": [
+          "11",
+          "12"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-trigonometry-f0",
+        "slug": "jee-mathematics-trigonometry-f0",
+        "title": "Complete guide to Trigonometry for JEE Main 2026",
+        "topic": "Trigonometry",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 1",
+        "ncertChapter": "Trigonometry",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-trigonometry-f1",
+        "slug": "jee-mathematics-trigonometry-f1",
+        "title": "How IIT toppers crack Trigonometry in 10 minutes",
+        "topic": "Trigonometry",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 1",
+        "ncertChapter": "Trigonometry",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-trigonometry-f2",
+        "slug": "jee-mathematics-trigonometry-f2",
+        "title": "JEE Main Mathematics — Trigonometry: what changed and what to do",
+        "topic": "Trigonometry",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 1",
+        "ncertChapter": "Trigonometry",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-trigonometry-f3",
+        "slug": "jee-mathematics-trigonometry-f3",
+        "title": "NCERT Mathematics Trigonometry — 5 things JEE always tests",
+        "topic": "Trigonometry",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 1",
+        "ncertChapter": "Trigonometry",
+        "targetClasses": [
+          "11"
+        ]
+      },
+      {
+        "customId": "blog-300-mathematics-trigonometry-f4",
+        "slug": "jee-mathematics-trigonometry-f4",
+        "title": "Trigonometry formulas, tricks and shortcuts for JEE Main 2026",
+        "topic": "Trigonometry",
+        "subject": "Mathematics",
+        "ncertBook": "Mathematics Part 1",
+        "ncertChapter": "Trigonometry",
+        "targetClasses": [
+          "11"
+        ]
+      }
+    ]
+  }
+]
