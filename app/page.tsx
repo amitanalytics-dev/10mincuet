@@ -238,7 +238,19 @@ export default function HomePage() {
             <Link href="/compare/allen" className="hover:text-white transition-colors">Compare</Link>
             <Link href="/for/class-12-students" className="hover:text-white transition-colors">For Students</Link>
           </div>
-          <div>© {new Date().getFullYear()} 10minCUET. Not affiliated with NTA.</div>
+          <div>
+            © {new Date().getFullYear()} 10minCUET. Not affiliated with NTA.
+            {' · '}
+            Powered by{' '}
+            <a
+              href="https://www.aletheiaai.in"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-white transition-colors"
+            >
+              Aletheia AI
+            </a>
+          </div>
         </div>
       </footer>
     </div>
