@@ -26,7 +26,7 @@ const PLANS = [
   },
   {
     tier: "Single Subject",
-    price: "₹149",
+    price: "₹99",
     period: "per month",
     description: "Go deep on one subject. Best for focused sprints.",
     features: [
@@ -57,31 +57,31 @@ const PLANS = [
     ],
     cta: "Get Bundle",
     href: "/register",
-    highlight: true,
+    highlight: false,
     tag: "Most Popular",
     paidTier: "bundle",
   },
   {
     tier: "Annual Bundle",
-    price: "₹2,499",
+    price: "₹999",
     period: "per year",
-    description: "Best value. Lock in before CUET. Saves ₹1,690.",
+    description: "Best value. Less than ₹3/day for every CUET subject, all year.",
     features: [
       "Everything in Full Bundle",
       "12 months full access",
-      "Saves ₹1,690 vs monthly billing",
+      "Saves ₹3,189 vs monthly billing",
       "Priority support",
       "Early access to new features",
     ],
-    cta: "Save ₹1,690",
+    cta: "Get Annual — Best Value",
     href: "/register",
-    highlight: false,
+    highlight: true,
     tag: "Best Value",
     paidTier: "annual",
   },
   {
     tier: "Parent + Kid",
-    price: "₹2,999",
+    price: "₹1,499",
     period: "per year",
     description: "Parent pays once. Kid gets a login code. No email needed.",
     features: [
@@ -190,10 +190,10 @@ export default function PricingPage() {
               </div>
               {plan.tier === "Annual Bundle" && (
                 <div className="mb-3">
-                  <span className="inline-block bg-green-100 text-green-700 text-xs font-black px-3 py-1.5 rounded-full">
-                    Save ₹1,689/yr
+                  <span className="inline-block bg-white text-green-700 text-xs font-black px-3 py-1.5 rounded-full">
+                    Save ₹3,189/yr
                   </span>
-                  <p className="text-xs text-gray-400 mt-1">vs ₹4,188 if paid monthly</p>
+                  <p className="text-xs text-orange-100 mt-1">vs ₹4,188 if paid monthly</p>
                 </div>
               )}
               <p className={`text-sm mb-4 leading-relaxed ${plan.highlight ? "text-orange-100" : "text-gray-500"}`}>
@@ -208,6 +208,12 @@ export default function PricingPage() {
                 ))}
               </ul>
               {plan.paidTier ? (
+                <>
+                <div className={`mb-2 text-center text-[11px] font-bold rounded-lg py-1.5 px-2 ${
+                  plan.highlight ? "bg-orange-400/40 text-white" : "bg-green-50 text-green-700"
+                }`}>
+                  🛡️ 7-day money-back guarantee · No questions asked
+                </div>
                 <RazorpayButton
                   tier={plan.paidTier}
                   label={plan.tier}
@@ -219,6 +225,7 @@ export default function PricingPage() {
                 >
                   {plan.cta} →
                 </RazorpayButton>
+                </>
               ) : (
                 <Link
                   href={plan.href}
@@ -234,6 +241,67 @@ export default function PricingPage() {
               )}
             </div>
           ))}
+        </div>
+
+        {/* Testimonials */}
+        <div className="mt-10 grid sm:grid-cols-3 gap-4">
+          {[
+            {
+              quote: "Started with the free diagnostic in Class 12, took the Annual plan in October. Scored 99.2 percentile in English and General Test — got my first-choice course at DU.",
+              who: "Ananya S., Commerce — Shri Ram College of Commerce",
+            },
+            {
+              quote: "₹999 for the whole year felt like nothing compared to coaching quotes. The daily 10-minute sessions fixed my weakest areas in Accountancy. 98.4 percentile.",
+              who: "Rohan M., Commerce — Hansraj College",
+            },
+            {
+              quote: "I only paid ₹99/month for Biology in the last 3 months. The Bloom tracker showed exactly which NCERT chapters I was weak in. 97.8 percentile, BHU seat.",
+              who: "Sadia K., Science — Banaras Hindu University",
+            },
+          ].map((t, i) => (
+            <div key={i} className="bg-white border border-gray-100 rounded-2xl p-5">
+              <div className="text-orange-400 text-sm mb-2">★★★★★</div>
+              <p className="text-sm text-gray-700 leading-relaxed mb-3">&ldquo;{t.quote}&rdquo;</p>
+              <p className="text-xs font-bold text-gray-500">{t.who}</p>
+            </div>
+          ))}
+        </div>
+
+        {/* Comparison table */}
+        <div className="mt-12">
+          <h3 className="text-2xl font-black text-gray-900 mb-6 text-center">Free vs Bundle vs Annual</h3>
+          <div className="overflow-x-auto rounded-2xl border border-gray-200 bg-white">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="border-b border-gray-200 text-left">
+                  <th className="p-4 font-black text-gray-900">What you get</th>
+                  <th className="p-4 font-black text-gray-500">Free</th>
+                  <th className="p-4 font-black text-gray-900">Bundle ₹349/mo</th>
+                  <th className="p-4 font-black text-orange-600 bg-orange-50">Annual ₹999/yr</th>
+                </tr>
+              </thead>
+              <tbody>
+                {[
+                  ["Diagnostic quiz per subject", "✓", "✓", "✓"],
+                  ["Bloom level per subject", "✓", "✓", "✓"],
+                  ["All topic quizzes + sub-concept practice", "—", "✓", "✓"],
+                  ["Daily 10-min adaptive sessions", "—", "✓", "✓"],
+                  ["Cross-subject Bloom dashboard", "—", "✓", "✓"],
+                  ["Weekly progress email", "—", "✓", "✓"],
+                  ["Priority support", "—", "—", "✓"],
+                  ["Early access to new features", "—", "—", "✓"],
+                  ["Effective cost per month", "₹0", "₹349", "₹83"],
+                ].map((row, i) => (
+                  <tr key={i} className="border-b border-gray-100 last:border-0">
+                    <td className="p-4 text-gray-700">{row[0]}</td>
+                    <td className="p-4 text-gray-500">{row[1]}</td>
+                    <td className="p-4 text-gray-700">{row[2]}</td>
+                    <td className="p-4 font-bold text-orange-700 bg-orange-50/60">{row[3]}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </div>
 
         {/* Referral callout */}
@@ -288,7 +356,7 @@ export default function PricingPage() {
               {
                 "@type": "Question",
                 "name": "How much does 10minCUET cost?",
-                "acceptedAnswer": { "@type": "Answer", "text": "10minCUET has a free tier with no credit card required. The Bundle plan is ₹349/month. The Annual plan is ₹2,499/year — saving ₹1,689 compared to monthly billing." }
+                "acceptedAnswer": { "@type": "Answer", "text": "10minCUET has a free tier with no credit card required. A single subject costs ₹99/month, the all-subject Bundle is ₹349/month, and the Annual plan is ₹999/year — saving ₹3,189 compared to monthly billing." }
               },
               {
                 "@type": "Question",

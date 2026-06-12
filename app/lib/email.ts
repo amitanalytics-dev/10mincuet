@@ -36,12 +36,12 @@ export async function sendWeeklyReport(email: string, name: string, reportHtml: 
 
 // Plan labels for GST invoice
 const PLAN_LABELS: Record<string, string> = {
-  physics: "Physics — Single Subject (₹149/month)",
-  chemistry: "Chemistry — Single Subject (₹149/month)",
-  math: "Math — Single Subject (₹149/month)",
+  physics: "Physics — Single Subject (₹99/month)",
+  chemistry: "Chemistry — Single Subject (₹99/month)",
+  math: "Math — Single Subject (₹99/month)",
   bundle: "Full Bundle — Physics + Chemistry + Math (₹349/month)",
-  annual: "Annual Bundle — Full Access, 12 months (₹2,499/year)",
-  parent_kid: "Parent + Kid — Full Access, 12 months (₹2,999/year)",
+  annual: "Annual Bundle — Full Access, 12 months (₹999/year)",
+  parent_kid: "Parent + Kid — Full Access, 12 months (₹1,499/year)",
   mock_pack: "Mock Test Pack — 10 Full NTA-Pattern Mocks (₹499 one-time)",
 };
 

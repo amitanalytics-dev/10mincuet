@@ -5,7 +5,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "10minCUET vs Allen Kota — CUET Prep Comparison 2026",
   description:
-    "10minCUET vs Allen Kota for CUET UG 2025. Compare price (₹2,499/yr vs ₹80,000–1.2L/yr), format (10 min/day vs 8hr classroom), Bloom tracking, and parent visibility. Honest breakdown.",
+    "10minCUET vs Allen Kota for CUET UG 2025. Compare price (₹999/yr vs ₹80,000–1.2L/yr), format (10 min/day vs 8hr classroom), Bloom tracking, and parent visibility. Honest breakdown.",
   alternates: { canonical: `${BASE_URL}/compare/allen` },
   openGraph: {
     type: "website",
@@ -33,7 +33,7 @@ const faqJsonLd = {
       name: "How much does Allen Kota cost compared to 10minCUET?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Allen Kota's classroom courses for two-year CUET preparation range from ₹80,000 to ₹1.2 lakh per year in tuition fees alone, not including hostel (₹8,000–15,000/month) and living expenses. Total two-year cost for a residential Kota student often exceeds ₹4–5 lakh. 10minCUET's annual plan costs ₹2,499 — approximately 1–2% of the equivalent Allen cost. These are not direct substitutes — Allen delivers full-syllabus instruction, 10minCUET delivers daily sub-concept mastery tracking.",
+        text: "Allen Kota's classroom courses for two-year CUET preparation range from ₹80,000 to ₹1.2 lakh per year in tuition fees alone, not including hostel (₹8,000–15,000/month) and living expenses. Total two-year cost for a residential Kota student often exceeds ₹4–5 lakh. 10minCUET's annual plan costs ₹999 — approximately 1–2% of the equivalent Allen cost. These are not direct substitutes — Allen delivers full-syllabus instruction, 10minCUET delivers daily sub-concept mastery tracking.",
       },
     },
     {
@@ -48,7 +48,7 @@ const faqJsonLd = {
 };
 
 const rows = [
-  { feature: "Annual tuition cost", a: "₹2,499/year", b: "₹80,000–1.2L/year", winner: "a" as const },
+  { feature: "Annual tuition cost", a: "₹999/year", b: "₹80,000–1.2L/year", winner: "a" as const },
   { feature: "Daily time commitment", a: "10 minutes", b: "8 hours (classroom)", winner: "a" as const },
   { feature: "Location required", a: "Anywhere — fully online", b: "Kota only (residential)", winner: "a" as const },
   { feature: "Format", a: "Adaptive Bloom-level quiz per sub-concept", b: "Classroom lectures + batch tests", winner: "tie" as const },

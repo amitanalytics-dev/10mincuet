@@ -165,7 +165,7 @@ export async function sendReEngagementDay21(email: string, name: string) {
   return getResend().emails.send({
     from: FROM_NOREPLY,
     to: email,
-    subject: `${name}, don't let your CUET prep stall — upgrade for ₹149/mo ⏰`,
+    subject: `${name}, don't let your CUET prep stall — upgrade for ₹99/mo ⏰`,
     html: reEngagementDay21Html(name, email),
     tags: [{ name: "sequence", value: "re-engagement" }, { name: "day", value: "21" }],
   });

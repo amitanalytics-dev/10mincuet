@@ -39,7 +39,7 @@ const compareMap: Record<CompareSlug, CompareData> = {
       { feature: "Session format", a: "10-min adaptive quiz per sub-concept", b: "Live classes, 60–180 min", winner: "a" },
       { feature: "Content type", a: "432 original Bloom-tagged questions", b: "Video lectures + test series", winner: "a" },
       { feature: "Bloom level tracking", a: "Per sub-concept, updated every session", b: "Not available", winner: "a" },
-      { feature: "Price (annual)", a: "₹2,499/year", b: "₹7,000–15,000/year", winner: "a" },
+      { feature: "Price (annual)", a: "₹999/year", b: "₹7,000–15,000/year", winner: "a" },
       { feature: "Live doubt solving", a: "Not available", b: "Available", winner: "b" },
       { feature: "Video lectures", a: "Not available", b: "Extensive library", winner: "b" },
       { feature: "Score to percentile tool", a: "Free, built-in", b: "Available", winner: "tie" },
@@ -51,7 +51,7 @@ const compareMap: Record<CompareSlug, CompareData> = {
       "Unacademy is a legitimate platform with strong teaching faculty, especially for Physics (Sachin Sir, Sameer Banerjee) and Chemistry (Paaras Thakur). For students who learn well from video instruction and benefit from live doubt-clearing sessions, Unacademy provides real value.",
       "The core difference is the model of learning. Unacademy delivers content. 10minCUET tracks mastery. A student can watch 10 hours of Unacademy lectures on Electrostatics and still be at Bloom Level 2 (Understand) without knowing it. 10minCUET's adaptive quiz after each session tests whether you've actually reached Level 3 (Apply) — the minimum required for CUET questions on that topic.",
       "For students with limited time — Class 12 students managing boards, or working professionals' children — the 10-minute session model is a practical advantage. A 90-minute Unacademy live class requires scheduling, bandwidth, and sustained focus. A 10-minute 10minCUET session can happen before breakfast on a school day.",
-      "On pricing: Unacademy subscriptions range from ₹7,000 to ₹15,000 per year depending on the plan. 10minCUET's annual plan is ₹2,499. These are not directly comparable — Unacademy offers substantially more content volume. But if the goal is targeted sub-concept mastery in minimal daily time, 10minCUET delivers that at a fraction of the cost.",
+      "On pricing: Unacademy subscriptions range from ₹7,000 to ₹15,000 per year depending on the plan. 10minCUET's annual plan is ₹999. These are not directly comparable — Unacademy offers substantially more content volume. But if the goal is targeted sub-concept mastery in minimal daily time, 10minCUET delivers that at a fraction of the cost.",
       "The platforms are not mutually exclusive. Many students use Unacademy for content delivery and 10minCUET for daily Bloom-level calibration — 10 minutes after each Unacademy session to verify what actually stuck.",
     ],
     faqs: [
@@ -84,7 +84,7 @@ const compareMap: Record<CompareSlug, CompareData> = {
       { feature: "Session format", a: "10-min adaptive Bloom quiz", b: "Video lectures + Pathshala modules", winner: "tie" },
       { feature: "Free content quality", a: "One free diagnostic per subject", b: "Extensive free YouTube library", winner: "b" },
       { feature: "Bloom level tracking", a: "Per sub-concept, daily", b: "Not available", winner: "a" },
-      { feature: "Price (paid plan, annual)", a: "₹2,499/year (all subjects)", b: "₹5,000–10,000/year", winner: "a" },
+      { feature: "Price (paid plan, annual)", a: "₹999/year (all subjects)", b: "₹5,000–10,000/year", winner: "a" },
       { feature: "Video content", a: "None", b: "Thousands of hours", winner: "b" },
       { feature: "Test series", a: "Full mock test (NTA format)", b: "Comprehensive test series", winner: "b" },
       { feature: "Sub-concept weak spot detection", a: "Automatic, objective", b: "Manual (interpret your test results)", winner: "a" },
@@ -96,7 +96,7 @@ const compareMap: Record<CompareSlug, CompareData> = {
       "Physics Wallah is one of India's most impactful CUET prep innovations. Alakh Pandey's free YouTube lectures on Physics, Chemistry, and Math have genuinely democratised CUET preparation for students who cannot afford coaching. The Pathshala paid platform extends this with structured modules and test series.",
       "The honest limitation of Physics Wallah — and of any video-based platform — is that watching a lecture does not guarantee understanding at the Apply level. A student can watch PW's Gauss's Law lecture twice and still answer CUET-style Analyse-level questions incorrectly. The gap between 'I watched it' and 'I can apply it' is exactly what 10minCUET measures.",
       "10minCUET has no video content. This is intentional. The platform assumes students will use PW, YouTube, or coaching for content delivery. 10minCUET's job is to test what stuck — with 10-minute Bloom-level quizzes after every study session.",
-      "For budget-conscious students: Physics Wallah's free YouTube content + 10minCUET's paid plan (₹2,499/year) is a compelling combination. PW delivers concept instruction at no cost. 10minCUET adds daily objective mastery tracking for ₹208/month — less than most students' monthly mobile recharge.",
+      "For budget-conscious students: Physics Wallah's free YouTube content + 10minCUET's paid plan (₹999/year) is a compelling combination. PW delivers concept instruction at no cost. 10minCUET adds daily objective mastery tracking for ₹83/month — less than most students' monthly mobile recharge.",
       "PW's test series is comprehensive and competitive. 10minCUET's mock test is one full NTA-format paper (90 questions, 3 hours, +4/−1 marking). These serve different purposes: PW tests rank students in a peer cohort, 10minCUET tests sub-concept mastery against the CUET Bloom distribution. Both are useful. Neither replaces the other.",
     ],
     faqs: [
@@ -126,7 +126,7 @@ const compareMap: Record<CompareSlug, CompareData> = {
     colA: "10minCUET",
     colB: "CUET Coaching Institute",
     rows: [
-      { feature: "Annual cost", a: "₹2,499", b: "₹1.5–3 lakh", winner: "a" },
+      { feature: "Annual cost", a: "₹999", b: "₹1.5–3 lakh", winner: "a" },
       { feature: "Daily time commitment", a: "10 minutes", b: "6–10 hours", winner: "a" },
       { feature: "Relocation required", a: "No — fully online", b: "Often yes (Kota, Delhi, Hyderabad)", winner: "a" },
       { feature: "Sub-concept mastery tracking", a: "Daily, automated, per sub-concept", b: "Weekly tests, batch-level analysis", winner: "a" },
@@ -150,7 +150,7 @@ const compareMap: Record<CompareSlug, CompareData> = {
         a: "No — 10minCUET does not have teachers, live classes, or full-syllabus content delivery. It is a sub-concept mastery tracker for daily use. It can complement coaching (as a daily calibration layer) or support self-study students who are using PW or YouTube for content. It cannot replace a teacher explaining a difficult Physics concept from scratch.",
       },
       {
-        q: "Is CUET coaching worth ₹3 lakh when 10minCUET costs ₹2,499?",
+        q: "Is CUET coaching worth ₹3 lakh when 10minCUET costs ₹999?",
         a: "They are not substitutes. Coaching delivers teacher-led instruction, structured schedules, and peer competition. 10minCUET delivers daily Bloom-level tracking per sub-concept. The value of coaching depends entirely on the student — some thrive, many don't. The value of 10minCUET is the same for every student: daily objective feedback on sub-concept mastery.",
       },
       {
@@ -184,7 +184,7 @@ const compareMap: Record<CompareSlug, CompareData> = {
       "The data on self-study vs coaching for CUET is nuanced. NTA does not publish the proportion of IIT admits from coaching vs self-study. However, coaching institutes claim 60–80% of IIT admits come from their programs — a claim difficult to verify independently. What we do know: Kota coaching institutes produce a disproportionate share of top-100 AIR students annually.",
       "The argument for coaching is structure and content quality. Experienced Physics faculty at Allen or Resonance have deep institutional knowledge of the CUET paper pattern, question archetypes, and optimal time allocation. A student who doesn't know 'Projectile Motion is high-frequency but rotational dynamics is lower-priority' will discover this faster in coaching than in self-study.",
       "The argument for self-study is discipline and cost. Students who are genuinely self-motivated — who study because they want to, not because they're scheduled to — often do as well or better in self-study. The total cost advantage is substantial: ₹5,000–20,000 vs ₹1.5–5 lakh for two years of coaching.",
-      "The critical variable in self-study is objective feedback. Without a teacher flagging weak sub-concepts and without batch tests providing peer benchmarking, a self-study student can study for months while stuck at Bloom Level 2 on critical topics. This is where 10minCUET's Bloom-level tracking adds the most value: it provides the objective, sub-concept-level feedback that coaching test systems provide — at ₹2,499/year instead of ₹1.5 lakh.",
+      "The critical variable in self-study is objective feedback. Without a teacher flagging weak sub-concepts and without batch tests providing peer benchmarking, a self-study student can study for months while stuck at Bloom Level 2 on critical topics. This is where 10minCUET's Bloom-level tracking adds the most value: it provides the objective, sub-concept-level feedback that coaching test systems provide — at ₹999/year instead of ₹1.5 lakh.",
       "The framework for your decision: if you are consistently self-disciplined, have access to good free content (PW, Khan Academy, NCERT), and can handle uncertainty without external structure, self-study with daily 10minCUET sessions is a viable path. If you know you need a teacher to explain concepts, need the accountability of external tests, and have the financial means, coaching is the right choice.",
     ],
     faqs: [
@@ -198,7 +198,7 @@ const compareMap: Record<CompareSlug, CompareData> = {
       },
       {
         q: "What tools help self-study CUET students the most?",
-        a: "For content: Physics Wallah (YouTube, free), NCERT textbooks, HC Verma for Physics. For objective mastery tracking: 10minCUET (₹2,499/year) — daily Bloom-level sessions that identify which specific sub-concepts are at L2 when CUET needs L3. For exam strategy: 10minCUET's Score to Percentile Calculator and College Predictor, NTA mock tests.",
+        a: "For content: Physics Wallah (YouTube, free), NCERT textbooks, HC Verma for Physics. For objective mastery tracking: 10minCUET (₹999/year) — daily Bloom-level sessions that identify which specific sub-concepts are at L2 when CUET needs L3. For exam strategy: 10minCUET's Score to Percentile Calculator and College Predictor, NTA mock tests.",
       },
     ],
     cta: "Self-Study Students — Track Your Bloom Level Free →",

@@ -250,7 +250,7 @@ export function welcomeDay7Html(name: string, email: string, improvement: number
     <div style="background:#f5f3ff;border-radius:12px;padding:20px;border-left:4px solid #7c3aed;margin-bottom:24px">
       <h3 style="margin:0 0 8px;font-size:14px;font-weight:700;color:#5b21b6">Unlock your full potential</h3>
       <p style="margin:0;font-size:13px;color:#6d28d9;line-height:1.6">
-        Premium users see <strong>3× faster Bloom-level growth</strong> with unlimited practice, full CUET mock tests, and personalised weak-topic drilling. Starting at ₹149/month.
+        Premium users see <strong>3× faster Bloom-level growth</strong> with unlimited practice, full CUET mock tests, and personalised weak-topic drilling. Starting at ₹99/month.
       </p>
     </div>
 
@@ -594,12 +594,12 @@ export function reEngagementDay21Html(name: string, email: string): string {
     </table>
 
     <div style="background:#fff7ed;border-radius:12px;padding:16px;text-align:center;border:2px solid #fed7aa;margin-bottom:24px">
-      <p style="margin:0;font-size:16px;font-weight:800;color:#c2410c">Starting at just ₹149/month</p>
+      <p style="margin:0;font-size:16px;font-weight:800;color:#c2410c">Starting at just ₹99/month</p>
       <p style="margin:4px 0 0;font-size:12px;color:#9a3412">Less than a cup of chai per day 🫖</p>
     </div>
 
     <div style="text-align:center">
-      ${ctaButton("Upgrade now — start from ₹149/mo →", `${BASE_URL}/pricing`)}
+      ${ctaButton("Upgrade now — start from ₹99/mo →", `${BASE_URL}/pricing`)}
       <p style="margin:16px 0 0;font-size:12px;color:#9ca3af">Cancel anytime. No questions asked.</p>
     </div>
   `;

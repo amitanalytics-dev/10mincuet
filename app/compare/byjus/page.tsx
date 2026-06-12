@@ -5,7 +5,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "10minCUET vs BYJU'S — CUET Prep Comparison 2026",
   description:
-    "10minCUET vs BYJU'S for CUET UG 2025. Compare price (₹2,499/yr vs ₹20,000–40,000/yr), format (10 min adaptive quiz vs app-based video lectures), Bloom tracking, and learning outcomes. Honest breakdown.",
+    "10minCUET vs BYJU'S for CUET UG 2025. Compare price (₹999/yr vs ₹20,000–40,000/yr), format (10 min adaptive quiz vs app-based video lectures), Bloom tracking, and learning outcomes. Honest breakdown.",
   alternates: { canonical: `${BASE_URL}/compare/byjus` },
   openGraph: {
     type: "website",
@@ -33,7 +33,7 @@ const faqJsonLd = {
       name: "How much does BYJU'S CUET preparation cost compared to 10minCUET?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "BYJU'S CUET preparation subscriptions typically range from ₹20,000 to ₹40,000 per year depending on the plan, course duration, and any bundled test series. 10minCUET's annual plan costs ₹2,499. The two platforms are not direct substitutes — BYJU'S delivers full-syllabus video content, 10minCUET delivers daily sub-concept mastery tracking. Many students use both.",
+        text: "BYJU'S CUET preparation subscriptions typically range from ₹20,000 to ₹40,000 per year depending on the plan, course duration, and any bundled test series. 10minCUET's annual plan costs ₹999. The two platforms are not direct substitutes — BYJU'S delivers full-syllabus video content, 10minCUET delivers daily sub-concept mastery tracking. Many students use both.",
       },
     },
     {
@@ -48,7 +48,7 @@ const faqJsonLd = {
 };
 
 const rows = [
-  { feature: "Annual cost", a: "₹2,499/year", b: "₹20,000–40,000/year", winner: "a" as const },
+  { feature: "Annual cost", a: "₹999/year", b: "₹20,000–40,000/year", winner: "a" as const },
   { feature: "Daily time commitment", a: "10 minutes", b: "30–90 min/session (video-based)", winner: "a" as const },
   { feature: "Format", a: "Adaptive Bloom-level quiz per sub-concept", b: "App-based animated video lectures", winner: "tie" as const },
   { feature: "Content type", a: "432 original Bloom-tagged questions", b: "Video lectures + test series", winner: "tie" as const },
@@ -66,7 +66,7 @@ const body = [
   "BYJU'S became India's most-funded ed-tech company by delivering a fundamentally better video learning experience than textbooks — animated concept explanations, step-by-step problem walkthroughs, and a gamified app interface. For students who learn well from visual instruction and need concept-building support, BYJU'S offers a substantial content library.",
   "The well-documented limitation of video-based learning is the gap between watching and understanding. Educational research is clear on this point: passive watching — even of high-quality content — does not reliably produce Apply-level (L3) mastery. A student who watches BYJU'S entire Electrostatics module can still fail CUET questions on Gauss's Law because the questions require applying the concept to an unfamiliar configuration — not recalling what the video showed.",
   "10minCUET's Bloom-level quiz is designed to close this gap. After watching a BYJU'S lecture (or any content source), a 10-minute 10minCUET session tests whether you can actually apply what you just watched. If the quiz result is L2 (Understand), you know the video did not produce working Apply-level mastery on that sub-concept — and the next session serves L3 questions until it does.",
-  "On pricing: BYJU'S CUET subscriptions range from ₹20,000 to ₹40,000 per year depending on plan and content bundle. 10minCUET's annual plan is ₹2,499. These are not comparable on content volume — BYJU'S delivers hundreds of hours of video. 10minCUET delivers 432 original Bloom-tagged questions across 24 high-frequency topics. The relevant comparison is: which platform is more effective at the specific job of daily sub-concept mastery tracking?",
+  "On pricing: BYJU'S CUET subscriptions range from ₹20,000 to ₹40,000 per year depending on plan and content bundle. 10minCUET's annual plan is ₹999. These are not comparable on content volume — BYJU'S delivers hundreds of hours of video. 10minCUET delivers 432 original Bloom-tagged questions across 24 high-frequency topics. The relevant comparison is: which platform is more effective at the specific job of daily sub-concept mastery tracking?",
   "For students who are already using BYJU'S: adding 10minCUET's 10-minute daily session after BYJU'S study is a practical, low-cost way to verify that content consumption is translating into Apply-level mastery — the minimum required for CUET UG marks.",
 ];
 

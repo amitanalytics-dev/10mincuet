@@ -124,7 +124,7 @@ const audienceMap: Record<AudienceSlug, AudienceData> = {
       {
         emoji: "💰",
         title: "Annual plan — lock in early",
-        desc: "The Annual plan at ₹2,499/year saves ₹1,690 vs monthly. For Class 11 students with two years ahead, this is the highest-ROI CUET investment you can make.",
+        desc: "The Annual plan at ₹999/year saves ₹3,189 vs monthly. For Class 11 students with two years ahead, this is the highest-ROI CUET investment you can make.",
       },
     ],
     bodyParagraphs: [
@@ -235,7 +235,7 @@ const audienceMap: Record<AudienceSlug, AudienceData> = {
       {
         emoji: "💰",
         title: "Fraction of coaching cost",
-        desc: "Kota coaching: ₹1.5–3 lakh/year. 10minCUET annual plan: ₹2,499. Not a replacement for coaching — but a daily precision layer that most coaching fees don't provide.",
+        desc: "Kota coaching: ₹1.5–3 lakh/year. 10minCUET annual plan: ₹999. Not a replacement for coaching — but a daily precision layer that most coaching fees don't provide.",
       },
     ],
     bodyParagraphs: [
@@ -243,7 +243,7 @@ const audienceMap: Record<AudienceSlug, AudienceData> = {
       "10minCUET gives parents an objective, science-backed view of their child's CUET readiness. Bloom's Taxonomy — the same framework used in educational research and curriculum design worldwide — tracks cognitive mastery at six levels. When your child is at L3 (Apply) on Current Electricity but L2 (Understand) on Wave Optics, you know exactly where to focus.",
       "The Parent + Kid account model is designed for Indian family dynamics. You purchase the subscription once. Your child receives a 6-digit access code that works on any device — no registration, no email, no password for the student to manage. You receive a weekly Bloom-level progress summary showing which sub-concepts have improved and which remain at risk.",
       "10minCUET is not a replacement for coaching. It is a daily calibration layer — 10 minutes per day — that tells you whether today's coaching session actually built Apply-level (L3) understanding, or just Recall-level (L1) exposure. Used alongside coaching, it significantly increases the ROI on your coaching investment.",
-      "For parents evaluating CUET prep options for a Class 11 student, 10minCUET's Annual plan at ₹2,499 represents the lowest-cost way to get objective, sub-concept-level CUET readiness tracking for two full years. The platform covers all 24 high-frequency CUET topics across Physics, Chemistry, and Math — the same topics that account for 60% of CUET marks every year.",
+      "For parents evaluating CUET prep options for a Class 11 student, 10minCUET's Annual plan at ₹999 represents the lowest-cost way to get objective, sub-concept-level CUET readiness tracking for two full years. The platform covers all 24 high-frequency CUET topics across Physics, Chemistry, and Math — the same topics that account for 60% of CUET marks every year.",
     ],
     ctaLabel: "Start Free for Your Child",
   },

@@ -635,7 +635,7 @@ export default function LandingPage() {
                 { label: "10 minutes. Adaptive. Every day.", note: "active recall beats passive watching every time" },
                 { label: "\"You're at L2 Gauss's Law Applications\"", note: "exact sub-concept, exact cognitive level" },
                 { label: "3 questions chosen for YOUR gap", note: "not random — sequenced to your Bloom level" },
-                { label: "₹149/month or free", note: "no lock-in, no dark patterns" },
+                { label: "₹99/month or free", note: "no lock-in, no dark patterns" },
               ].map((item, i) => (
                 <div key={i} className="flex items-start gap-3">
                   <span className="text-white font-black text-sm shrink-0 mt-0.5">✓</span>
@@ -730,7 +730,7 @@ export default function LandingPage() {
             {[
               { tier: "Free", price: "₹0", desc: "1 diagnostic quiz per subject. See your Bloom level. No commitment.", cta: "Start Free", href: "/register", highlight: false },
               { tier: "Bundle", price: "₹349/mo", desc: "All 3 subjects. Full access. Practice, daily plans, Bloom tracker.", cta: "Get Bundle", href: "/pricing", highlight: true },
-              { tier: "Annual", price: "₹2,499/yr", desc: "Everything in Bundle for a full year. Saves ₹1,690 vs monthly.", cta: "Best Value", href: "/pricing", highlight: false },
+              { tier: "Annual", price: "₹999/yr", desc: "Everything in Bundle for a full year. Saves ₹3,189 vs monthly.", cta: "Best Value", href: "/pricing", highlight: false },
             ].map((p, i) => (
               <div key={i} className={`rounded-2xl border p-6 ${p.highlight ? "bg-orange-500 border-orange-500 text-white shadow-xl shadow-orange-100" : "bg-white border-gray-200"}`}>
                 <div className={`text-xs font-black uppercase tracking-widest mb-2 ${p.highlight ? "text-orange-100" : "text-orange-500"}`}>{p.tier}</div>
@@ -788,7 +788,7 @@ export default function LandingPage() {
               {
                 "@type": "Question",
                 "name": "Is 10minCUET free?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Yes. 10minCUET is free to start with no credit card required. The free tier includes diagnostic quizzes for all subjects. Premium plans start at ₹349/month." }
+                "acceptedAnswer": { "@type": "Answer", "text": "Yes. 10minCUET is free to start with no credit card required. The free tier includes diagnostic quizzes for all subjects. Premium plans start at ₹99/month, with the Annual plan at ₹999/year." }
               },
               {
                 "@type": "Question",
