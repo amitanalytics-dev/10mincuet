@@ -43,9 +43,17 @@ const FEATURES = [
   { emoji: "👨‍👩‍👧", title: t.home_feat6_title, desc: t.home_feat6_desc, tag: t.home_feat6_tag },
 ];
 
+const STATS = [
+  { num: "500+", label: "ओरिजिनल प्रश्न", sub: "Bloom-टैग किए" },
+  { num: "27", label: "Domain विषय", sub: "Sci · Com · Hum" },
+  { num: "280+", label: "केंद्रीय विश्वविद्यालय", sub: "DU · JNU · BHU" },
+  { num: "10", label: "मिनट / दिन", sub: "बस इतना काफी है" },
+];
+
 export default function HindiLandingPage() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white pb-28 sm:pb-0">
+
       {/* ── Nav ── */}
       <nav className="border-b border-gray-100 bg-white/80 backdrop-blur-sm sticky top-0 z-20">
         <div className="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
@@ -58,7 +66,7 @@ export default function HindiLandingPage() {
             </Link>
             <Link
               href="/login"
-              className="text-sm text-gray-600 font-semibold px-4 py-2 rounded-full border border-gray-200 hover:border-gray-300 transition-all hidden sm:block"
+              className="hidden sm:block text-sm text-gray-600 font-semibold px-4 py-2 rounded-full border border-gray-200 hover:border-gray-300 transition-all"
             >
               {t.nav_signin}
             </Link>
@@ -73,51 +81,86 @@ export default function HindiLandingPage() {
       </nav>
 
       {/* ── Hero ── */}
-      <section className="max-w-5xl mx-auto px-4 pt-16 pb-12 text-center">
-        <div className="mb-6 inline-flex items-center gap-2 bg-orange-50 border border-orange-100 rounded-full px-4 py-2 text-sm">
-          <span>🍕</span>
-          <span className="text-gray-500">{t.home_india_fast}</span>
-        </div>
+      <section className="max-w-5xl mx-auto px-4 pt-10 sm:pt-16 pb-8 sm:pb-12">
+        <div className="lg:grid lg:grid-cols-2 lg:gap-12 lg:items-center text-center lg:text-left">
 
-        <h1 className="text-4xl sm:text-6xl font-black text-gray-900 leading-tight mb-4">
-          रोज़ <span className="text-orange-500">10 मिनट</span> में CUET UG की तैयारी
-        </h1>
+          <div>
+            <div className="mb-5 inline-flex items-center gap-2 bg-orange-50 border border-orange-100 rounded-full px-4 py-2 text-sm">
+              <span>🍕</span>
+              <span className="text-gray-500">{t.home_india_fast}</span>
+            </div>
 
-        <p className="text-lg sm:text-xl text-gray-500 max-w-xl mx-auto leading-relaxed mb-8">
-          {t.home_hero_sub}
-        </p>
+            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black text-gray-900 leading-tight mb-4">
+              रोज़ <span className="text-orange-500">10 मिनट</span> में<br className="hidden sm:block" /> CUET UG की तैयारी
+            </h1>
 
-        <div className="flex flex-col sm:flex-row gap-3 justify-center">
-          <Link
-            href="/diagnostic"
-            className="bg-orange-500 text-white font-black text-lg px-8 py-4 rounded-2xl hover:bg-orange-600 transition-all shadow-lg shadow-orange-200 active:scale-95"
-          >
-            2-मिनट का डायग्नोस्टिक दें — बिना साइनअप →
-          </Link>
-          <Link
-            href="/register"
-            className="border-2 border-gray-200 text-gray-600 font-semibold text-lg px-8 py-4 rounded-2xl hover:border-gray-300 transition-all"
-          >
-            {t.home_cta_start}
-          </Link>
-        </div>
-
-        <p className="mt-4 text-xs text-gray-400">{t.home_free_tag}</p>
-      </section>
-
-      {/* ── The India Problem ── */}
-      <section className="bg-gray-50 py-16">
-        <div className="max-w-5xl mx-auto px-4">
-          <div className="text-center mb-10">
-            <p className="text-sm font-semibold text-orange-500 uppercase tracking-widest mb-2">
-              {t.home_irony_badge}
+            <p className="text-base sm:text-xl text-gray-500 max-w-xl mx-auto lg:mx-0 leading-relaxed mb-6 sm:mb-8">
+              {t.home_hero_sub}
             </p>
-            <h2 className="text-3xl font-black text-gray-900">{t.home_irony_h2}</h2>
+
+            <div className="flex flex-col sm:flex-row gap-3">
+              <Link
+                href="/diagnostic"
+                className="w-full sm:w-auto bg-orange-500 text-white font-black text-base sm:text-lg px-6 sm:px-8 py-4 rounded-2xl hover:bg-orange-600 transition-all shadow-lg shadow-orange-200 active:scale-95 text-center"
+              >
+                2-मिनट का डायग्नोस्टिक → बिना साइनअप
+              </Link>
+              <Link
+                href="/register"
+                className="w-full sm:w-auto border-2 border-gray-200 text-gray-600 font-semibold text-base sm:text-lg px-6 sm:px-8 py-4 rounded-2xl hover:border-gray-300 transition-all text-center"
+              >
+                {t.home_cta_start}
+              </Link>
+            </div>
+
+            <p className="mt-3 text-xs text-gray-400">{t.home_free_tag}</p>
           </div>
 
-          <div className="grid sm:grid-cols-2 gap-4 mb-8">
-            <div className="bg-green-50 border border-green-100 rounded-2xl p-6">
-              <p className="font-black text-green-700 text-lg mb-4">{t.home_delivery_yes}</p>
+          {/* Stats card — desktop only */}
+          <div className="hidden lg:block">
+            <div className="bg-gradient-to-br from-orange-50 to-amber-50 border border-orange-100 rounded-3xl p-8">
+              <p className="text-xs font-bold text-orange-500 uppercase tracking-widest mb-6 text-center">
+                क्यों 10minCUET?
+              </p>
+              <div className="grid grid-cols-2 gap-4">
+                {STATS.map((s) => (
+                  <div key={s.label} className="bg-white rounded-2xl p-4 text-center shadow-sm">
+                    <p className="text-3xl font-black text-orange-500">{s.num}</p>
+                    <p className="font-bold text-gray-900 text-sm mt-1">{s.label}</p>
+                    <p className="text-xs text-gray-400 mt-0.5">{s.sub}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Stats strip — mobile only ── */}
+      <div className="lg:hidden bg-orange-500 py-4 overflow-x-auto">
+        <div className="flex gap-6 px-4 min-w-max mx-auto justify-center">
+          {STATS.map((s) => (
+            <div key={s.label} className="text-center text-white shrink-0">
+              <p className="text-xl font-black">{s.num}</p>
+              <p className="text-xs text-orange-100">{s.label}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* ── The India Problem ── */}
+      <section className="bg-gray-50 py-12 sm:py-16">
+        <div className="max-w-5xl mx-auto px-4">
+          <div className="text-center mb-8 sm:mb-10">
+            <p className="text-xs sm:text-sm font-semibold text-orange-500 uppercase tracking-widest mb-2">
+              {t.home_irony_badge}
+            </p>
+            <h2 className="text-2xl sm:text-3xl font-black text-gray-900">{t.home_irony_h2}</h2>
+          </div>
+
+          <div className="grid sm:grid-cols-2 gap-4 mb-6 sm:mb-8">
+            <div className="bg-green-50 border border-green-100 rounded-2xl p-5 sm:p-6">
+              <p className="font-black text-green-700 text-base sm:text-lg mb-3 sm:mb-4">{t.home_delivery_yes}</p>
               <ul className="space-y-2 text-gray-700 text-sm">
                 <li>🍕 पिज़्ज़ा — Swiggy (10 min)</li>
                 <li>🚗 कैब — Ola (8 min)</li>
@@ -126,8 +169,8 @@ export default function HindiLandingPage() {
                 <li>🧴 रात 2 बजे शैम्पू — Zepto (10 min)</li>
               </ul>
             </div>
-            <div className="bg-red-50 border border-red-100 rounded-2xl p-6">
-              <p className="font-black text-red-600 text-lg mb-4">{t.home_study_no}</p>
+            <div className="bg-red-50 border border-red-100 rounded-2xl p-5 sm:p-6">
+              <p className="font-black text-red-600 text-base sm:text-lg mb-3 sm:mb-4">{t.home_study_no}</p>
               <ul className="space-y-2 text-gray-700 text-sm">
                 <li>{t.home_study_b1}</li>
                 <li>{t.home_study_b2}</li>
@@ -139,29 +182,29 @@ export default function HindiLandingPage() {
             </div>
           </div>
 
-          <div className="bg-orange-500 rounded-2xl p-6 text-center text-white">
-            <p className="text-2xl font-black mb-2">{t.home_banner}</p>
+          <div className="bg-orange-500 rounded-2xl p-5 sm:p-6 text-center text-white">
+            <p className="text-xl sm:text-2xl font-black mb-2">{t.home_banner}</p>
             <p className="text-orange-100 text-sm">{t.home_banner_sub}</p>
           </div>
         </div>
       </section>
 
       {/* ── How It Works ── */}
-      <section className="py-16 max-w-5xl mx-auto px-4">
-        <div className="text-center mb-10">
-          <p className="text-sm font-semibold text-orange-500 uppercase tracking-widest mb-2">
+      <section className="py-12 sm:py-16 max-w-5xl mx-auto px-4">
+        <div className="text-center mb-8 sm:mb-10">
+          <p className="text-xs sm:text-sm font-semibold text-orange-500 uppercase tracking-widest mb-2">
             {t.home_how_badge}
           </p>
-          <h2 className="text-3xl font-black text-gray-900">{t.home_how_h2}</h2>
+          <h2 className="text-2xl sm:text-3xl font-black text-gray-900">{t.home_how_h2}</h2>
         </div>
-        <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4">
           {STEPS.map((step) => (
-            <div key={step.num} className="bg-white rounded-2xl border border-gray-100 p-5 shadow-sm">
-              <div className="flex items-center gap-2 mb-3">
-                <span className="text-2xl">{step.emoji}</span>
+            <div key={step.num} className="bg-white rounded-2xl border border-gray-100 p-4 sm:p-5 shadow-sm">
+              <div className="flex items-center gap-2 mb-2 sm:mb-3">
+                <span className="text-xl sm:text-2xl">{step.emoji}</span>
                 <span className="text-xs font-black text-orange-500">{step.num}</span>
               </div>
-              <h3 className="font-black text-gray-900 mb-2">{step.title}</h3>
+              <h3 className="font-black text-gray-900 mb-1 text-sm sm:text-base">{step.title}</h3>
               <p className="text-xs text-gray-500 leading-relaxed">{step.desc}</p>
             </div>
           ))}
@@ -169,21 +212,21 @@ export default function HindiLandingPage() {
       </section>
 
       {/* ── Features ── */}
-      <section className="bg-gray-50 py-16">
+      <section className="bg-gray-50 py-12 sm:py-16">
         <div className="max-w-5xl mx-auto px-4">
-          <div className="text-center mb-10">
-            <p className="text-sm font-semibold text-orange-500 uppercase tracking-widest mb-2">
+          <div className="text-center mb-8 sm:mb-10">
+            <p className="text-xs sm:text-sm font-semibold text-orange-500 uppercase tracking-widest mb-2">
               {t.home_features_badge}
             </p>
-            <h2 className="text-3xl font-black text-gray-900">{t.home_features_h2}</h2>
+            <h2 className="text-2xl sm:text-3xl font-black text-gray-900">{t.home_features_h2}</h2>
           </div>
-          <div className="grid md:grid-cols-2 gap-4">
+          <div className="grid md:grid-cols-2 gap-3 sm:gap-4">
             {FEATURES.map((f, i) => (
-              <div key={i} className="bg-white border border-gray-100 rounded-2xl p-6 shadow-sm flex gap-4">
-                <div className="text-3xl shrink-0">{f.emoji}</div>
+              <div key={i} className="bg-white border border-gray-100 rounded-2xl p-4 sm:p-6 shadow-sm flex gap-3 sm:gap-4">
+                <div className="text-2xl sm:text-3xl shrink-0">{f.emoji}</div>
                 <div>
-                  <h3 className="font-black text-gray-900 mb-1">{f.title}</h3>
-                  <p className="text-sm text-gray-600 leading-relaxed mb-2">{f.desc}</p>
+                  <h3 className="font-black text-gray-900 mb-1 text-sm sm:text-base">{f.title}</h3>
+                  <p className="text-xs sm:text-sm text-gray-600 leading-relaxed mb-2">{f.desc}</p>
                   <span className="text-xs font-semibold text-orange-500 bg-orange-50 px-2 py-1 rounded-full">
                     {f.tag}
                   </span>
@@ -195,18 +238,18 @@ export default function HindiLandingPage() {
       </section>
 
       {/* ── Emotion ── */}
-      <section className="py-16 max-w-5xl mx-auto px-4">
-        <div className="grid md:grid-cols-2 gap-8 items-center">
+      <section className="py-12 sm:py-16 max-w-5xl mx-auto px-4">
+        <div className="grid md:grid-cols-2 gap-6 sm:gap-8 items-center">
           <div>
-            <p className="text-sm font-semibold text-orange-500 uppercase tracking-widest mb-3">
+            <p className="text-xs sm:text-sm font-semibold text-orange-500 uppercase tracking-widest mb-3">
               {t.home_emotion_badge}
             </p>
-            <h2 className="text-3xl font-black text-gray-900 mb-4 leading-tight">
+            <h2 className="text-2xl sm:text-3xl font-black text-gray-900 mb-4 leading-tight">
               {t.home_emotion_h2a}
               <br />
               <span className="text-orange-500">{t.home_emotion_h2b}</span>
             </h2>
-            <div className="space-y-4 text-gray-600 leading-relaxed">
+            <div className="space-y-3 sm:space-y-4 text-gray-600 leading-relaxed text-sm sm:text-base">
               <p>{t.home_emotion_p1}</p>
               <p>{t.home_emotion_p2}</p>
               <p>{t.home_emotion_p3}</p>
@@ -214,19 +257,19 @@ export default function HindiLandingPage() {
               <p>{t.home_emotion_p5}</p>
             </div>
           </div>
-          <div className="bg-gradient-to-br from-orange-50 to-amber-50 border border-orange-100 rounded-3xl p-8 text-center">
-            <div className="text-6xl mb-4">🙏</div>
-            <p className="text-xl font-black text-gray-900 mb-2">{t.home_quote}</p>
+          <div className="bg-gradient-to-br from-orange-50 to-amber-50 border border-orange-100 rounded-3xl p-6 sm:p-8 text-center">
+            <div className="text-5xl sm:text-6xl mb-4">🙏</div>
+            <p className="text-lg sm:text-xl font-black text-gray-900 mb-2">{t.home_quote}</p>
             <p className="text-gray-500 text-sm">{t.home_quote_trans}</p>
-            <div className="mt-6 pt-6 border-t border-orange-100">
+            <div className="mt-5 sm:mt-6 pt-5 sm:pt-6 border-t border-orange-100">
               <p className="text-xs text-gray-400">{t.home_built}</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* ── Final CTA ── */}
-      <section className="bg-orange-500 py-16">
+      {/* ── Final CTA — desktop only ── */}
+      <section className="hidden sm:block bg-orange-500 py-16">
         <div className="max-w-3xl mx-auto px-4 text-center text-white">
           <div className="text-5xl mb-4">⏱️</div>
           <h2 className="text-4xl font-black mb-4 leading-tight">10 मिनट अभी शुरू होते हैं।</h2>
@@ -258,6 +301,16 @@ export default function HindiLandingPage() {
           </div>
         </div>
       </footer>
+
+      {/* ── Mobile sticky CTA — above BottomNav (h-16) ── */}
+      <div className="sm:hidden fixed bottom-16 left-0 right-0 z-30 px-4 pb-3 pt-6 bg-gradient-to-t from-white via-white to-transparent pointer-events-none">
+        <Link
+          href="/diagnostic"
+          className="pointer-events-auto block w-full bg-orange-500 text-white font-black text-base text-center py-4 rounded-2xl shadow-xl shadow-orange-300/50 active:scale-95 transition-all"
+        >
+          2-मिनट डायग्नोस्टिक — बिना साइनअप →
+        </Link>
+      </div>
     </div>
   );
 }
