@@ -48,6 +48,7 @@ export function SiteFooter() {
         <p className="text-xs text-gray-300 text-center">
           © {new Date().getFullYear()} 10minCUET · EAZEALLIANCE SERVICES PRIVATE LIMITED · GST 09AAHCE2255K1ZF
         </p>
+        <p style={{textAlign:'center',fontSize:'12px',color:'#999',padding:'8px 0'}}>Powered by <a href="https://aletheiaai.in" target="_blank" rel="noopener" style={{color:'#FF5722',textDecoration:'none'}}>Aletheiaai.in</a></p>
       </div>
     </footer>
   );
