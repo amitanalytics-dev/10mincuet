@@ -47,6 +47,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // ── Core pages ──────────────────────────────────────────────────────────────
   const core: MetadataRoute.Sitemap = [
     { url: base,                              lastModified: now, changeFrequency: "weekly",  priority: 1.0 },
+    { url: `${base}/hi`,                      lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${base}/topics`,                  lastModified: now, changeFrequency: "weekly",  priority: 0.9 },
     { url: `${base}/foundation`,              lastModified: now, changeFrequency: "weekly",  priority: 0.9 },
     { url: `${base}/mock`,                    lastModified: now, changeFrequency: "weekly",  priority: 0.9 },

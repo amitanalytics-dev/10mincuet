@@ -53,6 +53,14 @@ export const metadata: Metadata = {
     description:
       "Master CUET UG in 10 minutes a day. Pick your 5 of 27 domain subjects. Bloom-level tracking.",
   },
+  alternates: {
+    canonical: BASE_URL,
+    languages: {
+      "en-IN": BASE_URL,
+      "hi-IN": `${BASE_URL}/hi`,
+      "x-default": BASE_URL,
+    },
+  },
   robots: {
     index: true,
     follow: true,

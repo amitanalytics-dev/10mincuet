@@ -32,6 +32,8 @@ const PUBLIC_PATHS = [
   // SEO / content pages — crawlers and logged-out users must see these
   "/topics", "/cuet", "/jee", "/foundation", "/about", "/methodology",
   "/for", "/compare", "/sprint", "/cutoffs", "/toppers", "/score-normalisation",
+  // Hindi landing page (public SEO page, no signup needed)
+  "/hi",
 ];
 
 export default function AuthGate({ children }: { children: React.ReactNode }) {
