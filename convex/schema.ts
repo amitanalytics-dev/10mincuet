@@ -434,7 +434,6 @@ export default defineSchema({
     createdAt: v.optional(v.number()),
   })
     .index("by_slug", ["slug"])
-    .index("by_subject", ["subject"])
     .index("by_publishedAt", ["publishedAt"])
     .index("by_targetClasses", ["targetClasses"]),
 
@@ -686,4 +685,87 @@ export default defineSchema({
     ncertChapterName: v.optional(v.string()),
     updatedAt: v.number(),
   }).index("by_key", ["key"]),
+});
+  }).index("by_key", ["key"]),
+
+  topics: defineTable({
+    examType: v.union(v.literal("jee"), v.literal("neet"), v.literal("cuet")),
+    subject: v.string(),
+    name: v.string(),
+    subtopic: v.optional(v.string()),
+    frequency: v.number(), // times appeared in past papers
+    importance: v.number(), // 1-10 score
+    bloomLevel: v.number(), // 1-6
+    questionCount: v.number(),
+    keyPoints: v.optional(v.array(v.string())),
+    mindMapUrl: v.optional(v.string()),
+    conceptMapUrl: v.optional(v.string()),
+    createdAt: v.number(),
+  })
+    .index("by_exam_subject", ["examType", "subject"])
+    .index("by_frequency", ["frequency"]),
+
+  questions: defineTable({
+    examType: v.union(v.literal("jee"), v.literal("neet"), v.literal("cuet")),
+    subject: v.string(),
+    topic: v.string(),
+    subtopic: v.optional(v.string()),
+    questionText: v.string(),
+    options: v.optional(v.array(v.string())), // for MCQ
+    correctAnswer: v.string(),
+    difficulty: v.union(v.literal("easy"), v.literal("medium"), v.literal("hard")),
+    bloomLevel: v.number(), // 1-6
+    solution: v.string(),
+    conceptMap: v.optional(v.string()),
+    conceptMapUrl: v.optional(v.string()),
+    mindMapUrl: v.optional(v.string()),
+    relatedTopics: v.optional(v.array(v.string())),
+    commonMistakes: v.optional(v.array(v.string())),
+    estimatedTimeSeconds: v.number(), // average time to solve
+    isPYQ: v.boolean(), // is previous year question
+    pyqYear: v.optional(v.number()),
+    bloomLevel: v.number(),
+    status: v.string(), // "draft" | "published"
+    createdAt: v.number(),
+  })
+    .index("by_exam_topic", ["examType", "topic", "difficulty"])
+    .index("by_subject", ["examType", "subject"]),
+
+  questionResponses: defineTable({
+    userId: v.id("users"),
+    questionId: v.id("questions"),
+    examType: v.union(v.literal("jee"), v.literal("neet"), v.literal("cuet")),
+    selectedAnswer: v.string(),
+    isCorrect: v.boolean(),
+    timeTaken: v.number(), // seconds
+    createdAt: v.number(),
+  })
+    .index("by_user_exam", ["userId", "examType"])
+    .index("by_question", ["questionId"]),
+
+  dppProgress: defineTable({
+    userId: v.id("users"),
+    examType: v.union(v.literal("jee"), v.literal("neet"), v.literal("cuet")),
+    questionsAttempted: v.number(),
+    correctCount: v.number(),
+    accuracy: v.number(), // percentage
+    totalTimeSpent: v.number(), // seconds
+    completedAt: v.number(),
+  })
+    .index("by_user_exam", ["userId", "examType"]),
+
+  revisionBlueprint: defineTable({
+    examType: v.union(v.literal("jee"), v.literal("neet"), v.literal("cuet")),
+    subject: v.string(),
+    topicName: v.string(),
+    rank: v.number(), // 1-50
+    frequency: v.number(),
+    importance: v.number(),
+    expectedMarks: v.number(),
+    score: v.number(), // composite priority score
+    recommendedDaysToStudy: v.number(),
+    keyPoints: v.array(v.string()),
+    createdAt: v.number(),
+  })
+    .index("by_exam_subject", ["examType", "subject"]),
 });
