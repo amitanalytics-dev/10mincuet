@@ -63,6 +63,44 @@ export default defineSchema({
     .index("by_referred", ["referredId"])
     .index("by_paidAt", ["paidAt"]),
 
+  paperAnalysis: defineTable({
+    examType: v.union(v.literal("jee"), v.literal("neet"), v.literal("cuet")),
+    year: v.number(),
+    session: v.optional(v.string()),
+    shift: v.optional(v.number()),
+    subjects: v.array(
+      v.object({
+        name: v.string(),
+        subtopics: v.array(
+          v.object({
+            name: v.string(),
+            bloomLevel: v.union(v.literal(1), v.literal(2), v.literal(3), v.literal(4), v.literal(5), v.literal(6)),
+            marks: v.number(),
+            questionCount: v.number(),
+            pattern: v.union(v.literal("mcq"), v.literal("numeric")),
+            frequency: v.number(),
+          })
+        ),
+        totalMarks: v.number(),
+        totalQuestions: v.number(),
+      })
+    ),
+    totalMarks: v.number(),
+    createdAt: v.number(),
+  })
+    .index("by_exam_year", ["examType", "year"]),
+
+  userPaperAccess: defineTable({
+    userId: v.id("users"),
+    examType: v.union(v.literal("jee"), v.literal("neet"), v.literal("cuet")),
+    yearsAccessible: v.array(v.number()),
+    tier: v.string(),
+    verifiedPhone: v.boolean(),
+    verifiedEmail: v.boolean(),
+    createdAt: v.number(),
+  })
+    .index("by_user_exam", ["userId", "examType"]),
+
   progress: defineTable({
     userId: v.id("users"),
     topicSlug: v.string(),
@@ -377,6 +415,9 @@ export default defineSchema({
     slug: v.string(),
     title: v.string(),
     content: v.string(),
+    description: v.string(),
+    subject: v.string(),
+    tags: v.array(v.string()),
     ncertBook: v.string(),
     ncertChapter: v.string(),
     targetClasses: v.array(v.string()),
@@ -385,9 +426,16 @@ export default defineSchema({
     richContent: v.optional(v.string()),
     ncertPdfUrl: v.optional(v.string()),
     estimatedStudyTime: v.optional(v.number()),
+    featuredImageUrl: v.optional(v.string()),
+    featuredImageAlt: v.optional(v.string()),
+    publishedAt: v.optional(v.number()),
+    ratingCount: v.optional(v.number()),
+    ratingValue: v.optional(v.number()),
     createdAt: v.optional(v.number()),
   })
     .index("by_slug", ["slug"])
+    .index("by_subject", ["subject"])
+    .index("by_publishedAt", ["publishedAt"])
     .index("by_targetClasses", ["targetClasses"]),
 
   pendingBatches: defineTable({

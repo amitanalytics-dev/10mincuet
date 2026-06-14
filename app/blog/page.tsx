@@ -27,6 +27,43 @@ function stripHtml(html: string): string {
   return html.replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim();
 }
 
+function generateCollectionPageSchema(
+  totalPosts: number,
+  currentPage: number,
+  totalPages: number,
+  pageSize: number,
+  blogs: BlogView[],
+  category: string
+) {
+  const startIndex = (currentPage - 1) * pageSize;
+  const paginated = blogs.slice(startIndex, startIndex + pageSize);
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    url: category === "All"
+      ? currentPage > 1 ? `${BASE_URL}/blog?page=${currentPage}` : `${BASE_URL}/blog`
+      : currentPage > 1 ? `${BASE_URL}/blog?category=${encodeURIComponent(category)}&page=${currentPage}` : `${BASE_URL}/blog?category=${encodeURIComponent(category)}`,
+    name: `CUET Blog - ${category} (Page ${currentPage})`,
+    description: `CUET preparation articles on ${category}. Page ${currentPage} of ${totalPages}.`,
+    hasPart: paginated.map((post) => ({
+      "@type": "Article",
+      headline: post.title,
+      description: post.description,
+      url: `${BASE_URL}/blog/${post.slug}`,
+      datePublished: post.publishedAt,
+    })),
+    mainEntity: {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: BASE_URL },
+        { "@type": "ListItem", position: 2, name: "Blog", item: `${BASE_URL}/blog` },
+        ...(category !== "All" ? [{ "@type": "ListItem", position: 3, name: category, item: `${BASE_URL}/blog?category=${encodeURIComponent(category)}` }] : []),
+      ],
+    },
+  };
+}
+
 const PAGE_SIZE = 20;
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -127,9 +164,16 @@ export default async function BlogIndexPage({
     return qs ? `/blog?${qs}` : "/blog";
   }
 
+  const collectionSchema = generateCollectionPageSchema(totalPosts, currentPage, totalPages, PAGE_SIZE, sorted, cat);
+
   return (
     <div className="min-h-screen bg-white">
       <PublicNav />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionSchema) }}
+      />
 
       <section className="bg-gradient-to-br from-orange-50 to-amber-50 py-12 px-4">
         <div className="max-w-4xl mx-auto text-center">

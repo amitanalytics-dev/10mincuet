@@ -3,8 +3,8 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { ConvexHttpClient } from "convex/browser";
 import { api } from "convex/_generated/api";
-import { PublicNav } from "../../components/PublicNav";
-import { BLOGS } from "../../data/blogs";
+import { PublicNav } from "../../../components/PublicNav";
+import { BLOGS } from "../../../data/blogs";
 import type { Metadata } from "next";
 
 export const revalidate = 3600;
@@ -17,22 +17,21 @@ function stripHtml(html: string): string {
 function makePost(b: any) {
   return {
     slug: b.slug as string,
-    title: b.title as string,
-    content: (b.content ?? "") as string,
+    title: b.titleHi ?? b.title,
+    content: (b.contentHi ?? b.content ?? "") as string,
     subject: (b.subject ?? "CUET") as string,
     tags: (b.tags ?? []) as string[],
     publishedAt: new Date(b.publishedAt ?? b.createdAt ?? Date.now()).toISOString(),
     category: (b.subject ?? "CUET") as string,
-    readingMinutes: Math.max(1, Math.ceil(stripHtml(b.content ?? "").split(" ").length / 200)),
-    description: b.description
-      ? (b.description as string)
-      : stripHtml(b.content ?? "").slice(0, 160),
+    readingMinutes: Math.max(1, Math.ceil(stripHtml((b.contentHi ?? b.content) ?? "").split(" ").length / 200)),
+    description: b.descriptionHi
+      ? (b.descriptionHi as string)
+      : stripHtml((b.contentHi ?? b.content) ?? "").slice(0, 160),
   };
 }
 
 const STATIC_BY_SLUG = new Map(BLOGS.map((b) => [b.slug, b]));
 
-// Convex-first lookup with a static CUET fallback; never throws.
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 async function fetchRaw(slug: string): Promise<any | null> {
   try {
@@ -78,7 +77,7 @@ export async function generateMetadata({
     title: post.title,
     description: post.description,
     alternates: {
-      canonical: `${BASE_URL}/blog/${post.slug}`,
+      canonical: `${BASE_URL}/hi/blog/${post.slug}`,
       languages: {
         "en-IN": `${BASE_URL}/blog/${post.slug}`,
         "hi-IN": `${BASE_URL}/hi/blog/${post.slug}`,
@@ -88,9 +87,10 @@ export async function generateMetadata({
     openGraph: {
       title: post.title,
       description: post.description,
-      url: `${BASE_URL}/blog/${post.slug}`,
+      url: `${BASE_URL}/hi/blog/${post.slug}`,
       type: "article",
       publishedTime: post.publishedAt,
+      locale: "hi_IN",
       authors: ["Amit Tyagi"],
     },
   };
@@ -103,7 +103,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
 
   const post = makePost(raw);
 
-  // fetch related: all blogs, filter by same subject (fall back to any others)
+  // fetch related
   const allRaw = await fetchAllRaw();
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   let related = (allRaw as any[])
@@ -118,11 +118,12 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
       .map(makePost);
   }
 
-  const articleJsonLd: any = {
+  const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: post.title,
     description: post.description,
+    inLanguage: "hi-IN",
     author: {
       "@type": "Person",
       name: "Amit Tyagi",
@@ -133,32 +134,21 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
     },
     publisher: { "@type": "Organization", name: "10minCUET", url: BASE_URL },
     datePublished: post.publishedAt,
-    url: `${BASE_URL}/blog/${post.slug}`,
+    url: `${BASE_URL}/hi/blog/${post.slug}`,
   };
-
-  // Add AggregateRating if this is a topper case study with ratings
-  if (raw?.ratingCount && raw?.ratingValue) {
-    articleJsonLd.aggregateRating = {
-      "@type": "AggregateRating",
-      ratingValue: raw.ratingValue,
-      bestRating: 5,
-      worstRating: 1,
-      ratingCount: raw.ratingCount,
-    };
-  }
 
   const breadcrumbJsonLd = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: BASE_URL },
-      { "@type": "ListItem", position: 2, name: "Blog", item: `${BASE_URL}/blog` },
-      { "@type": "ListItem", position: 3, name: post.title, item: `${BASE_URL}/blog/${post.slug}` },
+      { "@type": "ListItem", position: 1, name: "होम", item: `${BASE_URL}/hi` },
+      { "@type": "ListItem", position: 2, name: "ब्लॉग", item: `${BASE_URL}/hi/blog` },
+      { "@type": "ListItem", position: 3, name: post.title, item: `${BASE_URL}/hi/blog/${post.slug}` },
     ],
   };
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white" lang="hi">
       <PublicNav />
 
       <script
@@ -173,9 +163,9 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
       <article className="max-w-2xl mx-auto px-4 py-10">
         {/* Breadcrumb */}
         <div className="flex items-center gap-2 text-xs text-gray-400 mb-6">
-          <Link href="/" className="hover:text-orange-500">Home</Link>
+          <Link href="/hi" className="hover:text-orange-500">होम</Link>
           <span>›</span>
-          <Link href="/blog" className="hover:text-orange-500">Blog</Link>
+          <Link href="/hi/blog" className="hover:text-orange-500">ब्लॉग</Link>
           <span>›</span>
           <span className="text-gray-600 truncate">{post.title}</span>
         </div>
@@ -185,9 +175,9 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           <span className="text-xs font-bold px-3 py-1 rounded-full bg-orange-50 text-orange-600">
             {post.category}
           </span>
-          <span className="text-xs text-gray-400">{post.readingMinutes} min read</span>
+          <span className="text-xs text-gray-400">{post.readingMinutes} मिनट पढ़ने का समय</span>
           <span className="text-xs text-gray-400">
-            {new Date(post.publishedAt).toLocaleDateString("en-IN", {
+            {new Date(post.publishedAt).toLocaleDateString("hi-IN", {
               day: "numeric", month: "long", year: "numeric",
             })}
           </span>
@@ -211,16 +201,16 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         {/* CTA */}
         <div className="mt-8 bg-orange-50 border border-orange-100 rounded-2xl p-6 text-center">
           <p className="text-sm font-bold text-gray-800 mb-1">
-            Practice this topic in 10 minutes
+            इस विषय को 10 मिनट में प्रैक्टिस करें
           </p>
           <p className="text-xs text-gray-500 mb-4">
-            Bloom-level questions mapped to exactly what you just read.
+            Bloom-स्तर के प्रश्न जो आपने अभी पढ़े हैं उनसे मैप किए गए।
           </p>
           <Link
-            href="/register"
+            href="/hi/register"
             className="inline-block bg-orange-500 text-white font-black text-sm px-6 py-3 rounded-xl hover:bg-orange-600 transition-all"
           >
-            Start free →
+            मुफ्त शुरू करें →
           </Link>
         </div>
       </article>
@@ -228,18 +218,18 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
       {/* Related posts */}
       {related.length > 0 && (
         <section className="max-w-2xl mx-auto px-4 pb-12">
-          <h2 className="text-base font-black text-gray-900 mb-4">Related articles</h2>
+          <h2 className="text-base font-black text-gray-900 mb-4">संबंधित लेख</h2>
           <div className="grid sm:grid-cols-3 gap-3">
             {related.map((r) => (
               <Link
                 key={r.slug}
-                href={`/blog/${r.slug}`}
+                href={`/hi/blog/${r.slug}`}
                 className="block border border-gray-100 rounded-xl p-4 hover:border-orange-200 hover:shadow-sm transition-all group"
               >
                 <p className="text-xs font-black text-gray-800 leading-snug group-hover:text-orange-500 transition-colors">
                   {r.title}
                 </p>
-                <p className="text-xs text-gray-400 mt-1">{r.readingMinutes} min</p>
+                <p className="text-xs text-gray-400 mt-1">{r.readingMinutes} मिनट</p>
               </Link>
             ))}
           </div>

@@ -3,8 +3,8 @@ import { BASE_URL } from "@/app/lib/site";
 
 import Link from "next/link";
 import { useState, useEffect } from "react";
-import { PublicNav } from "./components/PublicNav";
-import { useLanguage } from "./context/LanguageContext";
+import { PublicNav } from "./PublicNav";
+import { useLanguage } from "../context/LanguageContext";
 
 const DELIVERY_ITEMS = [
   { emoji: "🍕", item: "Pizza", app: "Swiggy", time: "10 min" },
@@ -38,7 +38,7 @@ const TESTIMONIALS = [
 
 const FAKE_STUDENTS = 1278; // floor — real data takes over once it exceeds this
 
-export default function LandingPage() {
+export function HomeLanding() {
   const { t } = useLanguage();
   const [currentItem, setCurrentItem] = useState(0);
   const [visible, setVisible] = useState(true);
