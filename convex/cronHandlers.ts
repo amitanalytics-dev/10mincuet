@@ -62,7 +62,7 @@ export const referralGifting = internalMutation({
   handler: async (ctx) => {
     const unpaid = await ctx.db
       .query("referrals")
-      .filter((q) => q.eq(q.field("paidAt"), undefined))
+      .withIndex("by_paidAt", (q) => q.eq("paidAt", undefined))
       .take(200);
     let gifted = 0;
     for (const ref of unpaid) {
@@ -229,7 +229,7 @@ export const parentDashboardSync = internalMutation({
   handler: async (ctx) => {
     const parents = await ctx.db
       .query("users")
-      .filter((q) => q.eq(q.field("isKid"), false))
+      .withIndex("by_isKid", (q) => q.eq("isKid", false))
       .take(200);
     const withKids = parents.filter((p) => p._id);
     return { synced: withKids.length };

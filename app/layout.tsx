@@ -87,15 +87,65 @@ export default function RootLayout({
               "@id": `${BASE_URL}/#founder`,
               "name": "Amit Tyagi",
               "jobTitle": "Founder",
-              "worksFor": {
-                "@type": "Organization",
-                "name": "EAZEALLIANCE SERVICES PRIVATE LIMITED",
-              },
+              "worksFor": { "@type": "Organization", "name": "EAZEALLIANCE SERVICES PRIVATE LIMITED" },
               "url": BASE_URL,
-              "alumniOf": {
-                "@type": "CollegeOrUniversity",
-                "name": "Indian School of Business",
-              },
+              "alumniOf": { "@type": "CollegeOrUniversity", "name": "Indian School of Business" },
+            }),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "SoftwareApplication",
+              "name": "10minCUET",
+              "description": "CUET UG preparation in 10 minutes a day — 500+ original questions across Languages, 27 Domain subjects, and General Test. Pick your 5 subjects for 280+ central universities.",
+              "applicationCategory": "EducationalApplication",
+              "operatingSystem": "Web",
+              "url": BASE_URL,
+              "inLanguage": ["en-IN", "hi-IN"],
+              "audience": { "@type": "EducationalAudience", "educationalRole": "student" },
+              "offers": [
+                { "@type": "Offer", "price": "0", "priceCurrency": "INR", "description": "Free tier — diagnostic test, topic practice" },
+                { "@type": "Offer", "price": "199", "priceCurrency": "INR", "description": "Premium — unlimited mocks, Bloom tracking, all subjects" },
+              ],
+            }),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "Which universities accept CUET UG scores?",
+                  "acceptedAnswer": { "@type": "Answer", "text": "280+ central universities accept CUET UG scores, including Delhi University (DU), Jawaharlal Nehru University (JNU), Banaras Hindu University (BHU), Jamia Millia Islamia, Aligarh Muslim University (AMU), and many more." },
+                },
+                {
+                  "@type": "Question",
+                  "name": "How many CUET subjects can I choose?",
+                  "acceptedAnswer": { "@type": "Answer", "text": "CUET UG allows you to appear for up to 6 subjects: 2 Languages + up to 4 Domain subjects + General Test. 10minCUET covers all 27 domain subjects across Science, Commerce, and Humanities streams." },
+                },
+                {
+                  "@type": "Question",
+                  "name": "Is 10minCUET free?",
+                  "acceptedAnswer": { "@type": "Answer", "text": "Yes. 10minCUET has a free tier with the diagnostic test and topic practice. Premium plans start at ₹199/month for unlimited mock tests, Bloom-level tracking, and spaced-repetition revision across your chosen subjects." },
+                },
+                {
+                  "@type": "Question",
+                  "name": "How is 10minCUET different from CUET coaching?",
+                  "acceptedAnswer": { "@type": "Answer", "text": "10minCUET uses Bloom's Taxonomy to track which sub-concepts you've mastered vs. not, so each 10-minute session targets your weakest gaps per subject. Practice only your chosen 5–6 CUET subjects — not 30 others." },
+                },
+                {
+                  "@type": "Question",
+                  "name": "Does 10minCUET cover General Test for CUET UG?",
+                  "acceptedAnswer": { "@type": "Answer", "text": "Yes. 10minCUET covers the CUET General Test with questions on General Knowledge, Current Affairs, Logical Reasoning, Quantitative Aptitude, and English Language — all mapped to the NTA syllabus." },
+                },
+              ],
             }),
           }}
         />

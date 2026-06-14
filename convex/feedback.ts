@@ -114,7 +114,7 @@ export const getFlaggedQuestions = query({
   handler: async (ctx) => {
     const flagged = await ctx.db
       .query("questionFeedback")
-      .filter((q) => q.eq(q.field("isError"), true))
+      .withIndex("by_isError", (q) => q.eq("isError", true))
       .collect();
     return flagged;
   },

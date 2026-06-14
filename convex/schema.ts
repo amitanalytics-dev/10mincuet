@@ -32,7 +32,8 @@ export default defineSchema({
     .index("by_email", ["email"])
     .index("by_referral_code", ["referralCode"])
     .index("by_parent", ["parentId"])
-    .index("by_team", ["teamId"]),
+    .index("by_team", ["teamId"])
+    .index("by_isKid", ["isKid"]),
 
   otpCodes: defineTable({
     email: v.string(),
@@ -59,7 +60,8 @@ export default defineSchema({
     createdAt: v.number(),
   })
     .index("by_referrer", ["referrerId"])
-    .index("by_referred", ["referredId"]),
+    .index("by_referred", ["referredId"])
+    .index("by_paidAt", ["paidAt"]),
 
   progress: defineTable({
     userId: v.id("users"),
@@ -90,7 +92,8 @@ export default defineSchema({
   })
     .index("by_question", ["questionId"])
     .index("by_user", ["userId"])
-    .index("by_topic", ["topicSlug"]),
+    .index("by_topic", ["topicSlug"])
+    .index("by_isError", ["isError"]),
 
   questionDifficultyOverride: defineTable({
     questionId: v.string(),
